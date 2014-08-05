@@ -8,7 +8,7 @@
 
   $(function(){
     var content = $('body').html();
-    $('body').load("_layout.html", function() {
+    $('body').load("layout.html", function() {
       $(content).prependTo('.row');
       $('.menu-oauth2-refresh-tokens').children().addClass('active');
     });

@@ -211,32 +211,34 @@ form.search button.search_btn {
 .content .breadcrumbs {
   margin-bottom: 30px;
   font-size: 0.92em;
+  margin-left: 0;
+  list-style: none;
 }
-/* line 141, /socialcast/app/assets/stylesheets/apipie.css.sass */
+/* line 143, /socialcast/app/assets/stylesheets/apipie.css.sass */
 .content .breadcrumbs li {
   display: inline-block;
 }
-/* line 143, /socialcast/app/assets/stylesheets/apipie.css.sass */
+/* line 145, /socialcast/app/assets/stylesheets/apipie.css.sass */
 .content .nav {
   float: left;
   width: 200px;
   margin-top: 30px;
   font-size: 1.08em;
 }
-/* line 148, /socialcast/app/assets/stylesheets/apipie.css.sass */
+/* line 150, /socialcast/app/assets/stylesheets/apipie.css.sass */
 .content .nav li {
   padding: 10px;
 }
-/* line 150, /socialcast/app/assets/stylesheets/apipie.css.sass */
+/* line 152, /socialcast/app/assets/stylesheets/apipie.css.sass */
 .content .nav li ul {
   margin-bottom: 20px;
   margin-top: 10px;
 }
-/* line 153, /socialcast/app/assets/stylesheets/apipie.css.sass */
+/* line 155, /socialcast/app/assets/stylesheets/apipie.css.sass */
 .content .nav a.active {
   color: #666666;
 }
-/* line 155, /socialcast/app/assets/stylesheets/apipie.css.sass */
+/* line 157, /socialcast/app/assets/stylesheets/apipie.css.sass */
 .content .row {
   width: 700px;
   float: right;
@@ -246,43 +248,43 @@ form.search button.search_btn {
   padding: 30px 30px 60px;
   margin-bottom: -30px;
 }
-/* line 163, /socialcast/app/assets/stylesheets/apipie.css.sass */
+/* line 165, /socialcast/app/assets/stylesheets/apipie.css.sass */
 .content .row p {
   line-height: 1.5;
   margin-top: 10px;
 }
-/* line 166, /socialcast/app/assets/stylesheets/apipie.css.sass */
+/* line 168, /socialcast/app/assets/stylesheets/apipie.css.sass */
 .content .row .article {
   border-bottom: 1px solid #cccccc;
   padding-bottom: 30px;
 }
-/* line 169, /socialcast/app/assets/stylesheets/apipie.css.sass */
+/* line 171, /socialcast/app/assets/stylesheets/apipie.css.sass */
 .content .row ul {
   list-style: disc;
   margin-left: 50px;
 }
-/* line 172, /socialcast/app/assets/stylesheets/apipie.css.sass */
+/* line 174, /socialcast/app/assets/stylesheets/apipie.css.sass */
 .content tr {
   text-align: left;
   font-size: 1.08em;
   border-bottom: 1px solid #e2e2e1;
 }
-/* line 176, /socialcast/app/assets/stylesheets/apipie.css.sass */
+/* line 178, /socialcast/app/assets/stylesheets/apipie.css.sass */
 .content th {
   font-size: 0.93em;
   line-height: 30px;
   padding-right: 10px;
 }
-/* line 180, /socialcast/app/assets/stylesheets/apipie.css.sass */
+/* line 182, /socialcast/app/assets/stylesheets/apipie.css.sass */
 .content td {
   padding: 10px 20px 10px 0;
   width: 300px;
 }
-/* line 185, /socialcast/app/assets/stylesheets/apipie.css.sass */
+/* line 187, /socialcast/app/assets/stylesheets/apipie.css.sass */
 .content .response_field tr th {
   min-width: 90px;
 }
-/* line 187, /socialcast/app/assets/stylesheets/apipie.css.sass */
+/* line 189, /socialcast/app/assets/stylesheets/apipie.css.sass */
 .content .well, .content .prettyprint {
   padding: 15px;
   background-color: whitesmoke;
@@ -292,7 +294,7 @@ form.search button.search_btn {
   word-wrap: break-word;
 }
 
-/* line 194, /socialcast/app/assets/stylesheets/apipie.css.sass */
+/* line 196, /socialcast/app/assets/stylesheets/apipie.css.sass */
 .footer {
   position: relative;
   background-color: #ededed;
@@ -300,7 +302,7 @@ form.search button.search_btn {
   padding: 30px 0 90px;
   border-top: solid 1px #c8c8c8;
 }
-/* line 200, /socialcast/app/assets/stylesheets/apipie.css.sass */
+/* line 202, /socialcast/app/assets/stylesheets/apipie.css.sass */
 .footer ul {
   padding-bottom: 25px;
   margin-bottom: 25px;
@@ -309,44 +311,44 @@ form.search button.search_btn {
   height: 130px;
   border-bottom: solid 1px #c8c8c8;
 }
-/* line 207, /socialcast/app/assets/stylesheets/apipie.css.sass */
+/* line 209, /socialcast/app/assets/stylesheets/apipie.css.sass */
 .footer li {
   line-height: 1.7;
 }
-/* line 209, /socialcast/app/assets/stylesheets/apipie.css.sass */
+/* line 211, /socialcast/app/assets/stylesheets/apipie.css.sass */
 .footer li a {
   color: #666666;
   font-weight: bold;
 }
-/* line 212, /socialcast/app/assets/stylesheets/apipie.css.sass */
+/* line 214, /socialcast/app/assets/stylesheets/apipie.css.sass */
 .footer .footer_links {
   margin-top: 30px;
 }
-/* line 214, /socialcast/app/assets/stylesheets/apipie.css.sass */
+/* line 216, /socialcast/app/assets/stylesheets/apipie.css.sass */
 .footer .social_links {
   width: 300px;
   float: left;
 }
-/* line 217, /socialcast/app/assets/stylesheets/apipie.css.sass */
+/* line 219, /socialcast/app/assets/stylesheets/apipie.css.sass */
 .footer .social_links a {
   width: 52px;
   height: 50px;
   display: block;
 }
-/* line 221, /socialcast/app/assets/stylesheets/apipie.css.sass */
+/* line 223, /socialcast/app/assets/stylesheets/apipie.css.sass */
 .footer .social_links .youtube, .footer .social_links .twitter, .footer .social_links .facebook, .footer .social_links .linkedin {
   background-position: 0 0;
   background-repeat: no-repeat;
   float: left;
   margin-right: 10px;
 }
-/* line 227, /socialcast/app/assets/stylesheets/apipie.css.sass */
+/* line 229, /socialcast/app/assets/stylesheets/apipie.css.sass */
 .footer .tos {
   float: right;
   margin: 14px 20px 0 0;
   font-size: 0.85em;
 }
-/* line 231, /socialcast/app/assets/stylesheets/apipie.css.sass */
+/* line 233, /socialcast/app/assets/stylesheets/apipie.css.sass */
 .footer .truste_badge {
   width: 142px;
   height: 45px;
