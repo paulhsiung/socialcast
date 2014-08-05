@@ -1,0 +1,104 @@
+<html>
+<head>
+<title>Socialcast Oauth 2.0 documentation</title>
+<link href="/socialcast/assets/apipie.css" media="screen" rel="stylesheet">
+
+<script type="text/javascript" src="/socialcast/apidoc/javascripts/bundled/jquery-1.7.2.js" ></script>
+<script>
+
+  $(function(){
+    var content = $('body').html();
+    $('body').load("_layout.html", function() {
+      $(content).prependTo('.row');
+      $('.menu-oauth2').children().addClass('active');
+    });
+  });
+
+</script>
+
+</head>
+
+<body>
+
+<h1>OAuth 2.0</h1>
+<p><a href="http://oauth.net">OAuth 2.0</a> is now available for selected REST API clients. OAuth is "an open protocol to allow secure API authorization in a simple and standard method from desktop and web applications". Socialcast added this functionality to remove the need for third party clients to securely store your credentials. Instead of storing an encrypted copy of your password, the OAuth enabled client applications now use an access token to authenticate with Socialcast. This token can be used to perform a limited set of actions your behalf, but doesn't permanently provide full access to your account. In the event that an authorized application is compromised, attackers can't access the user's plain text password and the compromised tokens can be revoked at any time.</p>
+
+<p>To register a custom app that a developer has created for your community, please refer to the documentation for the <a href="http://developers.socialcast.com/admin/customizing-the-community/apps/">Community Apps Manager</a>.</p>
+
+<h2>Client Registration</h2>
+<p>Socialcast requires all clients to be registered with Socialcast before they can use the OAuth2 authentication services.  This process is currently manual.  Please contact <a href="mailto:support@socialcast.com">support@socialcast.com</a> with the following details to request client registration:</p>
+<ul>
+  <li><strong>Email subject:</strong> OAuth2 Client Registration Request for [Application Name]</li>
+  <li><strong>Application name:</strong> The name of the application that will be displayed to users</li>
+  <li><strong>Application description:</strong> A short description of the application</li>
+  <li><strong>Application homepage URL:</strong> A URL with more information about the application.</li>
+  <li><strong>Application callback URL:</strong> A URL that will be used to pass data back to your application via user-agent redirection. The Callback URL must use SSL.</li>
+</ul>
+<p>Upon successful registration, the you will receive your the following information from Socialcast:</p>
+<ul>
+  <li><strong>client_id:</strong> an opaque string that uniquely identifies your client application to Socialcast</li>
+  <li><strong>client_secret:</strong> an opaque string associated with your client id, and used to authenticate requests as having originated from your application (not necessary in all flows)</li>
+</ul>
+<h2>Determining Community Domain</h2>
+<p>By default, API clients should present the user with the centralized authorization endpoint at:<br>
+<pre class="prettyprint">https://api.socialcast.com/oauth2/authorization</pre>
+<p>This enhanced authorization endpoint allows many users to log in to any of their Socialcast communities, provided these communities:</p>
+<ul>
+  <li>Are Standard SaaS accounts (i.e. not Private Cloud or On Behind the Firewall)</li>
+  <li>Do not use SSO (single sign on) to authenticate users</li>
+</ul>
+<p>Upon successful authorization, Socialcast will append a "community_domain" argument to the OAuth 2 authorization response (see <a title="OAuth2: Authorization Code" href="oauth2-authorization-code.html">Authorization Code</a> and <a title="OAuth2: Implicit" href="oauth2-implicit.html">Implicit</a> grant types) containing the domain you can use to redeem an authorization token (see the <a title="OAuth2: Authorization Code" href="oauth2-authorization-code.html">Authorization Code</a> grant type) and make other API requests (see <a title="OAuth2: Accessing Protected Resources" href="oauth2-accessing-protected-resources.html">Accessing Protected Resources</a>).</p>
+<h2>Other Cases</h2>
+<p>Unfortunately proper delegation to other identity providers and integration with private cloud or behind the firewall deployments requires API clients to use the full community domain when accessing OAuth 2.0 authorization endpoint. This is the same domain that would appear in a browser's URL bar after you have logged in to a community. To help verify that a particular domain is a valid communty domain, OAuth 2.0 compatible versions of Socialcast provide a "check" method that does not require prior authorization at:</p>
+<pre class="prettyprint">
+http://COMMUNITY_DOMAIN/oauth2/check
+</pre>
+<p>For example, the following request:</p>
+<pre class="prettyprint">
+GET /oauth2/check HTTP/1.1
+Host: demo.socialcast.local
+Accept: */*
+</pre>
+<p>will return something similar to the following JSON:</P>
+<pre class="prettyprint">
+{
+  "tenant": "Foobar Inc",
+  "service_type": "Socialcast",
+  "protocol_type": "OAuth2"
+}
+</pre>
+<p>Note: the value of "tenant" will be null if the server is OAuth2 compatible, but the domain provided does not correspond to a tenant.</p>
+<h2>Supported Flows</h2>
+<p><a title="OAuth2: Authorization Code" href="oauth2-authorization-code.html">Authorization Code Grant</a> - See <a href="http://tools.ietf.org/html/draft-ietf-oauth-v2-16#section-4.1" rel="noreferrer">Section 4.1 of Draft 16</a>. This flow is suitable for applications which can make cross-domain HTTP requests, such as web, mobile, or desktop applications.</p>
+<p><a title="OAuth2: Implicit" href="oauth2-implicit.html">Implicit</a> - See <a href="http://tools.ietf.org/html/draft-ietf-oauth-v2-16#section-4.2" rel="noreferrer">Section 4.2 of Draft 16</a>. This flow is recommended for clients which cannot make cross-domain requests or keep secrets such as in-browser JavaScript applications.</p>
+<h2>Summary of Authentication Phases</h2>
+<table columns="3" rows="4">
+  <tr>
+    <td></td>
+    <td><a title="OAuth2: Authorization Code" href="oauth2-authorization-code.html">Authorization Code</a></td>
+    <td><a title="OAuth2: Implicit" href="oauth2-implicit.html">Implicit</a></td>
+  </tr>
+  <tr>
+    <td>Phase 0: Obtain Authorization Code</td>
+    <td>Yes</td>
+    <td>No</td>
+  </tr>
+  <tr>
+    <td>Phase 1: Obtain Access Token</td>
+    <td>Yes</td>
+    <td>Yes</td>
+  </tr>
+  <tr>
+    <td>Phase 2: Access Protected Resources</td>
+    <td>Yes</td>
+    <td>Yes</td>
+  </tr>
+  <tr>
+    <td>Phase 3: Refresh Access Token</td>
+    <td>Yes</td>
+    <td>No</td>
+  </tr>
+</table>
+
+</body>
+</html>

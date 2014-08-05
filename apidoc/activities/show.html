@@ -1,0 +1,437 @@
+<link href="/socialcast/assets/apipie.css" media="screen" rel="stylesheet" />
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+  <head>
+    <title>API documentation</title>
+    <meta content='text/html; charset=US-ASCII' http-equiv='Content-Type' />
+    <link href='//cloud.typography.com/7512272/744364/css/fonts.css' rel='stylesheet' type='text/css' />
+    <!-- IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <!-- <script src="<haml_loud> asset_path('html5.js') </haml_loud>"></script> -->
+    <![endif]-->
+  </head>
+  <body>
+    <div class='header'>
+      <div class='utility_bar'>
+        <div class='wrapper'>
+          <p class='links'>
+            <a href="http://www.socialcast.com">Back to Socialcast</a>
+            |
+            <a href="http://blog.socialcast.com/">Blog</a>
+          </p>
+        </div>
+      </div>
+      <div class='wrapper'>
+        <a class="logo" href="http://www.socialcast.com"><img alt="Socialcast vmware" src="/socialcast/assets/socialcast_vmware.jpg" /></a>
+      </div>
+    </div>
+    <div class='content wrapper'>
+      <div class='nav'>
+        <ul>
+          <li>
+            <a href="/socialcast/auth/oauth2.html">OAuth 2.0</a>
+          </li>
+          <li>
+            <a href="/socialcast/auth/basic-auth.html">HTTP Basic Authentication</a>
+          </li>
+          <li>
+            <a class="" href="../../apidoc.html">API Resource Endpoints</a>
+            <ul>
+              <li>
+                <a class='' href='../../apidoc/activities.html'>
+                  Activities
+                </a>
+                <ul>
+                  <li>
+                    <a class='' href='../../apidoc/activities/index.html'>index</a>
+                  </li>
+                  <li>
+                    <a class='active' href='../../apidoc/activities/show.html'>show</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a class='' href='../../apidoc/attachments.html'>
+                  Attachments
+                </a>
+              </li>
+              <li>
+                <a class='' href='../../apidoc/authentication.html'>
+                  Authentication
+                </a>
+              </li>
+              <li>
+                <a class='' href='../../apidoc/badges.html'>
+                  Badges
+                </a>
+              </li>
+              <li>
+                <a class='' href='../../apidoc/client_devices.html'>
+                  Client devices
+                </a>
+              </li>
+              <li>
+                <a class='' href='../../apidoc/comments.html'>
+                  Comments
+                </a>
+              </li>
+              <li>
+                <a class='' href='../../apidoc/content_filters.html'>
+                  Content filters
+                </a>
+              </li>
+              <li>
+                <a class='' href='../../apidoc/conversations.html'>
+                  Conversations
+                </a>
+              </li>
+              <li>
+                <a class='' href='../../apidoc/custom_fields.html'>
+                  Custom fields
+                </a>
+              </li>
+              <li>
+                <a class='' href='../../apidoc/external_systems.html'>
+                  External systems
+                </a>
+              </li>
+              <li>
+                <a class='' href='../../apidoc/flags.html'>
+                  Flags
+                </a>
+              </li>
+              <li>
+                <a class='' href='../../apidoc/followers.html'>
+                  Followers
+                </a>
+              </li>
+              <li>
+                <a class='' href='../../apidoc/following.html'>
+                  Following
+                </a>
+              </li>
+              <li>
+                <a class='' href='../../apidoc/group_memberships.html'>
+                  Group memberships
+                </a>
+              </li>
+              <li>
+                <a class='' href='../../apidoc/groups.html'>
+                  Groups
+                </a>
+              </li>
+              <li>
+                <a class='' href='../../apidoc/likes.html'>
+                  Likes
+                </a>
+              </li>
+              <li>
+                <a class='' href='../../apidoc/media_files.html'>
+                  Media files
+                </a>
+              </li>
+              <li>
+                <a class='' href='../../apidoc/members.html'>
+                  Members
+                </a>
+              </li>
+              <li>
+                <a class='' href='../../apidoc/messages.html'>
+                  Messages
+                </a>
+              </li>
+              <li>
+                <a class='' href='../../apidoc/notifications.html'>
+                  Notifications
+                </a>
+              </li>
+              <li>
+                <a class='' href='../../apidoc/polls.html'>
+                  Polls
+                </a>
+              </li>
+              <li>
+                <a class='' href='../../apidoc/reach_extensions.html'>
+                  Reach extensions
+                </a>
+              </li>
+              <li>
+                <a class='' href='../../apidoc/remarks.html'>
+                  Remarks
+                </a>
+              </li>
+              <li>
+                <a class='' href='../../apidoc/search.html'>
+                  Search
+                </a>
+              </li>
+              <li>
+                <a class='' href='../../apidoc/streams.html'>
+                  Streams
+                </a>
+              </li>
+              <li>
+                <a class='' href='../../apidoc/thanks.html'>
+                  Thanks
+                </a>
+              </li>
+              <li>
+                <a class='' href='../../apidoc/topics.html'>
+                  Topics
+                </a>
+              </li>
+              <li>
+                <a class='' href='../../apidoc/users.html'>
+                  Users
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class='row'>
+        <ul class='breadcrumbs'>
+          <li>
+            <a href='../../apidoc.html'>
+              API Resource Endpoints &gt;
+            </a>
+          </li>
+          <li>
+            Activities
+          </li>
+        </ul>
+        <h1 class='detail'>
+          GET
+          /api/conversations/:conversation_id/activities/:id
+        </h1>
+        <p>get a specific activity item</p>
+        <div>
+          
+          <p>Note: clients must only display activities/attachments with an objectType
+          that they explicitly support.  Future updates may add additional
+          objectTypes and clients must ignore these until they add specific support.</p>
+          
+          <p>Each objectType is defined by the activitystrea.ms schema: {<a
+          href="http://activitystrea.ms/head/activity-schema.html#note">activitystrea.ms/head/activity-schema.html#note</a>
+          Note}, {<a
+          href="http://activitystrea.ms/head/activity-schema.html#image">activitystrea.ms/head/activity-schema.html#image</a>
+          Image}, and {<a
+          href="http://activitystrea.ms/head/activity-schema.html#collection">activitystrea.ms/head/activity-schema.html#collection</a>
+          Collection}</p>
+          
+          <p>objectTypes of attachments are defined according to the activitystrea.ms
+          schema: {<a
+          href="http://activitystrea.ms/head/activity-schema.html#file">activitystrea.ms/head/activity-schema.html#file</a>
+          File} and {<a
+          href="http://activitystrea.ms/head/activity-schema.html#image">activitystrea.ms/head/activity-schema.html#image</a>
+          Image}</p>
+          <h2>Params</h2>
+          <table class='table'>
+            <thead>
+              <tr>
+                <th>Param name</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr style='background-color:rgb(255,255,255);'>
+                <td>
+                  <strong>conversation_id</strong>
+                  <br />
+                  <small>
+                    optional
+                    
+                  </small>
+                </td>
+                <td>
+                  
+                  <p>referenced conversation</p>
+                  <br />
+                  Value: Must be Integer
+                </td>
+              </tr>
+              
+              <tr style='background-color:rgb(255,255,255);'>
+                <td>
+                  <strong>id</strong>
+                  <br />
+                  <small>
+                    optional
+                    
+                  </small>
+                </td>
+                <td>
+                  
+                  <p>activity id to load</p>
+                  <br />
+                  Value: Must be Integer
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <h2>Response Fields</h2>
+          <table class='table table-bordered response_field'>
+            <tr>
+              <th>activity[id]</th>
+              <td>unique id for this activity</td>
+              <td>Integer</td>
+            </tr>
+            <tr>
+              <th>activity[verb]</th>
+              <td>type of activity (post, update, join, leave)</td>
+              <td>String</td>
+            </tr>
+            <tr>
+              <th>activity[title]</th>
+              <td>descriptive sentence of the activity</td>
+              <td>String</td>
+            </tr>
+            <tr>
+              <th>activity[actor[displayName]]</th>
+              <td>full name of the activity actor</td>
+              <td>String</td>
+            </tr>
+            <tr>
+              <th>activity[actor[firstName]]</th>
+              <td>first name of the activity actor</td>
+              <td>String</td>
+            </tr>
+            <tr>
+              <th>activity[actor[image][url]]</th>
+              <td>image url for the activity actor</td>
+              <td>String</td>
+            </tr>
+            <tr>
+              <th>activity[object[objectType]]</th>
+              <td>data type of the activity (note, image, collection)</td>
+              <td>String</td>
+            </tr>
+            <tr>
+              <th>activity[published]</th>
+              <td>timestamp when the activity was created</td>
+              <td>DateTime</td>
+            </tr>
+            <tr>
+              <th>activity[location[longitude]]</th>
+              <td>location longitude of the activity</td>
+              <td>Integer</td>
+            </tr>
+            <tr>
+              <th>activity[location[latitude]]</th>
+              <td>location latitude of the activity</td>
+              <td>Integer</td>
+            </tr>
+            <tr>
+              <th>activity[generator[name]]</th>
+              <td>name of client application that generated the activity</td>
+              <td>String</td>
+            </tr>
+            <tr>
+              <th>activity[generator[url]]</th>
+              <td>informational url of the client application that generated the activity</td>
+              <td>String</td>
+            </tr>
+            <tr>
+              <th>activity[attachments]</th>
+              <td>array of objects associated to this object (image, file)</td>
+              <td>Array</td>
+            </tr>
+            <tr>
+              <th>activity[target]</th>
+              <td>target of the activity (ex: Joe joined the *conversation*)</td>
+              <td>Object</td>
+            </tr>
+          </table>
+          <h2>Example Curl Commands</h2>
+          <div class='well'>
+            curl -X GET -v --basic -u &quot;emily@socialcast.com:demo&quot; https://demo.socialcast.com/api/conversations/2/activities/8.json
+          </div>
+          <h2>Examples</h2>
+          <pre class='prettyprint'>GET /conversations/1/activities/1.json&#x000A;200&#x000A;{&#x000A;  &quot;activity&quot;: {&#x000A;    &quot;id&quot;: 1,&#x000A;    &quot;verb&quot;: &quot;post&quot;,&#x000A;    &quot;actor&quot;: {&#x000A;      &quot;id&quot;: 10,&#x000A;      &quot;displayName&quot;: &quot;J'øhn D'øe1&quot;,&#x000A;      &quot;firstName&quot;: &quot;J'øhn&quot;,&#x000A;      &quot;image&quot;: {&#x000A;        &quot;height&quot;: 70,&#x000A;        &quot;width&quot;: 70,&#x000A;        &quot;url&quot;: &quot;https://socialcast.socialcast.test/assets/v6/avatars/default_user_square70.png&quot;,&#x000A;        &quot;is_system_default&quot;: true&#x000A;      },&#x000A;      &quot;inactive&quot;: false,&#x000A;      &quot;terminated&quot;: false&#x000A;    },&#x000A;    &quot;object&quot;: {&#x000A;      &quot;id&quot;: 1,&#x000A;      &quot;objectType&quot;: &quot;note&quot;,&#x000A;      &quot;content&quot;: &quot;testing &amp; bläh &amp; stuff&quot;&#x000A;    },&#x000A;    &quot;title&quot;: &quot;J'øhn D'øe1 posted a Private Message&quot;,&#x000A;    &quot;published&quot;: &quot;2014-07-11T09:30:53-07:00&quot;&#x000A;  }&#x000A;}</pre>
+        </div>
+      </div>
+    </div>
+    <div class='clear'></div>
+    <div class='footer'>
+      <div class='wrapper'>
+        <ul>
+          <li>
+            <a href="http://socialcast.com/"><span class="translation_missing" title="translation missing: en.Overview">Overview</span></a>
+          </li>
+          <li>
+            <a href="http://socialcast.com/product"><span class="translation_missing" title="translation missing: en.Product Details">Product Details</span></a>
+          </li>
+          <li>
+            <a href="http://socialcast.com/pricing#pricing"><span class="translation_missing" title="translation missing: en.Pricing">Pricing</span></a>
+          </li>
+          <li>
+            <a href="http://socialcast.com/pricing#services"><span class="translation_missing" title="translation missing: en.Services">Services</span></a>
+          </li>
+          <li>
+            <a href="http://socialcast.com/customers"><span class="translation_missing" title="translation missing: en.Customer Stories">Customer Stories</span></a>
+          </li>
+          <li>
+            <a href="http://socialcast.com/webinars"><span class="translation_missing" title="translation missing: en.Webinars">Webinars</span></a>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <a href="http://socialcast.com/resources"><span class="translation_missing" title="translation missing: en.Resources">Resources</span></a>
+          </li>
+          <li>
+            <a href="https://communities.vmware.com/community/vmtn/socialcast"><span class="translation_missing" title="translation missing: en.Community Forum">Community Forum</span></a>
+          </li>
+          <li>
+            <a href="http://socialcast.com/help"><span class="translation_missing" title="translation missing: en.Help">Help</span></a>
+          </li>
+          <li>
+            <a href="http://socialcast.com/faq"><span class="translation_missing" title="translation missing: en.FAQ">Faq</span></a>
+          </li>
+          <li>
+            <a href="http://developers.socialcast.com/"><span class="translation_missing" title="translation missing: en.Developers">Developers</span></a>
+          </li>
+          <li>
+            <a href="http://developers.socialcast.com/admin/"><span class="translation_missing" title="translation missing: en.Administrators">Administrators</span></a>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <a href="http://blog.socialcast.com/"><span class="translation_missing" title="translation missing: en.Blog">Blog</span></a>
+          </li>
+          <li>
+            <a href="http://socialcast.com/about"><span class="translation_missing" title="translation missing: en.About">About</span></a>
+          </li>
+          <li>
+            <a href="http://socialcast.com/press"><span class="translation_missing" title="translation missing: en.Press Center">Press Center</span></a>
+          </li>
+          <li>
+            <a href="http://socialcast.com/careers"><span class="translation_missing" title="translation missing: en.Careers">Careers</span></a>
+          </li>
+          <li>
+            <a href="http://socialcast.com/contact-form"><span class="translation_missing" title="translation missing: en.Contact">Contact</span></a>
+          </li>
+        </ul>
+        <div class='clear'></div>
+        <div class='footer_links'>
+          <div class='social_links'>
+            <a class="youtube" href="http://www.youtube.com/user/SocialcastByVMware"><img alt="Youtube circle" src="/socialcast/assets/youtube_circle.png" /></a>
+            <a class="twitter" href="https://twitter.com/socialcast"><img alt="Twitter circle" src="/socialcast/assets/twitter_circle.png" /></a>
+            <a class="facebook" href="https://www.facebook.com/VMwareSocialcast"><img alt="Facebook circle" src="/socialcast/assets/facebook_circle.png" /></a>
+            <a class="linkedin" href="http://www.linkedin.com/company/1171942"><img alt="Linkedin circle" src="/socialcast/assets/linkedin_circle.png" /></a>
+          </div>
+          <a class="truste_badge" href="https://privacy.truste.com/privacy-seal/VMware,-Inc-/validation?rid=06daecaa-35ac-46f7-9c3e-5c3713be8787"><img alt="Truste seal" src="/socialcast/assets/truste_seal.png" /></a>
+          <p class='tos'>
+            Copyright 2014 VMWare, Inc. All Rights Reserved.
+            <a href="http://www.socialcast.com/terms">Terms</a>
+            |
+            <a href="http://www.socialcast.com/privacy">Privacy</a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <script type='text/javascript' src='../../apidoc/javascripts/bundled/jquery-1.7.2.js'></script>
+    <script type='text/javascript' src='../../apidoc/javascripts/bundled/bootstrap-collapse.js'></script>
+    <script type='text/javascript' src='../../apidoc/javascripts/bundled/prettify.js'></script>
+    <script type='text/javascript' src='../../apidoc/javascripts/apipie.js'></script>
+  </body>
+</html>

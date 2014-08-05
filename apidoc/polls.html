@@ -1,0 +1,680 @@
+<link href="/socialcast/assets/apipie.css" media="screen" rel="stylesheet" />
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+  <head>
+    <title>API documentation</title>
+    <meta content='text/html; charset=US-ASCII' http-equiv='Content-Type' />
+    <link href='//cloud.typography.com/7512272/744364/css/fonts.css' rel='stylesheet' type='text/css' />
+    <!-- IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <!-- <script src="<haml_loud> asset_path('html5.js') </haml_loud>"></script> -->
+    <![endif]-->
+  </head>
+  <body>
+    <div class='header'>
+      <div class='utility_bar'>
+        <div class='wrapper'>
+          <p class='links'>
+            <a href="http://www.socialcast.com">Back to Socialcast</a>
+            |
+            <a href="http://blog.socialcast.com/">Blog</a>
+          </p>
+        </div>
+      </div>
+      <div class='wrapper'>
+        <a class="logo" href="http://www.socialcast.com"><img alt="Socialcast vmware" src="/socialcast/assets/socialcast_vmware.jpg" /></a>
+      </div>
+    </div>
+    <div class='content wrapper'>
+      <div class='nav'>
+        <ul>
+          <li>
+            <a href="/socialcast/auth/oauth2.html">OAuth 2.0</a>
+          </li>
+          <li>
+            <a href="/socialcast/auth/basic-auth.html">HTTP Basic Authentication</a>
+          </li>
+          <li>
+            <a class="" href="../apidoc.html">API Resource Endpoints</a>
+            <ul>
+              <li>
+                <a class='' href='../apidoc/activities.html'>
+                  Activities
+                </a>
+              </li>
+              <li>
+                <a class='' href='../apidoc/attachments.html'>
+                  Attachments
+                </a>
+              </li>
+              <li>
+                <a class='' href='../apidoc/authentication.html'>
+                  Authentication
+                </a>
+              </li>
+              <li>
+                <a class='' href='../apidoc/badges.html'>
+                  Badges
+                </a>
+              </li>
+              <li>
+                <a class='' href='../apidoc/client_devices.html'>
+                  Client devices
+                </a>
+              </li>
+              <li>
+                <a class='' href='../apidoc/comments.html'>
+                  Comments
+                </a>
+              </li>
+              <li>
+                <a class='' href='../apidoc/content_filters.html'>
+                  Content filters
+                </a>
+              </li>
+              <li>
+                <a class='' href='../apidoc/conversations.html'>
+                  Conversations
+                </a>
+              </li>
+              <li>
+                <a class='' href='../apidoc/custom_fields.html'>
+                  Custom fields
+                </a>
+              </li>
+              <li>
+                <a class='' href='../apidoc/external_systems.html'>
+                  External systems
+                </a>
+              </li>
+              <li>
+                <a class='' href='../apidoc/flags.html'>
+                  Flags
+                </a>
+              </li>
+              <li>
+                <a class='' href='../apidoc/followers.html'>
+                  Followers
+                </a>
+              </li>
+              <li>
+                <a class='' href='../apidoc/following.html'>
+                  Following
+                </a>
+              </li>
+              <li>
+                <a class='' href='../apidoc/group_memberships.html'>
+                  Group memberships
+                </a>
+              </li>
+              <li>
+                <a class='' href='../apidoc/groups.html'>
+                  Groups
+                </a>
+              </li>
+              <li>
+                <a class='' href='../apidoc/likes.html'>
+                  Likes
+                </a>
+              </li>
+              <li>
+                <a class='' href='../apidoc/media_files.html'>
+                  Media files
+                </a>
+              </li>
+              <li>
+                <a class='' href='../apidoc/members.html'>
+                  Members
+                </a>
+              </li>
+              <li>
+                <a class='' href='../apidoc/messages.html'>
+                  Messages
+                </a>
+              </li>
+              <li>
+                <a class='' href='../apidoc/notifications.html'>
+                  Notifications
+                </a>
+              </li>
+              <li>
+                <a class='active' href='../apidoc/polls.html'>
+                  Polls
+                </a>
+                <ul>
+                  <li>
+                    <a class='' href='../apidoc/polls/create.html'>create</a>
+                  </li>
+                  <li>
+                    <a class='' href='../apidoc/polls/show.html'>show</a>
+                  </li>
+                  <li>
+                    <a class='' href='../apidoc/polls/respond.html'>respond</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a class='' href='../apidoc/reach_extensions.html'>
+                  Reach extensions
+                </a>
+              </li>
+              <li>
+                <a class='' href='../apidoc/remarks.html'>
+                  Remarks
+                </a>
+              </li>
+              <li>
+                <a class='' href='../apidoc/search.html'>
+                  Search
+                </a>
+              </li>
+              <li>
+                <a class='' href='../apidoc/streams.html'>
+                  Streams
+                </a>
+              </li>
+              <li>
+                <a class='' href='../apidoc/thanks.html'>
+                  Thanks
+                </a>
+              </li>
+              <li>
+                <a class='' href='../apidoc/topics.html'>
+                  Topics
+                </a>
+              </li>
+              <li>
+                <a class='' href='../apidoc/users.html'>
+                  Users
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class='row'>
+        <ul class='breadcrumbs'>
+          <li>
+            <a href='../apidoc.html'>
+              API Resource Endpoints &gt;
+            </a>
+          </li>
+          <li>
+            Polls
+          </li>
+        </ul>
+        <h1>
+          Polls
+        </h1>
+        <p></p>
+        <div class='article'>
+          <h2>
+            <a href='../apidoc/polls/create.html'>
+              POST
+              /api/polls
+            </a>
+            <br />
+            create a new poll without a message
+          </h2>
+          Also see <a href="../apidoc/messages/create.html">messages#create to bind a poll to a message</a>.
+          
+          <h3>
+            Success Response Code:
+            <b>201</b>
+          </h3>
+          <h3>Params</h3>
+          <table class='table'>
+            <thead>
+              <tr>
+                <th>Param name</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr style='background-color:rgb(255,255,255);'>
+                <td>
+                  <strong>poll</strong>
+                  <br />
+                  <small>
+                    required
+                    
+                  </small>
+                </td>
+                <td>
+                  
+                  <br />
+                  Value: Must be a Hash
+                </td>
+              </tr>
+              <tr style='background-color:rgb(250,250,250);'>
+                <td>
+                  <strong>poll[question]</strong>
+                  <br />
+                  <small>
+                    required
+                    
+                  </small>
+                </td>
+                <td>
+                  
+                  <p>question being asked by the poll</p>
+                  <br />
+                  Value: Must be String
+                </td>
+              </tr>
+              
+              <tr style='background-color:rgb(250,250,250);'>
+                <td>
+                  <strong>poll[poll_answers_attributes]</strong>
+                  <br />
+                  <small>
+                    required
+                    
+                  </small>
+                </td>
+                <td>
+                  
+                  <p>answers that go with the question as well as an integer representing the
+                  answer&#39;s order within a poll</p>
+                  <br />
+                  Value: Must be Hash
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <h3>Response Fields</h3>
+          <table class='table table-bordered response_field'>
+            <tr>
+              <th>poll[id]</th>
+              <td>unique ID for the poll</td>
+              <td>Integer</td>
+            </tr>
+            <tr>
+              <th>poll[question]</th>
+              <td>question poll is asking</td>
+              <td>String</td>
+            </tr>
+            <tr>
+              <th>poll[social_object_id]</th>
+              <td>social object associated with this poll</td>
+              <td>Integer</td>
+            </tr>
+            <tr>
+              <th>poll[my_response_id]</th>
+              <td>if requesting user has answered the poll, id of their response</td>
+              <td>Integer</td>
+            </tr>
+            <tr>
+              <th>poll[answers]</th>
+              <td>potential answers to this poll</td>
+              <td>Array&lt;PollAnswer&gt;</td>
+            </tr>
+            <tr>
+              <th>answer[id]</th>
+              <td>answer's ID</td>
+              <td>Integer</td>
+            </tr>
+            <tr>
+              <th>answer[text]</th>
+              <td>text to display with the answer</td>
+              <td>String</td>
+            </tr>
+            <tr>
+              <th>answer[response_count]</th>
+              <td>number of votes so far this answer</td>
+              <td>Integer</td>
+            </tr>
+          </table>
+          <h3>Example Curl Commands</h3>
+          <div class='well'>
+            curl -X POST -v --basic -u &quot;emily@socialcast.com:demo&quot; https://demo.socialcast.com/api/polls.json -H&quot;Content-Type: application/json&quot; -d'{&quot;poll&quot;:{&quot;question&quot;:&quot;Hands up, who likes me?&quot;,&quot;poll_answers_attributes&quot;:{&quot;1&quot;:{&quot;answer&quot;:&quot;YES!&quot;},&quot;2&quot;:{&quot;answer&quot;:&quot;You are OK&quot;},&quot;3&quot;:{&quot;answer&quot;:&quot;Absolutely not&quot;}}}}'
+          </div>
+          <div class='well'>
+            #binding the created poll to a message
+            <br />
+            curl -X POST -v --basic -u &quot;emily@socialcast.com:demo&quot; https://demo.socialcast.com/api/messages.json -H &quot;Content-Type: application/json&quot; -d '{&quot;message&quot;:{&quot;poll_id&quot;:&quot;5&quot;, &quot;body&quot;:&quot;creating a message with poll&quot;}}'
+          </div>
+          <h3>Examples</h3>
+          <pre class='prettyprint'>POST /api/polls.json&#x000A;{&#x000A;  &quot;poll&quot;: {&#x000A;    &quot;question&quot;: &quot;who am i?&quot;,&#x000A;    &quot;poll_answers_attributes&quot;: {&#x000A;      &quot;0&quot;: {&#x000A;        &quot;answer&quot;: &quot;me&quot;&#x000A;      }&#x000A;    }&#x000A;  }&#x000A;}&#x000A;201&#x000A;{&#x000A;  &quot;poll&quot;: {&#x000A;    &quot;id&quot;: 6,&#x000A;    &quot;question&quot;: &quot;who am i?&quot;,&#x000A;    &quot;answers&quot;: [&#x000A;      {&#x000A;        &quot;id&quot;: 6,&#x000A;        &quot;text&quot;: &quot;me&quot;,&#x000A;        &quot;response_count&quot;: 0&#x000A;      }&#x000A;    ],&#x000A;    &quot;social_object_id&quot;: null,&#x000A;    &quot;my_response_id&quot;: null&#x000A;  }&#x000A;}</pre>
+        </div>
+        <div class='article'>
+          <h2>
+            <a href='../apidoc/polls/show.html'>
+              GET
+              /api/polls/:poll_id
+            </a>
+            <br />
+            get information about a poll with poll_id
+          </h2>
+          <h2>
+            <a href='../apidoc/polls/show.html'>
+              GET
+              /api/messages/:message_id/poll
+            </a>
+            <br />
+            get information about a poll with message_id
+          </h2>
+          
+          <h3>
+            Success Response Code:
+            <b>200</b>
+          </h3>
+          <h3>Params</h3>
+          <table class='table'>
+            <thead>
+              <tr>
+                <th>Param name</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr style='background-color:rgb(255,255,255);'>
+                <td>
+                  <strong>poll_id</strong>
+                  <br />
+                  <small>
+                    optional
+                    
+                  </small>
+                </td>
+                <td>
+                  
+                  <p>id of the poll</p>
+                  <br />
+                  Value: Must be Integer
+                </td>
+              </tr>
+              
+              <tr style='background-color:rgb(255,255,255);'>
+                <td>
+                  <strong>message_id</strong>
+                  <br />
+                  <small>
+                    optional
+                    
+                  </small>
+                </td>
+                <td>
+                  
+                  <p>id of the messsage</p>
+                  <br />
+                  Value: Must be Integer
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <h3>Response Fields</h3>
+          <table class='table table-bordered response_field'>
+            <tr>
+              <th>poll[id]</th>
+              <td>unique ID for the poll</td>
+              <td>Integer</td>
+            </tr>
+            <tr>
+              <th>poll[question]</th>
+              <td>question poll is asking</td>
+              <td>String</td>
+            </tr>
+            <tr>
+              <th>poll[social_object_id]</th>
+              <td>social object associated with this poll</td>
+              <td>Integer</td>
+            </tr>
+            <tr>
+              <th>poll[my_response_id]</th>
+              <td>if requesting user has answered the poll, id of their response</td>
+              <td>Integer</td>
+            </tr>
+            <tr>
+              <th>poll[answers]</th>
+              <td>potential answers to this poll</td>
+              <td>Array&lt;PollAnswer&gt;</td>
+            </tr>
+            <tr>
+              <th>answer[id]</th>
+              <td>answer's ID</td>
+              <td>Integer</td>
+            </tr>
+            <tr>
+              <th>answer[text]</th>
+              <td>text to display with the answer</td>
+              <td>String</td>
+            </tr>
+            <tr>
+              <th>answer[response_count]</th>
+              <td>number of votes so far this answer</td>
+              <td>Integer</td>
+            </tr>
+          </table>
+          <h3>Example Curl Commands</h3>
+          <div class='well'>
+            curl -X GET -v --basic -u &quot;emily@socialcast.com:demo&quot; &quot;https://demo.socialcast.com/api/polls/1.json&quot;
+          </div>
+          <div class='well'>
+            curl -X GET -v --basic -u &quot;emily@socialcast.com:demo&quot; &quot;https://demo.socialcast.com/api/messages/431/poll.json&quot;
+          </div>
+          <h3>Examples</h3>
+          <pre class='prettyprint'>GET /api/polls/5.json&#x000A;200&#x000A;{&#x000A;  &quot;poll&quot;: {&#x000A;    &quot;id&quot;: 5,&#x000A;    &quot;question&quot;: &quot;whø &amp; what am I?&quot;,&#x000A;    &quot;answers&quot;: [&#x000A;      {&#x000A;        &quot;id&quot;: 5,&#x000A;        &quot;text&quot;: &quot;høme &amp; away&quot;,&#x000A;        &quot;response_count&quot;: 0&#x000A;      }&#x000A;    ],&#x000A;    &quot;social_object_id&quot;: 146,&#x000A;    &quot;my_response_id&quot;: null&#x000A;  }&#x000A;}</pre>
+        </div>
+        <div class='article'>
+          <h2>
+            <a href='../apidoc/polls/respond.html'>
+              POST
+              /api/polls/:poll_id/respond
+            </a>
+            <br />
+            respond to a poll with poll_id
+          </h2>
+          <h2>
+            <a href='../apidoc/polls/respond.html'>
+              POST
+              /api/messages/:message_id/poll/respond
+            </a>
+            <br />
+            respond to a poll with message_id
+          </h2>
+          
+          <h3>
+            Success Response Code:
+            <b>201</b>
+          </h3>
+          <h3>Params</h3>
+          <table class='table'>
+            <thead>
+              <tr>
+                <th>Param name</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr style='background-color:rgb(255,255,255);'>
+                <td>
+                  <strong>poll_id</strong>
+                  <br />
+                  <small>
+                    optional
+                    
+                  </small>
+                </td>
+                <td>
+                  
+                  <p>id of the poll which you want to respond</p>
+                  <br />
+                  Value: Must be Integer
+                </td>
+              </tr>
+              
+              <tr style='background-color:rgb(255,255,255);'>
+                <td>
+                  <strong>message_id</strong>
+                  <br />
+                  <small>
+                    optional
+                    
+                  </small>
+                </td>
+                <td>
+                  
+                  <p>id of the message which contains the poll you want to respond</p>
+                  <br />
+                  Value: Must be Integer
+                </td>
+              </tr>
+              
+              <tr style='background-color:rgb(255,255,255);'>
+                <td>
+                  <strong>answer_id</strong>
+                  <br />
+                  <small>
+                    required
+                    
+                  </small>
+                </td>
+                <td>
+                  
+                  <p>answer ID to submit</p>
+                  <br />
+                  Value: Must be Integer
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <h3>Response Fields</h3>
+          <table class='table table-bordered response_field'>
+            <tr>
+              <th>poll[id]</th>
+              <td>unique ID for the poll</td>
+              <td>Integer</td>
+            </tr>
+            <tr>
+              <th>poll[question]</th>
+              <td>question poll is asking</td>
+              <td>String</td>
+            </tr>
+            <tr>
+              <th>poll[social_object_id]</th>
+              <td>social object associated with this poll</td>
+              <td>Integer</td>
+            </tr>
+            <tr>
+              <th>poll[my_response_id]</th>
+              <td>if requesting user has answered the poll, id of their response</td>
+              <td>Integer</td>
+            </tr>
+            <tr>
+              <th>poll[answers]</th>
+              <td>potential answers to this poll</td>
+              <td>Array&lt;PollAnswer&gt;</td>
+            </tr>
+            <tr>
+              <th>answer[id]</th>
+              <td>answer's ID</td>
+              <td>Integer</td>
+            </tr>
+            <tr>
+              <th>answer[text]</th>
+              <td>text to display with the answer</td>
+              <td>String</td>
+            </tr>
+            <tr>
+              <th>answer[response_count]</th>
+              <td>number of votes so far this answer</td>
+              <td>Integer</td>
+            </tr>
+          </table>
+          <h3>Example Curl Commands</h3>
+          <div class='well'>
+            curl -X POST -v --basic -u &quot;emily@socialcast.com:demo&quot; &quot;https://demo.socialcast.com/api/polls/1/respond.json&quot; -d &quot;answer_id=1&quot;
+          </div>
+          <div class='well'>
+            curl -X POST -v --basic -u &quot;emily@socialcast.com:demo&quot; &quot;https://demo.socialcast.com/api/messages/431/poll/respond.json&quot; -d &quot;answer_id=13&quot;
+          </div>
+          <h3>Examples</h3>
+          <pre class='prettyprint'>POST /api/polls/5/respond.json&#x000A;{&#x000A;  &quot;answer_id&quot;: 5&#x000A;}&#x000A;201&#x000A;{&#x000A;  &quot;poll&quot;: {&#x000A;    &quot;id&quot;: 5,&#x000A;    &quot;question&quot;: &quot;whø &amp; what am I?&quot;,&#x000A;    &quot;answers&quot;: [&#x000A;      {&#x000A;        &quot;id&quot;: 5,&#x000A;        &quot;text&quot;: &quot;høme &amp; away&quot;,&#x000A;        &quot;response_count&quot;: 1&#x000A;      }&#x000A;    ],&#x000A;    &quot;social_object_id&quot;: 146,&#x000A;    &quot;my_response_id&quot;: 5&#x000A;  }&#x000A;}</pre>
+        </div>
+      </div>
+    </div>
+    <div class='clear'></div>
+    <div class='footer'>
+      <div class='wrapper'>
+        <ul>
+          <li>
+            <a href="http://socialcast.com/"><span class="translation_missing" title="translation missing: en.Overview">Overview</span></a>
+          </li>
+          <li>
+            <a href="http://socialcast.com/product"><span class="translation_missing" title="translation missing: en.Product Details">Product Details</span></a>
+          </li>
+          <li>
+            <a href="http://socialcast.com/pricing#pricing"><span class="translation_missing" title="translation missing: en.Pricing">Pricing</span></a>
+          </li>
+          <li>
+            <a href="http://socialcast.com/pricing#services"><span class="translation_missing" title="translation missing: en.Services">Services</span></a>
+          </li>
+          <li>
+            <a href="http://socialcast.com/customers"><span class="translation_missing" title="translation missing: en.Customer Stories">Customer Stories</span></a>
+          </li>
+          <li>
+            <a href="http://socialcast.com/webinars"><span class="translation_missing" title="translation missing: en.Webinars">Webinars</span></a>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <a href="http://socialcast.com/resources"><span class="translation_missing" title="translation missing: en.Resources">Resources</span></a>
+          </li>
+          <li>
+            <a href="https://communities.vmware.com/community/vmtn/socialcast"><span class="translation_missing" title="translation missing: en.Community Forum">Community Forum</span></a>
+          </li>
+          <li>
+            <a href="http://socialcast.com/help"><span class="translation_missing" title="translation missing: en.Help">Help</span></a>
+          </li>
+          <li>
+            <a href="http://socialcast.com/faq"><span class="translation_missing" title="translation missing: en.FAQ">Faq</span></a>
+          </li>
+          <li>
+            <a href="http://developers.socialcast.com/"><span class="translation_missing" title="translation missing: en.Developers">Developers</span></a>
+          </li>
+          <li>
+            <a href="http://developers.socialcast.com/admin/"><span class="translation_missing" title="translation missing: en.Administrators">Administrators</span></a>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <a href="http://blog.socialcast.com/"><span class="translation_missing" title="translation missing: en.Blog">Blog</span></a>
+          </li>
+          <li>
+            <a href="http://socialcast.com/about"><span class="translation_missing" title="translation missing: en.About">About</span></a>
+          </li>
+          <li>
+            <a href="http://socialcast.com/press"><span class="translation_missing" title="translation missing: en.Press Center">Press Center</span></a>
+          </li>
+          <li>
+            <a href="http://socialcast.com/careers"><span class="translation_missing" title="translation missing: en.Careers">Careers</span></a>
+          </li>
+          <li>
+            <a href="http://socialcast.com/contact-form"><span class="translation_missing" title="translation missing: en.Contact">Contact</span></a>
+          </li>
+        </ul>
+        <div class='clear'></div>
+        <div class='footer_links'>
+          <div class='social_links'>
+            <a class="youtube" href="http://www.youtube.com/user/SocialcastByVMware"><img alt="Youtube circle" src="/socialcast/assets/youtube_circle.png" /></a>
+            <a class="twitter" href="https://twitter.com/socialcast"><img alt="Twitter circle" src="/socialcast/assets/twitter_circle.png" /></a>
+            <a class="facebook" href="https://www.facebook.com/VMwareSocialcast"><img alt="Facebook circle" src="/socialcast/assets/facebook_circle.png" /></a>
+            <a class="linkedin" href="http://www.linkedin.com/company/1171942"><img alt="Linkedin circle" src="/socialcast/assets/linkedin_circle.png" /></a>
+          </div>
+          <a class="truste_badge" href="https://privacy.truste.com/privacy-seal/VMware,-Inc-/validation?rid=06daecaa-35ac-46f7-9c3e-5c3713be8787"><img alt="Truste seal" src="/socialcast/assets/truste_seal.png" /></a>
+          <p class='tos'>
+            Copyright 2014 VMWare, Inc. All Rights Reserved.
+            <a href="http://www.socialcast.com/terms">Terms</a>
+            |
+            <a href="http://www.socialcast.com/privacy">Privacy</a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <script type='text/javascript' src='../apidoc/javascripts/bundled/jquery-1.7.2.js'></script>
+    <script type='text/javascript' src='../apidoc/javascripts/bundled/bootstrap-collapse.js'></script>
+    <script type='text/javascript' src='../apidoc/javascripts/bundled/prettify.js'></script>
+    <script type='text/javascript' src='../apidoc/javascripts/apipie.js'></script>
+  </body>
+</html>

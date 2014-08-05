@@ -1,0 +1,1310 @@
+<link href="/socialcast/assets/apipie.css" media="screen" rel="stylesheet" />
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+  <head>
+    <title>API documentation</title>
+    <meta content='text/html; charset=US-ASCII' http-equiv='Content-Type' />
+    <link href='//cloud.typography.com/7512272/744364/css/fonts.css' rel='stylesheet' type='text/css' />
+    <!-- IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <!-- <script src="<haml_loud> asset_path('html5.js') </haml_loud>"></script> -->
+    <![endif]-->
+  </head>
+  <body>
+    <div class='header'>
+      <div class='utility_bar'>
+        <div class='wrapper'>
+          <p class='links'>
+            <a href="http://www.socialcast.com">Back to Socialcast</a>
+            |
+            <a href="http://blog.socialcast.com/">Blog</a>
+          </p>
+        </div>
+      </div>
+      <div class='wrapper'>
+        <a class="logo" href="http://www.socialcast.com"><img alt="Socialcast vmware" src="/socialcast/assets/socialcast_vmware.jpg" /></a>
+      </div>
+    </div>
+    <div class='content wrapper'>
+      <div class='nav'>
+        <ul>
+          <li>
+            <a href="/socialcast/auth/oauth2.html">OAuth 2.0</a>
+          </li>
+          <li>
+            <a href="/socialcast/auth/basic-auth.html">HTTP Basic Authentication</a>
+          </li>
+          <li>
+            <a class="" href="../apidoc.html">API Resource Endpoints</a>
+            <ul>
+              <li>
+                <a class='' href='../apidoc/activities.html'>
+                  Activities
+                </a>
+              </li>
+              <li>
+                <a class='' href='../apidoc/attachments.html'>
+                  Attachments
+                </a>
+              </li>
+              <li>
+                <a class='' href='../apidoc/authentication.html'>
+                  Authentication
+                </a>
+              </li>
+              <li>
+                <a class='' href='../apidoc/badges.html'>
+                  Badges
+                </a>
+              </li>
+              <li>
+                <a class='' href='../apidoc/client_devices.html'>
+                  Client devices
+                </a>
+              </li>
+              <li>
+                <a class='' href='../apidoc/comments.html'>
+                  Comments
+                </a>
+              </li>
+              <li>
+                <a class='' href='../apidoc/content_filters.html'>
+                  Content filters
+                </a>
+              </li>
+              <li>
+                <a class='' href='../apidoc/conversations.html'>
+                  Conversations
+                </a>
+              </li>
+              <li>
+                <a class='' href='../apidoc/custom_fields.html'>
+                  Custom fields
+                </a>
+              </li>
+              <li>
+                <a class='' href='../apidoc/external_systems.html'>
+                  External systems
+                </a>
+              </li>
+              <li>
+                <a class='' href='../apidoc/flags.html'>
+                  Flags
+                </a>
+              </li>
+              <li>
+                <a class='' href='../apidoc/followers.html'>
+                  Followers
+                </a>
+              </li>
+              <li>
+                <a class='' href='../apidoc/following.html'>
+                  Following
+                </a>
+              </li>
+              <li>
+                <a class='' href='../apidoc/group_memberships.html'>
+                  Group memberships
+                </a>
+              </li>
+              <li>
+                <a class='' href='../apidoc/groups.html'>
+                  Groups
+                </a>
+              </li>
+              <li>
+                <a class='' href='../apidoc/likes.html'>
+                  Likes
+                </a>
+              </li>
+              <li>
+                <a class='' href='../apidoc/media_files.html'>
+                  Media files
+                </a>
+              </li>
+              <li>
+                <a class='' href='../apidoc/members.html'>
+                  Members
+                </a>
+              </li>
+              <li>
+                <a class='' href='../apidoc/messages.html'>
+                  Messages
+                </a>
+              </li>
+              <li>
+                <a class='' href='../apidoc/notifications.html'>
+                  Notifications
+                </a>
+              </li>
+              <li>
+                <a class='' href='../apidoc/polls.html'>
+                  Polls
+                </a>
+              </li>
+              <li>
+                <a class='active' href='../apidoc/reach_extensions.html'>
+                  Reach extensions
+                </a>
+                <ul>
+                  <li>
+                    <a class='' href='../apidoc/reach_extensions/index.html'>index</a>
+                  </li>
+                  <li>
+                    <a class='' href='../apidoc/reach_extensions/show.html'>show</a>
+                  </li>
+                  <li>
+                    <a class='' href='../apidoc/reach_extensions/create.html'>create</a>
+                  </li>
+                  <li>
+                    <a class='' href='../apidoc/reach_extensions/update.html'>update</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a class='' href='../apidoc/remarks.html'>
+                  Remarks
+                </a>
+              </li>
+              <li>
+                <a class='' href='../apidoc/search.html'>
+                  Search
+                </a>
+              </li>
+              <li>
+                <a class='' href='../apidoc/streams.html'>
+                  Streams
+                </a>
+              </li>
+              <li>
+                <a class='' href='../apidoc/thanks.html'>
+                  Thanks
+                </a>
+              </li>
+              <li>
+                <a class='' href='../apidoc/topics.html'>
+                  Topics
+                </a>
+              </li>
+              <li>
+                <a class='' href='../apidoc/users.html'>
+                  Users
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class='row'>
+        <ul class='breadcrumbs'>
+          <li>
+            <a href='../apidoc.html'>
+              API Resource Endpoints &gt;
+            </a>
+          </li>
+          <li>
+            Reach extensions
+          </li>
+        </ul>
+        <h1>
+          Reach extensions
+        </h1>
+        <p></p>
+        <div class='article'>
+          <h2>
+            <a href='../apidoc/reach_extensions/index.html'>
+              GET
+              /api/reach_extensions
+            </a>
+            <br />
+            get a list of reach_extensions
+          </h2>
+          
+          <h3>
+            Success Response Code:
+            <b>200</b>
+          </h3>
+          <h3>Params</h3>
+          <table class='table'>
+            <thead>
+              <tr>
+                <th>Param name</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr style='background-color:rgb(255,255,255);'>
+                <td>
+                  <strong>page</strong>
+                  <br />
+                  <small>
+                    optional
+                    
+                  </small>
+                </td>
+                <td>
+                  
+                  <p>page number of reach_extensions to be returned (default=1)</p>
+                  <br />
+                  Value: Must be Integer
+                </td>
+              </tr>
+              
+              <tr style='background-color:rgb(255,255,255);'>
+                <td>
+                  <strong>per_page</strong>
+                  <br />
+                  <small>
+                    optional
+                    
+                  </small>
+                </td>
+                <td>
+                  
+                  <p>number of reach_extensions to be returned per page (default=20)</p>
+                  <br />
+                  Value: Must be Integer
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <h3>Response Fields</h3>
+          <table class='table table-bordered response_field'>
+            <tr>
+              <th>reach_extensions</th>
+              <td>array of ReachExtension entries. See "GET /api/reach_extensions/:reach_extension_id" for format</td>
+              <td>Array&lt;ReachExtension&gt;</td>
+            </tr>
+          </table>
+          <h3>Example Curl Commands</h3>
+          <div class='well'>
+            curl -X GET -v --basic -u &quot;adminuser@socialcast.com:adminuser&quot; https://demo.socialcast.com/api/reach_extensions.json
+          </div>
+        </div>
+        <div class='article'>
+          <h2>
+            <a href='../apidoc/reach_extensions/show.html'>
+              GET
+              /api/reach_extensions/:reach_extension_id
+            </a>
+            <br />
+            get a single reach_extension for the authenticated reach admin
+          </h2>
+          
+          <h3>
+            Success Response Code:
+            <b>200</b>
+          </h3>
+          <h3>Response Fields</h3>
+          <table class='table table-bordered response_field'>
+            <tr>
+              <th>reach_extension</th>
+              <td>see "POST /api/reach_extensions" for documentation on each response</td>
+              <td>reach_extension</td>
+            </tr>
+          </table>
+          <h3>Example Curl Commands</h3>
+          <div class='well'>
+            curl -X GET -v --basic -u &quot;adminuser@socialcast.com:adminuser&quot; https://demo.socialcast.com/api/reach_extension/12.json
+          </div>
+          <h3>Examples</h3>
+          <pre class='prettyprint'>GET /api/reach_extensions/2.json&#x000A;200&#x000A;{&#x000A;  &quot;reach_extension&quot;: {&#x000A;    &quot;id&quot;: 2,&#x000A;    &quot;name&quot;: &quot;Réach d'Extension 1&quot;,&#x000A;    &quot;external_system_id&quot;: 4,&#x000A;    &quot;group_id&quot;: null,&#x000A;    &quot;url&quot;: &quot;https://socialcast2.socialcast.test/api/reach_extensions/2&quot;,&#x000A;    &quot;permanent_url&quot;: &quot;https://socialcast2.socialcast.test/tenant_admin/reach_extensions/2&quot;,&#x000A;    &quot;extension_type&quot;: &quot;discussion&quot;,&#x000A;    &quot;stream_type&quot;: null,&#x000A;    &quot;button_type&quot;: null,&#x000A;    &quot;install_type&quot;: &quot;html&quot;,&#x000A;    &quot;state&quot;: &quot;active&quot;,&#x000A;    &quot;button_verb&quot;: &quot;recommend&quot;,&#x000A;    &quot;profile_heading&quot;: true,&#x000A;    &quot;days_ago&quot;: 7,&#x000A;    &quot;login_required&quot;: true,&#x000A;    &quot;reach_border_style&quot;: &quot;solid&quot;,&#x000A;    &quot;reach_border_color&quot;: &quot;#d9d9d9&quot;,&#x000A;    &quot;reach_poweredby_bg&quot;: &quot;#f2f2f2&quot;,&#x000A;    &quot;reach_entry_border_color&quot;: &quot;#e5e5e5&quot;,&#x000A;    &quot;reach_comment_bg&quot;: &quot;#efefea&quot;,&#x000A;    &quot;reach_default_text&quot;: &quot;#404040&quot;,&#x000A;    &quot;reach_secondary_text&quot;: &quot;#8c8c8c&quot;,&#x000A;    &quot;reach_default_link&quot;: &quot;#187aab&quot;,&#x000A;    &quot;reach_secondary_link&quot;: &quot;#5da2c4&quot;,&#x000A;    &quot;reach_button_border&quot;: &quot;#6bb4d8&quot;,&#x000A;    &quot;reach_button_color&quot;: &quot;#187aab&quot;,&#x000A;    &quot;reach_button_bgcolor&quot;: &quot;#cde4f0&quot;,&#x000A;    &quot;reach_button_inner_border&quot;: &quot;#fff&quot;,&#x000A;    &quot;reach_button_border_hover&quot;: &quot;#0481C0&quot;,&#x000A;    &quot;reach_button_bgcolor_hover&quot;: &quot;#b7d9eb&quot;,&#x000A;    &quot;reach_button_textshadow&quot;: &quot;#fff&quot;,&#x000A;    &quot;reach_social_button_border&quot;: &quot;#6bb4d8&quot;,&#x000A;    &quot;reach_social_button_text&quot;: &quot;#187aab&quot;,&#x000A;    &quot;reach_social_button_background&quot;: &quot;#cde4f0&quot;,&#x000A;    &quot;reach_separator_color&quot;: &quot;#d9d9d9&quot;&#x000A;  }&#x000A;}</pre>
+        </div>
+        <div class='article'>
+          <h2>
+            <a href='../apidoc/reach_extensions/create.html'>
+              POST
+              /api/reach_extensions
+            </a>
+            <br />
+            create an reach_extension for the authenticated reach admin
+          </h2>
+          
+          <h3>
+            Success Response Code:
+            <b>201</b>
+          </h3>
+          <h3>Params</h3>
+          <table class='table'>
+            <thead>
+              <tr>
+                <th>Param name</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr style='background-color:rgb(255,255,255);'>
+                <td>
+                  <strong>reach_extension</strong>
+                  <br />
+                  <small>
+                    optional
+                    
+                  </small>
+                </td>
+                <td>
+                  
+                  <br />
+                  Value: Must be a Hash
+                </td>
+              </tr>
+              <tr style='background-color:rgb(250,250,250);'>
+                <td>
+                  <strong>reach_extension[name]</strong>
+                  <br />
+                  <small>
+                    required
+                    
+                  </small>
+                </td>
+                <td>
+                  
+                  <p>name of the reach_extension</p>
+                  <br />
+                  Value: Must be String
+                </td>
+              </tr>
+              
+              <tr style='background-color:rgb(250,250,250);'>
+                <td>
+                  <strong>reach_extension[external_system_id]</strong>
+                  <br />
+                  <small>
+                    required
+                    
+                  </small>
+                </td>
+                <td>
+                  
+                  <p>the id of an external_system</p>
+                  <br />
+                  Value: Must be Integer
+                </td>
+              </tr>
+              
+              <tr style='background-color:rgb(250,250,250);'>
+                <td>
+                  <strong>reach_extension[group_id]</strong>
+                  <br />
+                  <small>
+                    optional
+                    
+                  </small>
+                </td>
+                <td>
+                  
+                  <p>the id of a group</p>
+                  <br />
+                  Value: Must be Integer
+                </td>
+              </tr>
+              
+              <tr style='background-color:rgb(250,250,250);'>
+                <td>
+                  <strong>reach_extension[install_type]</strong>
+                  <br />
+                  <small>
+                    optional
+                    
+                  </small>
+                </td>
+                <td>
+                  
+                  <p>(default=html)</p>
+                  <dl class="rdoc-list label-list"><dt>html
+                  <dd>
+                  <p>deploy your Reach Extension on any HTML page. Requires JavaScript to be
+                  enabled</p>
+                  </dd><dt>sharepoint
+                  <dd>
+                  <p>deploy your Reach Extension as a Sharepoint WebPart (2010 or 2007)</p>
+                  </dd><dt>google_gadget
+                  <dd>
+                  <p>deploy your Reach Extension as a Google Gadget.  The only available options
+                  for extension_type are dynamic or stream.</p>
+                  </dd></dl>
+                  <br />
+                  Value: Must be one of: html, sharepoint, google_gadget.
+                </td>
+              </tr>
+              
+              <tr style='background-color:rgb(250,250,250);'>
+                <td>
+                  <strong>reach_extension[extension_type]</strong>
+                  <br />
+                  <small>
+                    optional
+                    
+                  </small>
+                </td>
+                <td>
+                  
+                  <p>(default=discussion)</p>
+                  <dl class="rdoc-list label-list"><dt>stream (if this option is selected, stream_type is required)
+                  <dd>
+                  <p>stream that delivers realtime updates in a themable component that can be
+                  embedded anywhere</p>
+                  </dd><dt>dynamic
+                  <dd>
+                  <p>dynamic Extensions are flexible views that can display User Profiles,
+                  Discussions, or Group Streams based on metadata in the host page</p>
+                  </dd><dt>discussion (if this option is selected, button_verb and button_type are required)
+                  <dd>
+                  <p>the Reach Discussion Extension allows you to focus discussions around key
+                  resources within your business system environment.  Now employees can
+                  engage in specific conversations related to particular customers, projects,
+                  and operational metrics that live in a multitude of systems.  Comments get
+                  delivered in real-time delivered directly to any page in your organization
+                  with the REACH Discussion extension.  New messages appear in the stream
+                  providing a rich view into the external resource which can include a title,
+                  thumbnail, description and any other relevant metadata.</p>
+                  </dd><dt>recommend
+                  <dd>
+                  <p>once a user clicks on a Recommend button on any resource in the enterprise,
+                  a rich message is immediately inserted into the Socialcast platform which
+                  surfaces the recommendation of that person. Others in the community will
+                  now be able to view (and access) this content that was marked as relevant.
+                  All Recommendations on an object will be aggregated providing for a
+                  relevance driven view into the organization&#39;s most valuable content.</p>
+                  </dd><dt>trends
+                  <dd>
+                  <p>the Reach Trends Extension shows a real-time overview of your Socialcast
+                  community with trending topics, most active discussions, most active groups
+                  and most interesting people</p>
+                  </dd><dt>recent_thanks
+                  <dd>
+                  <p>the Reach Recent Thanks Extension allows you to embed an interactive list
+                  of the latest &#39;Thanks&#39; sent in the Community within any business
+                  system. If the viewer has Thanks points available, they can send a
+                  &#39;Thanks&#39; to a co-worker directly from Reach.</p>
+                  </dd></dl>
+                  <br />
+                  Value: Must be one of: discussion, stream, recommend, trends, dynamic, recent_thanks.
+                </td>
+              </tr>
+              
+              <tr style='background-color:rgb(250,250,250);'>
+                <td>
+                  <strong>reach_extension[stream_type]</strong>
+                  <br />
+                  <small>
+                    optional
+                    
+                  </small>
+                </td>
+                <td>
+                  <dl class="rdoc-list label-list"><dt>profile (profile_header is required)
+                  <dd>
+                  <p>the Reach Profile Stream detects a User&#39;s email in the host page markup
+                  and displays their Socialcast Profile Stream.  If no user is found, the
+                  person viewing the extension will see their own profile.</p>
+                  </dd><dt>company
+                  <dd>
+                  <p>the Reach Company Stream Extension brings realtime updates from your entire
+                  company in realtime</p>
+                  </dd><dt>custom (either user or tag filters can be used, but not both)
+                  <dd>
+                  <p>the Reach Custom Stream Extension brings realtime updates for all tags,
+                  topics or users that you specify</p>
+                  </dd></dl>
+                  
+                  <pre>* to create tags filters, see reach_extension[reach_extension_tag_filters_attributes][:count][tag_name]
+                  * to create users filters, see reach_extension[reach_extension_user_filters_attributes][:counter][user_id]</pre>
+                  <dl class="rdoc-list label-list"><dt>group (group_id is required)
+                  <dd>
+                  <p>the Reach Group Stream Extension allows you to embed Public and Private
+                  Groups (access required) within your business system environment</p>
+                  </dd><dt>home
+                  <dd>
+                  <p>the Reach Home Stream Extension makes your Home Stream available from
+                  anywhere</p>
+                  </dd><dt>default
+                  <dd>
+                  <p>the Reach Default Stream Extension makes your default Stream (Home, Group,
+                  Custom Stream) available from anywhere</p>
+                  </dd></dl>
+                  <br />
+                  Value: Must be one of: profile, company, group, custom, home, default.
+                </td>
+              </tr>
+              
+              <tr style='background-color:rgb(250,250,250);'>
+                <td>
+                  <strong>reach_extension[reach_extension_tag_filters_attributes]</strong>
+                  <br />
+                  <small>
+                    optional
+                    
+                  </small>
+                </td>
+                <td>
+                  
+                  <br />
+                  Value: Must be a Hash
+                </td>
+              </tr>
+              <tr style='background-color:rgb(245,245,245);'>
+                <td>
+                  <strong>reach_extension[reach_extension_tag_filters_attributes][:counter]</strong>
+                  <br />
+                  <small>
+                    optional
+                    
+                  </small>
+                </td>
+                <td>
+                  
+                  <br />
+                  Value: Must be a Hash
+                </td>
+              </tr>
+              <tr style='background-color:rgb(240,240,240);'>
+                <td>
+                  <strong>reach_extension[reach_extension_tag_filters_attributes][:counter][tag_name]</strong>
+                  <br />
+                  <small>
+                    optional
+                    
+                  </small>
+                </td>
+                <td>
+                  
+                  <p>create tag filters for custom stream reach extensions. 
+                  <strong>:counter</strong> numbers the tag filters and starts at 0. See curl
+                  example below.</p>
+                  <br />
+                  Value: Must be String
+                </td>
+              </tr>
+              <tr style='background-color:rgb(250,250,250);'>
+                <td>
+                  <strong>reach_extension[reach_extension_user_filters_attributes]</strong>
+                  <br />
+                  <small>
+                    optional
+                    
+                  </small>
+                </td>
+                <td>
+                  
+                  <br />
+                  Value: Must be a Hash
+                </td>
+              </tr>
+              <tr style='background-color:rgb(245,245,245);'>
+                <td>
+                  <strong>reach_extension[reach_extension_user_filters_attributes][:counter]</strong>
+                  <br />
+                  <small>
+                    optional
+                    
+                  </small>
+                </td>
+                <td>
+                  
+                  <br />
+                  Value: Must be a Hash
+                </td>
+              </tr>
+              <tr style='background-color:rgb(240,240,240);'>
+                <td>
+                  <strong>reach_extension[reach_extension_user_filters_attributes][:counter][user_id]</strong>
+                  <br />
+                  <small>
+                    optional
+                    
+                  </small>
+                </td>
+                <td>
+                  
+                  <p>create user filters for custom stream reach extensions. 
+                  <strong>:counter</strong> numbers the user filter and starts at 0.</p>
+                  <br />
+                  Value: Must be Integer
+                </td>
+              </tr>
+              <tr style='background-color:rgb(250,250,250);'>
+                <td>
+                  <strong>reach_extension[button_verb]</strong>
+                  <br />
+                  <small>
+                    optional
+                    
+                  </small>
+                </td>
+                <td>
+                  
+                  <p>(default=recommend)</p>
+                  <dl class="rdoc-list label-list"><dt>ask_for_help (button_type should be icon_and_verb or icon)
+                  <dd>
+                  <p>once a user clicks on a “Ask for Help” button, they will be presented with
+                  a share box and link preview for the host web page. When the message is
+                  posted to Socialcast, metadata from the page will automatically be
+                  attached, providing valuable context to the user&#39;s message.</p>
+                  </dd><dt>request_assistance (button_type should be icon_and_verb or icon)
+                  <dd>
+                  <p>once a user clicks on a “Request Assistance” button, they will be presented
+                  with a share box and link preview for the host web page. When the message
+                  is posted to Socialcast, metadata from the page will automatically be
+                  attached, providing valuable context to the user&#39;s message.</p>
+                  </dd><dt>recommend (button_type should be toggle, count, or names)
+                  <dd>
+                  <p>once a user clicks on a “Recommend” button on any resource in the
+                  enterprise, a rich message is immediately inserted into the Socialcast
+                  platform which surfaces the recommendation of that person. Others in the
+                  community will now be able to view (and access) this content that was
+                  marked as relevant. All Recommendations on an object will be aggregated
+                  providing for a relevance driven view into the organization&#39;s most
+                  valuable content.</p>
+                  </dd><dt>like (button_type should be toggle, count, or names)
+                  <dd>
+                  <p>once a user clicks on a “Like” button on any resource in the enterprise, a
+                  rich message is immediately inserted into the Socialcast platform which
+                  surfaces the recommendation of that person. Others in the community will
+                  now be able to view (and access) this content that was marked as relevant.
+                  All Recommendations on an object will be aggregated providing for a
+                  relevance driven view into the organization&#39;s most valuable content.</p>
+                  </dd><dt>request_review (button_type should be icon_and_verb or icon)
+                  <dd>
+                  <p>once a user clicks on a “Request Review” button, they will be presented
+                  with a share box and link preview for the host web page. When the message
+                  is posted to Socialcast, metadata from the page will automatically be
+                  attached, providing valuable context to the user&#39;s message.</p>
+                  </dd><dt>share (button_type should be icon_and_verb or icon)
+                  <dd>
+                  <p>once a user clicks on a “Share” button, they will be presented with a share
+                  box and link preview for the host web page. When the message is posted to
+                  Socialcast, metadata from the page will automatically be attached,
+                  providing valuable context to the user&#39;s message.</p>
+                  </dd><dt>send_thanks (button_type should be icon_and_verb or icon)
+                  <dd>
+                  <p>the Reach “Send Thanks” Button allows you to send thanks to co-workers from
+                  within any Reach-enabled application. Once a user clicks on the “Send
+                  Thanks” Button, they will be able to select the recipient, badge, and
+                  include a personal message.</p>
+                  </dd></dl>
+                  <br />
+                  Value: Must be one of: ask_for_help, request_assistance, recommend, like, request_review, share, send_thanks.
+                </td>
+              </tr>
+              
+              <tr style='background-color:rgb(250,250,250);'>
+                <td>
+                  <strong>reach_extension[button_type]</strong>
+                  <br />
+                  <small>
+                    optional
+                    
+                  </small>
+                </td>
+                <td>
+                  
+                  <p>see rules in button_verb</p>
+                  <dl class="rdoc-list label-list"><dt>icon_and_verb
+                  <dd>
+                  <p>a button embedded with the button_verb text</p>
+                  </dd><dt>icon
+                  <dd>
+                  <p>button with no text embedded</p>
+                  </dd><dt>toggle
+                  <dd>
+                  <p>button that toggles on/off</p>
+                  </dd><dt>count
+                  <dd>
+                  <p>toggle button with a count (e.g. how many likes)</p>
+                  </dd><dt>names
+                  <dd>
+                  <p>toggle button that displays others that like/recommend the same button</p>
+                  </dd></dl>
+                  <br />
+                  Value: Must be one of: icon_and_verb, icon, toggle, count, names.
+                </td>
+              </tr>
+              
+              <tr style='background-color:rgb(250,250,250);'>
+                <td>
+                  <strong>reach_extension[profile_heading]</strong>
+                  <br />
+                  <small>
+                    optional
+                    
+                  </small>
+                </td>
+                <td>
+                  
+                  <p>(default=true) toogle the display of user profile in a profile stream</p>
+                  <br />
+                  Value: Must be one of: true, false.
+                </td>
+              </tr>
+              
+              <tr style='background-color:rgb(250,250,250);'>
+                <td>
+                  <strong>reach_extension[days_ago]</strong>
+                  <br />
+                  <small>
+                    optional
+                    
+                  </small>
+                </td>
+                <td>
+                  
+                  <p>(default=7) the number of days for reach trends to look back</p>
+                  <br />
+                  Value: Must be Integer
+                </td>
+              </tr>
+              
+              <tr style='background-color:rgb(250,250,250);'>
+                <td>
+                  <strong>reach_extension[login_required]</strong>
+                  <br />
+                  <small>
+                    optional
+                    
+                  </small>
+                </td>
+                <td>
+                  
+                  <p>(default=true) if true, only Socialcast users can view your reach
+                  extension.  If false, anyone with the embedded token can view.</p>
+                  <br />
+                  Value: Must be one of: true, false.
+                </td>
+              </tr>
+              
+              <tr style='background-color:rgb(250,250,250);'>
+                <td>
+                  <strong>reach_extension[reach_border_style]</strong>
+                  <br />
+                  <small>
+                    optional
+                    
+                  </small>
+                </td>
+                <td>
+                  
+                  <p>(default is set to tenant themes) color setting in hexcode triplets (e.g.
+                  #ffeeaa or #fea)</p>
+                  <br />
+                  Value: Must be String
+                </td>
+              </tr>
+              
+              <tr style='background-color:rgb(250,250,250);'>
+                <td>
+                  <strong>reach_extension[reach_default_link]</strong>
+                  <br />
+                  <small>
+                    optional
+                    
+                  </small>
+                </td>
+                <td>
+                  
+                  <p>(default is set to tenant themes) color setting in hexcode triplets (e.g.
+                  #ffeeaa or #fea)</p>
+                  <br />
+                  Value: Must be String
+                </td>
+              </tr>
+              
+              <tr style='background-color:rgb(250,250,250);'>
+                <td>
+                  <strong>reach_extension[reach_poweredby_bg]</strong>
+                  <br />
+                  <small>
+                    optional
+                    
+                  </small>
+                </td>
+                <td>
+                  
+                  <p>(default is set to tenant themes) color setting in hexcode triplets (e.g.
+                  #ffeeaa or #fea)</p>
+                  <br />
+                  Value: Must be String
+                </td>
+              </tr>
+              
+              <tr style='background-color:rgb(250,250,250);'>
+                <td>
+                  <strong>reach_extension[reach_secondary_link]</strong>
+                  <br />
+                  <small>
+                    optional
+                    
+                  </small>
+                </td>
+                <td>
+                  
+                  <p>(default is set to tenant themes) color setting in hexcode triplets (e.g.
+                  #ffeeaa or #fea)</p>
+                  <br />
+                  Value: Must be String
+                </td>
+              </tr>
+              
+              <tr style='background-color:rgb(250,250,250);'>
+                <td>
+                  <strong>reach_extension[reach_button_border_hover]</strong>
+                  <br />
+                  <small>
+                    optional
+                    
+                  </small>
+                </td>
+                <td>
+                  
+                  <p>(default is set to tenant themes) color setting in hexcode triplets (e.g.
+                  #ffeeaa or #fea)</p>
+                  <br />
+                  Value: Must be String
+                </td>
+              </tr>
+              
+              <tr style='background-color:rgb(250,250,250);'>
+                <td>
+                  <strong>reach_extension[reach_entry_border_color]</strong>
+                  <br />
+                  <small>
+                    optional
+                    
+                  </small>
+                </td>
+                <td>
+                  
+                  <p>(default is set to tenant themes) color setting in hexcode triplets (e.g.
+                  #ffeeaa or #fea)</p>
+                  <br />
+                  Value: Must be String
+                </td>
+              </tr>
+              
+              <tr style='background-color:rgb(250,250,250);'>
+                <td>
+                  <strong>reach_extension[reach_button_border]</strong>
+                  <br />
+                  <small>
+                    optional
+                    
+                  </small>
+                </td>
+                <td>
+                  
+                  <p>(default is set to tenant themes) color setting in hexcode triplets (e.g.
+                  #ffeeaa or #fea)</p>
+                  <br />
+                  Value: Must be String
+                </td>
+              </tr>
+              
+              <tr style='background-color:rgb(250,250,250);'>
+                <td>
+                  <strong>reach_extension[reach_button_bgcolor_hover]</strong>
+                  <br />
+                  <small>
+                    optional
+                    
+                  </small>
+                </td>
+                <td>
+                  
+                  <p>(default is set to tenant themes) color setting in hexcode triplets (e.g.
+                  #ffeeaa or #fea)</p>
+                  <br />
+                  Value: Must be String
+                </td>
+              </tr>
+              
+              <tr style='background-color:rgb(250,250,250);'>
+                <td>
+                  <strong>reach_extension[reach_comment_bg]</strong>
+                  <br />
+                  <small>
+                    optional
+                    
+                  </small>
+                </td>
+                <td>
+                  
+                  <p>(default is set to tenant themes) color setting in hexcode triplets (e.g.
+                  #ffeeaa or #fea)</p>
+                  <br />
+                  Value: Must be String
+                </td>
+              </tr>
+              
+              <tr style='background-color:rgb(250,250,250);'>
+                <td>
+                  <strong>reach_extension[reach_button_color]</strong>
+                  <br />
+                  <small>
+                    optional
+                    
+                  </small>
+                </td>
+                <td>
+                  
+                  <p>(default is set to tenant themes) color setting in hexcode triplets (e.g.
+                  #ffeeaa or #fea)</p>
+                  <br />
+                  Value: Must be String
+                </td>
+              </tr>
+              
+              <tr style='background-color:rgb(250,250,250);'>
+                <td>
+                  <strong>reach_extension[reach_button_textshadow]</strong>
+                  <br />
+                  <small>
+                    optional
+                    
+                  </small>
+                </td>
+                <td>
+                  
+                  <p>(default is set to tenant themes) color setting in hexcode triplets (e.g.
+                  #ffeeaa or #fea)</p>
+                  <br />
+                  Value: Must be String
+                </td>
+              </tr>
+              
+              <tr style='background-color:rgb(250,250,250);'>
+                <td>
+                  <strong>reach_extension[reach_default_text]</strong>
+                  <br />
+                  <small>
+                    optional
+                    
+                  </small>
+                </td>
+                <td>
+                  
+                  <p>(default is set to tenant themes) color setting in hexcode triplets (e.g.
+                  #ffeeaa or #fea)</p>
+                  <br />
+                  Value: Must be String
+                </td>
+              </tr>
+              
+              <tr style='background-color:rgb(250,250,250);'>
+                <td>
+                  <strong>reach_extension[reach_button_bgcolor]</strong>
+                  <br />
+                  <small>
+                    optional
+                    
+                  </small>
+                </td>
+                <td>
+                  
+                  <p>(default is set to tenant themes) color setting in hexcode triplets (e.g.
+                  #ffeeaa or #fea)</p>
+                  <br />
+                  Value: Must be String
+                </td>
+              </tr>
+              
+              <tr style='background-color:rgb(250,250,250);'>
+                <td>
+                  <strong>reach_extension[reach_secondary_text]</strong>
+                  <br />
+                  <small>
+                    optional
+                    
+                  </small>
+                </td>
+                <td>
+                  
+                  <p>(default is set to tenant themes) color setting in hexcode triplets (e.g.
+                  #ffeeaa or #fea)</p>
+                  <br />
+                  Value: Must be String
+                </td>
+              </tr>
+              
+              <tr style='background-color:rgb(250,250,250);'>
+                <td>
+                  <strong>reach_extension[reach_button_inner_border]</strong>
+                  <br />
+                  <small>
+                    optional
+                    
+                  </small>
+                </td>
+                <td>
+                  
+                  <p>(default is set to tenant themes) color setting in hexcode triplets (e.g.
+                  #ffeeaa or #fea)</p>
+                  <br />
+                  Value: Must be String
+                </td>
+              </tr>
+              
+              <tr style='background-color:rgb(250,250,250);'>
+                <td>
+                  <strong>reach_extension[reach_border_color]</strong>
+                  <br />
+                  <small>
+                    optional
+                    
+                  </small>
+                </td>
+                <td>
+                  
+                  <p>(default is set to tenant themes) color setting in hexcode triplets (e.g.
+                  #ffeeaa or #fea)</p>
+                  <br />
+                  Value: Must be String
+                </td>
+              </tr>
+              
+              <tr style='background-color:rgb(250,250,250);'>
+                <td>
+                  <strong>reach_extension[reach_social_button_border]</strong>
+                  <br />
+                  <small>
+                    optional
+                    
+                  </small>
+                </td>
+                <td>
+                  
+                  <p>(default is set to tenant themes) color setting in hexcode triplets (e.g.
+                  #ffeeaa or #fea)</p>
+                  <br />
+                  Value: Must be String
+                </td>
+              </tr>
+              
+              <tr style='background-color:rgb(250,250,250);'>
+                <td>
+                  <strong>reach_extension[reach_social_button_text]</strong>
+                  <br />
+                  <small>
+                    optional
+                    
+                  </small>
+                </td>
+                <td>
+                  
+                  <p>(default is set to tenant themes) color setting in hexcode triplets (e.g.
+                  #ffeeaa or #fea)</p>
+                  <br />
+                  Value: Must be String
+                </td>
+              </tr>
+              
+              <tr style='background-color:rgb(250,250,250);'>
+                <td>
+                  <strong>reach_extension[reach_social_button_background]</strong>
+                  <br />
+                  <small>
+                    optional
+                    
+                  </small>
+                </td>
+                <td>
+                  
+                  <p>(default is set to tenant themes) color setting in hexcode triplets (e.g.
+                  #ffeeaa or #fea)</p>
+                  <br />
+                  Value: Must be String
+                </td>
+              </tr>
+              
+              <tr style='background-color:rgb(250,250,250);'>
+                <td>
+                  <strong>reach_extension[reach_separator_color]</strong>
+                  <br />
+                  <small>
+                    optional
+                    
+                  </small>
+                </td>
+                <td>
+                  
+                  <p>(default is set to tenant themes) color setting in hexcode triplets (e.g.
+                  #ffeeaa or #fea)</p>
+                  <br />
+                  Value: Must be String
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <h3>Example Curl Commands</h3>
+          <div class='well'>
+            #Create a reach_extension named &quot;Socialcast Developers
+            <br />
+            curl -X POST -d &quot;reach_extension[name]=Socialcast%20Developers&amp;reach_extension[external_system_id]=1&quot; -v --basic -u &quot;adminuser@socialcast.com:adminuser&quot; https://demo.socialcast.com/api/reach_extensions.json
+          </div>
+          <div class='well'>
+            #Create a custom stream reach_extension with tag filter on sicklog and worklog
+            <br />
+            curl -X POST -F &quot;reach_extension[name]=TagFilter&quot; -F &quot;reach_extension[external_system_id]=1&quot; -F &quot;reach_extension[extension_type]=stream&quot; -F &quot;reach_extension[stream_type]=custom&quot; -F &quot;reach_extension[reach_extension_tag_filters_attributes][0][tag_name]=worklog&quot; -F &quot;reach_extension[reach_extension_tag_filters_attributes][1][tag_name]=sicklog&quot; -v --basic -u &quot;adminuser@socialcast.com:adminuser&quot; https://demo.socialcast.com/api/reach_extensions.json
+          </div>
+          <div class='well'>
+            #Create a custom stream reach_extension with user filter on user 10 and 11
+            <br />
+            curl -X POST -F &quot;reach_extension[name]=TagFilter&quot; -F &quot;reach_extension[external_system_id]=1&quot; -F &quot;reach_extension[extension_type]=stream&quot; -F &quot;reach_extension[stream_type]=custom&quot; -F &quot;reach_extension[reach_extension_user_filters_attributes][0][user_id]=10&quot; -F &quot;reach_extension[reach_extension_user_filters_attributes][1][user_id]=11&quot; -v --basic -u &quot;adminuser@socialcast.com:adminuser&quot; https://demo.socialcast.com/api/reach_extensions.json
+          </div>
+        </div>
+        <div class='article'>
+          <h2>
+            <a href='../apidoc/reach_extensions/update.html'>
+              PUT
+              /api/reach_extensions/:reach_extension_id
+            </a>
+            <br />
+            update a reach_extension for the authenticated reach admin
+          </h2>
+          
+          <h3>
+            Success Response Code:
+            <b>200</b>
+          </h3>
+          <h3>Params</h3>
+          <table class='table'>
+            <thead>
+              <tr>
+                <th>Param name</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr style='background-color:rgb(255,255,255);'>
+                <td>
+                  <strong>reach_extension</strong>
+                  <br />
+                  <small>
+                    optional
+                    
+                  </small>
+                </td>
+                <td>
+                  
+                  <br />
+                  Value: Must be a Hash
+                </td>
+              </tr>
+              <tr style='background-color:rgb(250,250,250);'>
+                <td>
+                  <strong>reach_extension[state]</strong>
+                  <br />
+                  <small>
+                    optional
+                    
+                  </small>
+                </td>
+                <td>
+                  
+                  <p>this will activate/deactivate reach_extension</p>
+                  <br />
+                  Value: Must be one of: deactivated, activated.
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <h3>Response Fields</h3>
+          <table class='table table-bordered response_field'>
+            <tr>
+              <th>reach_extension</th>
+              <td>see "POST /api/reach_extensions" for documentation on other params</td>
+              <td>reach_extension</td>
+            </tr>
+          </table>
+          <h3>Example Curl Commands</h3>
+          <div class='well'>
+            #Update reach_extension to name &quot;Socialcast Developers
+            <br />
+            curl -X PUT -d &quot;reach_extension[name]=Socialcast%20Developers&quot; -v --basic -u &quot;adminuser@socialcast.com:adminuser&quot; http://demo.socialcast.com/api/reach_extensions/12.json
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class='clear'></div>
+    <div class='footer'>
+      <div class='wrapper'>
+        <ul>
+          <li>
+            <a href="http://socialcast.com/"><span class="translation_missing" title="translation missing: en.Overview">Overview</span></a>
+          </li>
+          <li>
+            <a href="http://socialcast.com/product"><span class="translation_missing" title="translation missing: en.Product Details">Product Details</span></a>
+          </li>
+          <li>
+            <a href="http://socialcast.com/pricing#pricing"><span class="translation_missing" title="translation missing: en.Pricing">Pricing</span></a>
+          </li>
+          <li>
+            <a href="http://socialcast.com/pricing#services"><span class="translation_missing" title="translation missing: en.Services">Services</span></a>
+          </li>
+          <li>
+            <a href="http://socialcast.com/customers"><span class="translation_missing" title="translation missing: en.Customer Stories">Customer Stories</span></a>
+          </li>
+          <li>
+            <a href="http://socialcast.com/webinars"><span class="translation_missing" title="translation missing: en.Webinars">Webinars</span></a>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <a href="http://socialcast.com/resources"><span class="translation_missing" title="translation missing: en.Resources">Resources</span></a>
+          </li>
+          <li>
+            <a href="https://communities.vmware.com/community/vmtn/socialcast"><span class="translation_missing" title="translation missing: en.Community Forum">Community Forum</span></a>
+          </li>
+          <li>
+            <a href="http://socialcast.com/help"><span class="translation_missing" title="translation missing: en.Help">Help</span></a>
+          </li>
+          <li>
+            <a href="http://socialcast.com/faq"><span class="translation_missing" title="translation missing: en.FAQ">Faq</span></a>
+          </li>
+          <li>
+            <a href="http://developers.socialcast.com/"><span class="translation_missing" title="translation missing: en.Developers">Developers</span></a>
+          </li>
+          <li>
+            <a href="http://developers.socialcast.com/admin/"><span class="translation_missing" title="translation missing: en.Administrators">Administrators</span></a>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <a href="http://blog.socialcast.com/"><span class="translation_missing" title="translation missing: en.Blog">Blog</span></a>
+          </li>
+          <li>
+            <a href="http://socialcast.com/about"><span class="translation_missing" title="translation missing: en.About">About</span></a>
+          </li>
+          <li>
+            <a href="http://socialcast.com/press"><span class="translation_missing" title="translation missing: en.Press Center">Press Center</span></a>
+          </li>
+          <li>
+            <a href="http://socialcast.com/careers"><span class="translation_missing" title="translation missing: en.Careers">Careers</span></a>
+          </li>
+          <li>
+            <a href="http://socialcast.com/contact-form"><span class="translation_missing" title="translation missing: en.Contact">Contact</span></a>
+          </li>
+        </ul>
+        <div class='clear'></div>
+        <div class='footer_links'>
+          <div class='social_links'>
+            <a class="youtube" href="http://www.youtube.com/user/SocialcastByVMware"><img alt="Youtube circle" src="/socialcast/assets/youtube_circle.png" /></a>
+            <a class="twitter" href="https://twitter.com/socialcast"><img alt="Twitter circle" src="/socialcast/assets/twitter_circle.png" /></a>
+            <a class="facebook" href="https://www.facebook.com/VMwareSocialcast"><img alt="Facebook circle" src="/socialcast/assets/facebook_circle.png" /></a>
+            <a class="linkedin" href="http://www.linkedin.com/company/1171942"><img alt="Linkedin circle" src="/socialcast/assets/linkedin_circle.png" /></a>
+          </div>
+          <a class="truste_badge" href="https://privacy.truste.com/privacy-seal/VMware,-Inc-/validation?rid=06daecaa-35ac-46f7-9c3e-5c3713be8787"><img alt="Truste seal" src="/socialcast/assets/truste_seal.png" /></a>
+          <p class='tos'>
+            Copyright 2014 VMWare, Inc. All Rights Reserved.
+            <a href="http://www.socialcast.com/terms">Terms</a>
+            |
+            <a href="http://www.socialcast.com/privacy">Privacy</a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <script type='text/javascript' src='../apidoc/javascripts/bundled/jquery-1.7.2.js'></script>
+    <script type='text/javascript' src='../apidoc/javascripts/bundled/bootstrap-collapse.js'></script>
+    <script type='text/javascript' src='../apidoc/javascripts/bundled/prettify.js'></script>
+    <script type='text/javascript' src='../apidoc/javascripts/apipie.js'></script>
+  </body>
+</html>

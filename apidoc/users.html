@@ -1,0 +1,1991 @@
+<link href="/socialcast/assets/apipie.css" media="screen" rel="stylesheet" />
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+  <head>
+    <title>API documentation</title>
+    <meta content='text/html; charset=US-ASCII' http-equiv='Content-Type' />
+    <link href='//cloud.typography.com/7512272/744364/css/fonts.css' rel='stylesheet' type='text/css' />
+    <!-- IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <!-- <script src="<haml_loud> asset_path('html5.js') </haml_loud>"></script> -->
+    <![endif]-->
+  </head>
+  <body>
+    <div class='header'>
+      <div class='utility_bar'>
+        <div class='wrapper'>
+          <p class='links'>
+            <a href="http://www.socialcast.com">Back to Socialcast</a>
+            |
+            <a href="http://blog.socialcast.com/">Blog</a>
+          </p>
+        </div>
+      </div>
+      <div class='wrapper'>
+        <a class="logo" href="http://www.socialcast.com"><img alt="Socialcast vmware" src="/socialcast/assets/socialcast_vmware.jpg" /></a>
+      </div>
+    </div>
+    <div class='content wrapper'>
+      <div class='nav'>
+        <ul>
+          <li>
+            <a href="/socialcast/auth/oauth2.html">OAuth 2.0</a>
+          </li>
+          <li>
+            <a href="/socialcast/auth/basic-auth.html">HTTP Basic Authentication</a>
+          </li>
+          <li>
+            <a class="" href="../apidoc.html">API Resource Endpoints</a>
+            <ul>
+              <li>
+                <a class='' href='../apidoc/activities.html'>
+                  Activities
+                </a>
+              </li>
+              <li>
+                <a class='' href='../apidoc/attachments.html'>
+                  Attachments
+                </a>
+              </li>
+              <li>
+                <a class='' href='../apidoc/authentication.html'>
+                  Authentication
+                </a>
+              </li>
+              <li>
+                <a class='' href='../apidoc/badges.html'>
+                  Badges
+                </a>
+              </li>
+              <li>
+                <a class='' href='../apidoc/client_devices.html'>
+                  Client devices
+                </a>
+              </li>
+              <li>
+                <a class='' href='../apidoc/comments.html'>
+                  Comments
+                </a>
+              </li>
+              <li>
+                <a class='' href='../apidoc/content_filters.html'>
+                  Content filters
+                </a>
+              </li>
+              <li>
+                <a class='' href='../apidoc/conversations.html'>
+                  Conversations
+                </a>
+              </li>
+              <li>
+                <a class='' href='../apidoc/custom_fields.html'>
+                  Custom fields
+                </a>
+              </li>
+              <li>
+                <a class='' href='../apidoc/external_systems.html'>
+                  External systems
+                </a>
+              </li>
+              <li>
+                <a class='' href='../apidoc/flags.html'>
+                  Flags
+                </a>
+              </li>
+              <li>
+                <a class='' href='../apidoc/followers.html'>
+                  Followers
+                </a>
+              </li>
+              <li>
+                <a class='' href='../apidoc/following.html'>
+                  Following
+                </a>
+              </li>
+              <li>
+                <a class='' href='../apidoc/group_memberships.html'>
+                  Group memberships
+                </a>
+              </li>
+              <li>
+                <a class='' href='../apidoc/groups.html'>
+                  Groups
+                </a>
+              </li>
+              <li>
+                <a class='' href='../apidoc/likes.html'>
+                  Likes
+                </a>
+              </li>
+              <li>
+                <a class='' href='../apidoc/media_files.html'>
+                  Media files
+                </a>
+              </li>
+              <li>
+                <a class='' href='../apidoc/members.html'>
+                  Members
+                </a>
+              </li>
+              <li>
+                <a class='' href='../apidoc/messages.html'>
+                  Messages
+                </a>
+              </li>
+              <li>
+                <a class='' href='../apidoc/notifications.html'>
+                  Notifications
+                </a>
+              </li>
+              <li>
+                <a class='' href='../apidoc/polls.html'>
+                  Polls
+                </a>
+              </li>
+              <li>
+                <a class='' href='../apidoc/reach_extensions.html'>
+                  Reach extensions
+                </a>
+              </li>
+              <li>
+                <a class='' href='../apidoc/remarks.html'>
+                  Remarks
+                </a>
+              </li>
+              <li>
+                <a class='' href='../apidoc/search.html'>
+                  Search
+                </a>
+              </li>
+              <li>
+                <a class='' href='../apidoc/streams.html'>
+                  Streams
+                </a>
+              </li>
+              <li>
+                <a class='' href='../apidoc/thanks.html'>
+                  Thanks
+                </a>
+              </li>
+              <li>
+                <a class='' href='../apidoc/topics.html'>
+                  Topics
+                </a>
+              </li>
+              <li>
+                <a class='active' href='../apidoc/users.html'>
+                  Users
+                </a>
+                <ul>
+                  <li>
+                    <a class='' href='../apidoc/users/index.html'>index</a>
+                  </li>
+                  <li>
+                    <a class='' href='../apidoc/users/show.html'>show</a>
+                  </li>
+                  <li>
+                    <a class='' href='../apidoc/users/search.html'>search</a>
+                  </li>
+                  <li>
+                    <a class='' href='../apidoc/users/suggest.html'>suggest</a>
+                  </li>
+                  <li>
+                    <a class='' href='../apidoc/users/update.html'>update</a>
+                  </li>
+                  <li>
+                    <a class='' href='../apidoc/users/create.html'>create</a>
+                  </li>
+                  <li>
+                    <a class='' href='../apidoc/users/destroy.html'>destroy</a>
+                  </li>
+                  <li>
+                    <a class='' href='../apidoc/users/userinfo.html'>userinfo</a>
+                  </li>
+                  <li>
+                    <a class='' href='../apidoc/users/company_login.html'>company_login</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class='row'>
+        <ul class='breadcrumbs'>
+          <li>
+            <a href='../apidoc.html'>
+              API Resource Endpoints &gt;
+            </a>
+          </li>
+          <li>
+            Users
+          </li>
+        </ul>
+        <h1>
+          Users
+        </h1>
+        <p></p>
+        <div class='article'>
+          <h2>
+            <a href='../apidoc/users/index.html'>
+              GET
+              /api/users
+            </a>
+            <br />
+            get a  list of users for the current community
+          </h2>
+          
+          <h3>
+            Success Response Code:
+            <b>200</b>
+          </h3>
+          <h3>Params</h3>
+          <table class='table'>
+            <thead>
+              <tr>
+                <th>Param name</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr style='background-color:rgb(255,255,255);'>
+                <td>
+                  <strong>state</strong>
+                  <br />
+                  <small>
+                    optional
+                    
+                  </small>
+                </td>
+                <td>
+                  
+                  <p>user&#39;s state (default=active)</p>
+                  <br />
+                  Value: Must be one of: inactive, terminated, all, active.
+                </td>
+              </tr>
+              
+              <tr style='background-color:rgb(255,255,255);'>
+                <td>
+                  <strong>page</strong>
+                  <br />
+                  <small>
+                    optional
+                    
+                  </small>
+                </td>
+                <td>
+                  
+                  <p>page number to view (default=1)</p>
+                  <br />
+                  Value: Must be Integer
+                </td>
+              </tr>
+              
+              <tr style='background-color:rgb(255,255,255);'>
+                <td>
+                  <strong>per_page</strong>
+                  <br />
+                  <small>
+                    optional
+                    
+                  </small>
+                </td>
+                <td>
+                  
+                  <p>number of users to be returned per page (default=20)</p>
+                  <br />
+                  Value: Must be Integer
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <h3>Response Fields</h3>
+          <table class='table table-bordered response_field'>
+            <tr>
+              <th>users</th>
+              <td>all users in the community (see #show for details)</td>
+              <td>Array&lt;User&gt;</td>
+            </tr>
+          </table>
+          <h3>Example Curl Commands</h3>
+          <div class='well'>
+            curl -X GET -v --basic -u &quot;emily@socialcast.com:demo&quot; https://demo.socialcast.com/api/users.json
+          </div>
+          <div class='well'>
+            curl -X GET -v --basic -u &quot;emily@socialcast.com:demo&quot; &quot;https://demo.socialcast.com/api/users.json?state=inactive&quot;
+          </div>
+          <h3>Examples</h3>
+          <pre class='prettyprint'>GET /api/users.json?per_page=6&#x000A;200&#x000A;{&#x000A;  &quot;users&quot;: [&#x000A;    {&#x000A;      &quot;contact_info&quot;: {&#x000A;        &quot;email&quot;: &quot;active'63@socialcast.com&quot;&#x000A;      },&#x000A;      &quot;manager&quot;: null,&#x000A;      &quot;custom_fields&quot;: [],&#x000A;      &quot;followable&quot;: false,&#x000A;      &quot;contact_id&quot;: null,&#x000A;      &quot;following_count&quot;: 0,&#x000A;      &quot;followers_count&quot;: 0,&#x000A;      &quot;status_message&quot;: null,&#x000A;      &quot;id&quot;: 453,&#x000A;      &quot;name&quot;: &quot;J'øhn D'øe63&quot;,&#x000A;      &quot;url&quot;: &quot;https://socialcast.socialcast.test/users/453-j%C3%B8hnd%C3%B8e63&quot;,&#x000A;      &quot;avatars&quot;: {&#x000A;        &quot;is_system_default&quot;: true,&#x000A;        &quot;square16&quot;: &quot;https://socialcast.socialcast.test/assets/v6/avatars/default_user_square16.png&quot;,&#x000A;        &quot;square30&quot;: &quot;https://socialcast.socialcast.test/assets/v6/avatars/default_user_square30.png&quot;,&#x000A;        &quot;square45&quot;: &quot;https://socialcast.socialcast.test/assets/v6/avatars/default_user_square45.png&quot;,&#x000A;        &quot;square70&quot;: &quot;https://socialcast.socialcast.test/assets/v6/avatars/default_user_square70.png&quot;,&#x000A;        &quot;square140&quot;: &quot;https://socialcast.socialcast.test/assets/v6/avatars/default_user_square140.png&quot;&#x000A;      },&#x000A;      &quot;username&quot;: &quot;JøhnDøe63&quot;,&#x000A;      &quot;active&quot;: true,&#x000A;      &quot;terminated&quot;: false,&#x000A;      &quot;inactive&quot;: false,&#x000A;      &quot;role&quot;: &quot;member&quot;,&#x000A;      &quot;type&quot;: &quot;User&quot;,&#x000A;      &quot;title&quot;: null,&#x000A;      &quot;out_of_office&quot;: false,&#x000A;      &quot;back_in_office_on&quot;: null,&#x000A;      &quot;company_login&quot;: null&#x000A;    },&#x000A;    {&#x000A;      &quot;contact_info&quot;: {&#x000A;        &quot;email&quot;: &quot;active'64@socialcast.com&quot;&#x000A;      },&#x000A;      &quot;manager&quot;: null,&#x000A;      &quot;custom_fields&quot;: [],&#x000A;      &quot;followable&quot;: true,&#x000A;      &quot;contact_id&quot;: null,&#x000A;      &quot;following_count&quot;: 0,&#x000A;      &quot;followers_count&quot;: 0,&#x000A;      &quot;status_message&quot;: null,&#x000A;      &quot;id&quot;: 454,&#x000A;      &quot;name&quot;: &quot;J'øhn D'øe64&quot;,&#x000A;      &quot;url&quot;: &quot;https://socialcast.socialcast.test/users/454-j%C3%B8hnd%C3%B8e64&quot;,&#x000A;      &quot;avatars&quot;: {&#x000A;        &quot;is_system_default&quot;: true,&#x000A;        &quot;square16&quot;: &quot;https://socialcast.socialcast.test/assets/v6/avatars/default_user_square16.png&quot;,&#x000A;        &quot;square30&quot;: &quot;https://socialcast.socialcast.test/assets/v6/avatars/default_user_square30.png&quot;,&#x000A;        &quot;square45&quot;: &quot;https://socialcast.socialcast.test/assets/v6/avatars/default_user_square45.png&quot;,&#x000A;        &quot;square70&quot;: &quot;https://socialcast.socialcast.test/assets/v6/avatars/default_user_square70.png&quot;,&#x000A;        &quot;square140&quot;: &quot;https://socialcast.socialcast.test/assets/v6/avatars/default_user_square140.png&quot;&#x000A;      },&#x000A;      &quot;username&quot;: &quot;JøhnDøe64&quot;,&#x000A;      &quot;active&quot;: true,&#x000A;      &quot;terminated&quot;: false,&#x000A;      &quot;inactive&quot;: false,&#x000A;      &quot;role&quot;: &quot;tenant_admin&quot;,&#x000A;      &quot;type&quot;: &quot;User&quot;,&#x000A;      &quot;title&quot;: null,&#x000A;      &quot;out_of_office&quot;: false,&#x000A;      &quot;back_in_office_on&quot;: null,&#x000A;      &quot;company_login&quot;: null&#x000A;    },&#x000A;    {&#x000A;      &quot;contact_info&quot;: {&#x000A;        &quot;email&quot;: &quot;active'65@socialcast.com&quot;&#x000A;      },&#x000A;      &quot;manager&quot;: null,&#x000A;      &quot;custom_fields&quot;: [],&#x000A;      &quot;followable&quot;: true,&#x000A;      &quot;contact_id&quot;: null,&#x000A;      &quot;following_count&quot;: 0,&#x000A;      &quot;followers_count&quot;: 0,&#x000A;      &quot;status_message&quot;: null,&#x000A;      &quot;id&quot;: 455,&#x000A;      &quot;name&quot;: &quot;J'øhn D'øe65&quot;,&#x000A;      &quot;url&quot;: &quot;https://socialcast.socialcast.test/users/455-j%C3%B8hnd%C3%B8e65&quot;,&#x000A;      &quot;avatars&quot;: {&#x000A;        &quot;is_system_default&quot;: true,&#x000A;        &quot;square16&quot;: &quot;https://socialcast.socialcast.test/assets/v6/avatars/default_user_square16.png&quot;,&#x000A;        &quot;square30&quot;: &quot;https://socialcast.socialcast.test/assets/v6/avatars/default_user_square30.png&quot;,&#x000A;        &quot;square45&quot;: &quot;https://socialcast.socialcast.test/assets/v6/avatars/default_user_square45.png&quot;,&#x000A;        &quot;square70&quot;: &quot;https://socialcast.socialcast.test/assets/v6/avatars/default_user_square70.png&quot;,&#x000A;        &quot;square140&quot;: &quot;https://socialcast.socialcast.test/assets/v6/avatars/default_user_square140.png&quot;&#x000A;      },&#x000A;      &quot;username&quot;: &quot;JøhnDøe65&quot;,&#x000A;      &quot;active&quot;: true,&#x000A;      &quot;terminated&quot;: false,&#x000A;      &quot;inactive&quot;: false,&#x000A;      &quot;role&quot;: &quot;member&quot;,&#x000A;      &quot;type&quot;: &quot;User&quot;,&#x000A;      &quot;title&quot;: null,&#x000A;      &quot;out_of_office&quot;: false,&#x000A;      &quot;back_in_office_on&quot;: null,&#x000A;      &quot;company_login&quot;: null&#x000A;    },&#x000A;    {&#x000A;      &quot;contact_info&quot;: {&#x000A;        &quot;email&quot;: &quot;active'66@socialcast.com&quot;&#x000A;      },&#x000A;      &quot;manager&quot;: null,&#x000A;      &quot;custom_fields&quot;: [],&#x000A;      &quot;followable&quot;: true,&#x000A;      &quot;contact_id&quot;: null,&#x000A;      &quot;following_count&quot;: 0,&#x000A;      &quot;followers_count&quot;: 0,&#x000A;      &quot;status_message&quot;: null,&#x000A;      &quot;id&quot;: 456,&#x000A;      &quot;name&quot;: &quot;J'øhn D'øe66&quot;,&#x000A;      &quot;url&quot;: &quot;https://socialcast.socialcast.test/users/456-j%C3%B8hnd%C3%B8e66&quot;,&#x000A;      &quot;avatars&quot;: {&#x000A;        &quot;is_system_default&quot;: true,&#x000A;        &quot;square16&quot;: &quot;https://socialcast.socialcast.test/assets/v6/avatars/default_user_square16.png&quot;,&#x000A;        &quot;square30&quot;: &quot;https://socialcast.socialcast.test/assets/v6/avatars/default_user_square30.png&quot;,&#x000A;        &quot;square45&quot;: &quot;https://socialcast.socialcast.test/assets/v6/avatars/default_user_square45.png&quot;,&#x000A;        &quot;square70&quot;: &quot;https://socialcast.socialcast.test/assets/v6/avatars/default_user_square70.png&quot;,&#x000A;        &quot;square140&quot;: &quot;https://socialcast.socialcast.test/assets/v6/avatars/default_user_square140.png&quot;&#x000A;      },&#x000A;      &quot;username&quot;: &quot;JøhnDøe66&quot;,&#x000A;      &quot;active&quot;: true,&#x000A;      &quot;terminated&quot;: false,&#x000A;      &quot;inactive&quot;: false,&#x000A;      &quot;role&quot;: &quot;member&quot;,&#x000A;      &quot;type&quot;: &quot;User&quot;,&#x000A;      &quot;title&quot;: null,&#x000A;      &quot;out_of_office&quot;: false,&#x000A;      &quot;back_in_office_on&quot;: null,&#x000A;      &quot;company_login&quot;: null&#x000A;    }&#x000A;  ]&#x000A;}</pre>
+        </div>
+        <div class='article'>
+          <h2>
+            <a href='../apidoc/users/show.html'>
+              GET
+              /api/users/:user_id
+            </a>
+            <br />
+            show information for a user
+          </h2>
+          
+          <h3>
+            Success Response Code:
+            <b>200</b>
+          </h3>
+          <h3>Params</h3>
+          <table class='table'>
+            <thead>
+              <tr>
+                <th>Param name</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr style='background-color:rgb(255,255,255);'>
+                <td>
+                  <strong>user_id</strong>
+                  <br />
+                  <small>
+                    required
+                    
+                  </small>
+                </td>
+                <td>
+                  
+                  <p>id to user</p>
+                  <br />
+                  Value: Must be String
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <h3>Response Fields</h3>
+          <table class='table table-bordered response_field'>
+            <tr>
+              <th>contact_info</th>
+              <td>the user's contact information. Includes phone numbers, email addresses, instant messenger services, and location</td>
+              <td>Hash&lt;string, string&gt;</td>
+            </tr>
+            <tr>
+              <th>manager</th>
+              <td>user's manager's ID</td>
+              <td>Integer</td>
+            </tr>
+            <tr>
+              <th>custom_fields</th>
+              <td>user's settings for community-defined custom fields - also includes business unit and department information</td>
+              <td>Array&lt;Hash&lt;string, string&gt;&gt;</td>
+            </tr>
+            <tr>
+              <th>followable</th>
+              <td>whether this user can be followed</td>
+              <td>Boolean</td>
+            </tr>
+            <tr>
+              <th>contact_id</th>
+              <td>if the current user is following this user, the contact record</td>
+              <td>Integer</td>
+            </tr>
+            <tr>
+              <th>following_count</th>
+              <td>the number of users that the user is following</td>
+              <td>Integer</td>
+            </tr>
+            <tr>
+              <th>followers_count</th>
+              <td>the number of users are following the user</td>
+              <td>Integer</td>
+            </tr>
+            <tr>
+              <th>status_message</th>
+              <td>unused; always null</td>
+              <td>String</td>
+            </tr>
+            <tr>
+              <th>id</th>
+              <td>user's id</td>
+              <td>Integer</td>
+            </tr>
+            <tr>
+              <th>name</th>
+              <td>user's name</td>
+              <td>String</td>
+            </tr>
+            <tr>
+              <th>url</th>
+              <td>url to interact with the user's record</td>
+              <td>String</td>
+            </tr>
+            <tr>
+              <th>avatars</th>
+              <td>urls for the user's avatar in various sizes</td>
+              <td>Hash&lt;string, string&gt;</td>
+            </tr>
+            <tr>
+              <th>username</th>
+              <td>user's username</td>
+              <td>String</td>
+            </tr>
+            <tr>
+              <th>active</th>
+              <td>whether the user is currently active</td>
+              <td>Boolean</td>
+            </tr>
+            <tr>
+              <th>terminated</th>
+              <td>whether the user has been terminated</td>
+              <td>Boolean</td>
+            </tr>
+            <tr>
+              <th>inactive</th>
+              <td>whether the user is inactive</td>
+              <td>Boolean</td>
+            </tr>
+            <tr>
+              <th>role</th>
+              <td>user's role within the community (community_admin, sbi_admin, reach_admin, town_hall_admin, external_contributor_admin, thanks_admin, broadcast_message_admin, client_admin, content_moderator, challenge_admin, tenant_admin)</td>
+              <td>String</td>
+            </tr>
+            <tr>
+              <th>title</th>
+              <td>user's title within the organization</td>
+              <td>String</td>
+            </tr>
+            <tr>
+              <th>type</th>
+              <td>type of user</td>
+              <td>String</td>
+            </tr>
+            <tr>
+              <th>out_of_office</th>
+              <td>whether the user is currently out of the office</td>
+              <td>Boolean</td>
+            </tr>
+            <tr>
+              <th>back_in_office_on</th>
+              <td>date and time that the user is expected back in the office if currently out_of_office</td>
+              <td>DateTime</td>
+            </tr>
+            <tr>
+              <th>company_login</th>
+              <td>user's company login</td>
+              <td>String</td>
+            </tr>
+          </table>
+          <h3>Example Curl Commands</h3>
+          <div class='well'>
+            curl -X GET -v --basic -u &quot;emily@socialcast.com:demo&quot; &quot;https://demo.socialcast.com/api/users/26.json&quot;
+          </div>
+          <h3>Examples</h3>
+          <pre class='prettyprint'>GET /api/users/453.json&#x000A;200&#x000A;{&#x000A;  &quot;user&quot;: {&#x000A;    &quot;contact_info&quot;: {&#x000A;      &quot;email&quot;: &quot;active'63@socialcast.com&quot;&#x000A;    },&#x000A;    &quot;manager&quot;: null,&#x000A;    &quot;custom_fields&quot;: [],&#x000A;    &quot;followable&quot;: false,&#x000A;    &quot;contact_id&quot;: null,&#x000A;    &quot;following_count&quot;: 0,&#x000A;    &quot;followers_count&quot;: 0,&#x000A;    &quot;status_message&quot;: null,&#x000A;    &quot;id&quot;: 453,&#x000A;    &quot;name&quot;: &quot;J'øhn D'øe63&quot;,&#x000A;    &quot;url&quot;: &quot;https://socialcast.socialcast.test/users/453-j%C3%B8hnd%C3%B8e63&quot;,&#x000A;    &quot;avatars&quot;: {&#x000A;      &quot;is_system_default&quot;: true,&#x000A;      &quot;square16&quot;: &quot;https://socialcast.socialcast.test/assets/v6/avatars/default_user_square16.png&quot;,&#x000A;      &quot;square30&quot;: &quot;https://socialcast.socialcast.test/assets/v6/avatars/default_user_square30.png&quot;,&#x000A;      &quot;square45&quot;: &quot;https://socialcast.socialcast.test/assets/v6/avatars/default_user_square45.png&quot;,&#x000A;      &quot;square70&quot;: &quot;https://socialcast.socialcast.test/assets/v6/avatars/default_user_square70.png&quot;,&#x000A;      &quot;square140&quot;: &quot;https://socialcast.socialcast.test/assets/v6/avatars/default_user_square140.png&quot;&#x000A;    },&#x000A;    &quot;username&quot;: &quot;JøhnDøe63&quot;,&#x000A;    &quot;active&quot;: true,&#x000A;    &quot;terminated&quot;: false,&#x000A;    &quot;inactive&quot;: false,&#x000A;    &quot;role&quot;: &quot;member&quot;,&#x000A;    &quot;type&quot;: &quot;User&quot;,&#x000A;    &quot;title&quot;: null,&#x000A;    &quot;out_of_office&quot;: false,&#x000A;    &quot;back_in_office_on&quot;: null,&#x000A;    &quot;company_login&quot;: null&#x000A;  }&#x000A;}</pre>
+        </div>
+        <div class='article'>
+          <h2>
+            <a href='../apidoc/users/search.html'>
+              GET
+              /api/users/search
+            </a>
+            <br />
+            search for users in your community
+          </h2>
+          
+          <h3>
+            Success Response Code:
+            <b>200</b>
+          </h3>
+          <h3>Params</h3>
+          <table class='table'>
+            <thead>
+              <tr>
+                <th>Param name</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr style='background-color:rgb(255,255,255);'>
+                <td>
+                  <strong>q</strong>
+                  <br />
+                  <small>
+                    optional
+                    
+                  </small>
+                </td>
+                <td>
+                  
+                  <p>search term</p>
+                  <br />
+                  Value: Must be String
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <h3>Response Fields</h3>
+          <table class='table table-bordered response_field'>
+            <tr>
+              <th>users</th>
+              <td>see #show for details</td>
+              <td>Array&lt;User&gt;</td>
+            </tr>
+          </table>
+          <h3>Example Curl Commands</h3>
+          <div class='well'>
+            curl -X GET -v --basic -u &quot;emily@socialcast.com:demo&quot; &quot;https://demo.socialcast.com/api/users/search.json?q=emily&quot;
+          </div>
+          <h3>Examples</h3>
+          <pre class='prettyprint'>GET /api/users/search.json?q=emily&#x000A;200&#x000A;{&#x000A;  &quot;users&quot;: [&#x000A;    {&#x000A;      &quot;contact_info&quot;: {&#x000A;        &quot;email&quot;: &quot;active'2@socialcast.com&quot;&#x000A;      },&#x000A;      &quot;manager&quot;: null,&#x000A;      &quot;custom_fields&quot;: [],&#x000A;      &quot;followable&quot;: true,&#x000A;      &quot;contact_id&quot;: null,&#x000A;      &quot;following_count&quot;: 0,&#x000A;      &quot;followers_count&quot;: 0,&#x000A;      &quot;status_message&quot;: null,&#x000A;      &quot;id&quot;: 2,&#x000A;      &quot;name&quot;: &quot;Emily D'øe2&quot;,&#x000A;      &quot;url&quot;: &quot;https://socialcast.socialcast.test/users/2-emilyd%C3%B8e2&quot;,&#x000A;      &quot;avatars&quot;: {&#x000A;        &quot;is_system_default&quot;: true,&#x000A;        &quot;id&quot;: null,&#x000A;        &quot;square16&quot;: &quot;https://socialcast.socialcast.test/assets/v6/avatars/default_user_square16.png&quot;,&#x000A;        &quot;square30&quot;: &quot;https://socialcast.socialcast.test/assets/v6/avatars/default_user_square30.png&quot;,&#x000A;        &quot;square45&quot;: &quot;https://socialcast.socialcast.test/assets/v6/avatars/default_user_square45.png&quot;,&#x000A;        &quot;square70&quot;: &quot;https://socialcast.socialcast.test/assets/v6/avatars/default_user_square70.png&quot;,&#x000A;        &quot;square140&quot;: &quot;https://socialcast.socialcast.test/assets/v6/avatars/default_user_square140.png&quot;&#x000A;      },&#x000A;      &quot;username&quot;: &quot;EmilyDøe2&quot;,&#x000A;      &quot;active&quot;: true,&#x000A;      &quot;terminated&quot;: false,&#x000A;      &quot;inactive&quot;: false,&#x000A;      &quot;role&quot;: &quot;tenant_admin&quot;,&#x000A;      &quot;type&quot;: &quot;User&quot;,&#x000A;      &quot;title&quot;: null,&#x000A;      &quot;out_of_office&quot;: false,&#x000A;      &quot;back_in_office_on&quot;: null,&#x000A;      &quot;company_login&quot;: null&#x000A;    }&#x000A;  ]&#x000A;}</pre>
+        </div>
+        <div class='article'>
+          <h2>
+            <a href='../apidoc/users/suggest.html'>
+              GET
+              /api/users/suggest
+            </a>
+            <br />
+            suggest users in your community for autocompletion
+          </h2>
+          
+          <h3>
+            Success Response Code:
+            <b>200</b>
+          </h3>
+          <h3>Params</h3>
+          <table class='table'>
+            <thead>
+              <tr>
+                <th>Param name</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr style='background-color:rgb(255,255,255);'>
+                <td>
+                  <strong>q</strong>
+                  <br />
+                  <small>
+                    required
+                    
+                  </small>
+                </td>
+                <td>
+                  
+                  <p>search term</p>
+                  <br />
+                  Value: Must be String
+                </td>
+              </tr>
+              
+              <tr style='background-color:rgb(255,255,255);'>
+                <td>
+                  <strong>admins</strong>
+                  <br />
+                  <small>
+                    optional
+                    
+                  </small>
+                </td>
+                <td>
+                  
+                  <p>should it include admins</p>
+                  <br />
+                  Value: Must be one of: true, false.
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <h3>Response Fields</h3>
+          <table class='table table-bordered response_field'>
+            <tr>
+              <th>users</th>
+              <td>see #show for details</td>
+              <td>Array&lt;User&gt;</td>
+            </tr>
+          </table>
+          <h3>Example Curl Commands</h3>
+          <div class='well'>
+            curl -X GET -v --basic -u &quot;emily@socialcast.com:demo&quot; &quot;https://demo.socialcast.com/api/users/suggest.json?q=Jenni&quot;
+          </div>
+          <h3>Examples</h3>
+          <pre class='prettyprint'>GET /api/users/suggest.json?admins=true&amp;q=z&#x000A;200&#x000A;{&#x000A;  &quot;users&quot;: [&#x000A;    {&#x000A;      &quot;contact_info&quot;: {&#x000A;        &quot;email&quot;: &quot;active'64@socialcast.com&quot;&#x000A;      },&#x000A;      &quot;manager&quot;: null,&#x000A;      &quot;custom_fields&quot;: [],&#x000A;      &quot;followable&quot;: true,&#x000A;      &quot;contact_id&quot;: null,&#x000A;      &quot;following_count&quot;: 0,&#x000A;      &quot;followers_count&quot;: 0,&#x000A;      &quot;status_message&quot;: null,&#x000A;      &quot;id&quot;: 454,&#x000A;      &quot;name&quot;: &quot;Zelda D'øe64&quot;,&#x000A;      &quot;url&quot;: &quot;https://socialcast.socialcast.test/users/454-zeldad%C3%B8e64&quot;,&#x000A;      &quot;avatars&quot;: {&#x000A;        &quot;is_system_default&quot;: true,&#x000A;        &quot;square16&quot;: &quot;https://socialcast.socialcast.test/assets/v6/avatars/default_user_square16.png&quot;,&#x000A;        &quot;square30&quot;: &quot;https://socialcast.socialcast.test/assets/v6/avatars/default_user_square30.png&quot;,&#x000A;        &quot;square45&quot;: &quot;https://socialcast.socialcast.test/assets/v6/avatars/default_user_square45.png&quot;,&#x000A;        &quot;square70&quot;: &quot;https://socialcast.socialcast.test/assets/v6/avatars/default_user_square70.png&quot;,&#x000A;        &quot;square140&quot;: &quot;https://socialcast.socialcast.test/assets/v6/avatars/default_user_square140.png&quot;&#x000A;      },&#x000A;      &quot;username&quot;: &quot;ZeldaDøe64&quot;,&#x000A;      &quot;active&quot;: true,&#x000A;      &quot;terminated&quot;: false,&#x000A;      &quot;inactive&quot;: false,&#x000A;      &quot;role&quot;: &quot;tenant_admin&quot;,&#x000A;      &quot;type&quot;: &quot;User&quot;,&#x000A;      &quot;title&quot;: null,&#x000A;      &quot;out_of_office&quot;: false,&#x000A;      &quot;back_in_office_on&quot;: null,&#x000A;      &quot;company_login&quot;: null&#x000A;    }&#x000A;  ]&#x000A;}</pre>
+        </div>
+        <div class='article'>
+          <h2>
+            <a href='../apidoc/users/update.html'>
+              PUT
+              /api/users/:user_id
+            </a>
+            <br />
+            update the authenticated user or another user as a community admin
+          </h2>
+          
+          <h3>
+            Success Response Code:
+            <b>200</b>
+          </h3>
+          <h3>Params</h3>
+          <table class='table'>
+            <thead>
+              <tr>
+                <th>Param name</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr style='background-color:rgb(255,255,255);'>
+                <td>
+                  <strong>user_id</strong>
+                  <br />
+                  <small>
+                    required
+                    
+                  </small>
+                </td>
+                <td>
+                  
+                  <p>id of user</p>
+                  <br />
+                  Value: Must be Integer
+                </td>
+              </tr>
+              
+              <tr style='background-color:rgb(255,255,255);'>
+                <td>
+                  <strong>user</strong>
+                  <br />
+                  <small>
+                    optional
+                    
+                  </small>
+                </td>
+                <td>
+                  
+                  <br />
+                  Value: Must be a Hash
+                </td>
+              </tr>
+              <tr style='background-color:rgb(250,250,250);'>
+                <td>
+                  <strong>user[first_name]</strong>
+                  <br />
+                  <small>
+                    optional
+                    
+                  </small>
+                </td>
+                <td>
+                  
+                  <p>first name of the user</p>
+                  <br />
+                  Value: Must be String
+                </td>
+              </tr>
+              
+              <tr style='background-color:rgb(250,250,250);'>
+                <td>
+                  <strong>user[last_name]</strong>
+                  <br />
+                  <small>
+                    optional
+                    
+                  </small>
+                </td>
+                <td>
+                  
+                  <p>last name of the user</p>
+                  <br />
+                  Value: Must be String
+                </td>
+              </tr>
+              
+              <tr style='background-color:rgb(250,250,250);'>
+                <td>
+                  <strong>user[title]</strong>
+                  <br />
+                  <small>
+                    optional
+                    
+                  </small>
+                </td>
+                <td>
+                  
+                  <p>title of the user</p>
+                  <br />
+                  Value: Must be String
+                </td>
+              </tr>
+              
+              <tr style='background-color:rgb(250,250,250);'>
+                <td>
+                  <strong>user[profile_photo_url]</strong>
+                  <br />
+                  <small>
+                    optional
+                    
+                  </small>
+                </td>
+                <td>
+                  
+                  <p>set the profile picture to the picture from this URL link</p>
+                  <br />
+                  Value: Must be String
+                </td>
+              </tr>
+              
+              <tr style='background-color:rgb(250,250,250);'>
+                <td>
+                  <strong>user[profile_photo]</strong>
+                  <br />
+                  <small>
+                    optional
+                    
+                  </small>
+                </td>
+                <td>
+                  
+                  <br />
+                  Value: Must be a Hash
+                </td>
+              </tr>
+              <tr style='background-color:rgb(245,245,245);'>
+                <td>
+                  <strong>user[profile_photo][data]</strong>
+                  <br />
+                  <small>
+                    optional
+                    
+                  </small>
+                </td>
+                <td>
+                  
+                  <p>set the profile picture to a file upload from the local file path</p>
+                  <br />
+                  Value: Must be File
+                </td>
+              </tr>
+              <tr style='background-color:rgb(250,250,250);'>
+                <td>
+                  <strong>user[roles]</strong>
+                  <br />
+                  <small>
+                    optional
+                    
+                  </small>
+                </td>
+                <td>
+                  
+                  <br />
+                  Value: Must be a Hash
+                </td>
+              </tr>
+              <tr style='background-color:rgb(245,245,245);'>
+                <td>
+                  <strong>user[roles][tenant_admin_role]</strong>
+                  <br />
+                  <small>
+                    optional
+                    
+                  </small>
+                </td>
+                <td>
+                  
+                  <p>flag to set tenant admin role</p>
+                  <br />
+                  Value: Must be one of: true, false.
+                </td>
+              </tr>
+              <tr style='background-color:rgb(250,250,250);'>
+                <td>
+                  <strong>user[contact_info]</strong>
+                  <br />
+                  <small>
+                    optional
+                    
+                  </small>
+                </td>
+                <td>
+                  
+                  <br />
+                  Value: Must be a Hash
+                </td>
+              </tr>
+              <tr style='background-color:rgb(245,245,245);'>
+                <td>
+                  <strong>user[contact_info][cell_phone]</strong>
+                  <br />
+                  <small>
+                    optional
+                    
+                  </small>
+                </td>
+                <td>
+                  
+                  <br />
+                  Value: Must be String
+                </td>
+              </tr>
+              
+              <tr style='background-color:rgb(245,245,245);'>
+                <td>
+                  <strong>user[contact_info][office_phone]</strong>
+                  <br />
+                  <small>
+                    optional
+                    
+                  </small>
+                </td>
+                <td>
+                  
+                  <br />
+                  Value: Must be String
+                </td>
+              </tr>
+              
+              <tr style='background-color:rgb(245,245,245);'>
+                <td>
+                  <strong>user[contact_info][aim]</strong>
+                  <br />
+                  <small>
+                    optional
+                    
+                  </small>
+                </td>
+                <td>
+                  
+                  <br />
+                  Value: Must be String
+                </td>
+              </tr>
+              
+              <tr style='background-color:rgb(245,245,245);'>
+                <td>
+                  <strong>user[contact_info][google_talk]</strong>
+                  <br />
+                  <small>
+                    optional
+                    
+                  </small>
+                </td>
+                <td>
+                  
+                  <br />
+                  Value: Must be String
+                </td>
+              </tr>
+              
+              <tr style='background-color:rgb(245,245,245);'>
+                <td>
+                  <strong>user[contact_info][yahoo]</strong>
+                  <br />
+                  <small>
+                    optional
+                    
+                  </small>
+                </td>
+                <td>
+                  
+                  <br />
+                  Value: Must be String
+                </td>
+              </tr>
+              
+              <tr style='background-color:rgb(245,245,245);'>
+                <td>
+                  <strong>user[contact_info][skype]</strong>
+                  <br />
+                  <small>
+                    optional
+                    
+                  </small>
+                </td>
+                <td>
+                  
+                  <br />
+                  Value: Must be String
+                </td>
+              </tr>
+              
+              <tr style='background-color:rgb(245,245,245);'>
+                <td>
+                  <strong>user[contact_info][jabber]</strong>
+                  <br />
+                  <small>
+                    optional
+                    
+                  </small>
+                </td>
+                <td>
+                  
+                  <br />
+                  Value: Must be String
+                </td>
+              </tr>
+              
+              <tr style='background-color:rgb(245,245,245);'>
+                <td>
+                  <strong>user[contact_info][msn]</strong>
+                  <br />
+                  <small>
+                    optional
+                    
+                  </small>
+                </td>
+                <td>
+                  
+                  <br />
+                  Value: Must be String
+                </td>
+              </tr>
+              
+              <tr style='background-color:rgb(245,245,245);'>
+                <td>
+                  <strong>user[contact_info][email]</strong>
+                  <br />
+                  <small>
+                    optional
+                    
+                  </small>
+                </td>
+                <td>
+                  
+                  <br />
+                  Value: Must be String
+                </td>
+              </tr>
+              
+              <tr style='background-color:rgb(245,245,245);'>
+                <td>
+                  <strong>user[contact_info][location]</strong>
+                  <br />
+                  <small>
+                    optional
+                    
+                  </small>
+                </td>
+                <td>
+                  
+                  <br />
+                  Value: Must be String
+                </td>
+              </tr>
+              
+              <tr style='background-color:rgb(245,245,245);'>
+                <td>
+                  <strong>user[contact_info][twitter]</strong>
+                  <br />
+                  <small>
+                    optional
+                    
+                  </small>
+                </td>
+                <td>
+                  
+                  <br />
+                  Value: Must be String
+                </td>
+              </tr>
+              
+              <tr style='background-color:rgb(245,245,245);'>
+                <td>
+                  <strong>user[contact_info][lync]</strong>
+                  <br />
+                  <small>
+                    optional
+                    
+                  </small>
+                </td>
+                <td>
+                  
+                  <br />
+                  Value: Must be String
+                </td>
+              </tr>
+              
+              <tr style='background-color:rgb(245,245,245);'>
+                <td>
+                  <strong>user[contact_info][google_talk]</strong>
+                  <br />
+                  <small>
+                    optional
+                    
+                  </small>
+                </td>
+                <td>
+                  
+                  <br />
+                  Value: Must be String
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <h3>Response Fields</h3>
+          <table class='table table-bordered response_field'>
+            <tr>
+              <th>user</th>
+              <td>see #show for details</td>
+              <td>User</td>
+            </tr>
+          </table>
+          <h3>Example Curl Commands</h3>
+          <div class='well'>
+            curl -X PUT -v --basic -u &quot;emily@socialcast.com:demo&quot; &quot;https://demo.socialcast.com/api/users/25.json&quot; -H&quot;Content-Type: application/json&quot; -d'{&quot;user&quot;:{&quot;first_name&quot;:&quot;EmilyChanged&quot;}}'
+          </div>
+          <div class='well'>
+            curl -X PUT -v --basic -u &quot;emily@socialcast.com:demo&quot; &quot;https://demo.socialcast.com/api/users/25.json&quot; -H&quot;Content-Type: application/json&quot; -d'{&quot;user&quot;:{&quot;profile_photo_url&quot;: &quot;http://www.socialcast.com/sites/default/files/Logos/logo.png&quot;}}'
+          </div>
+          <div class='well'>
+            curl -X PUT -v --basic -u &quot;emily@socialcast.com:demo&quot; &quot;https://demo.socialcast.com/api/users/25.json&quot; -F&quot;user[profile_photo][data]=@./socialcast.jpg&quot;
+          </div>
+          <div class='well'>
+            curl -X PUT -v --basic -u &quot;admin@server.com:admin_password&quot; &quot;https://demo.socialcast.com/api/users/25.json&quot; -H&quot;Content-Type: application/json&quot; -d'{&quot;user&quot;:{&quot;roles&quot;:{&quot;tenant_admin&quot;:true}}}'
+          </div>
+          <h3>Examples</h3>
+          <pre class='prettyprint'>PUT /api/users/453.json&#x000A;{&#x000A;  &quot;user&quot;: {&#x000A;    &quot;first_name&quot;: &quot;changed&quot;&#x000A;  }&#x000A;}&#x000A;200&#x000A;{&#x000A;  &quot;user&quot;: {&#x000A;    &quot;contact_info&quot;: {&#x000A;      &quot;email&quot;: &quot;active'63@socialcast.com&quot;&#x000A;    },&#x000A;    &quot;manager&quot;: null,&#x000A;    &quot;custom_fields&quot;: [],&#x000A;    &quot;followable&quot;: false,&#x000A;    &quot;contact_id&quot;: null,&#x000A;    &quot;following_count&quot;: 0,&#x000A;    &quot;followers_count&quot;: 0,&#x000A;    &quot;status_message&quot;: null,&#x000A;    &quot;id&quot;: 453,&#x000A;    &quot;name&quot;: &quot;changed D'øe63&quot;,&#x000A;    &quot;url&quot;: &quot;https://socialcast.socialcast.test/users/453-changedd%C3%B8e63&quot;,&#x000A;    &quot;avatars&quot;: {&#x000A;      &quot;is_system_default&quot;: true,&#x000A;      &quot;square16&quot;: &quot;https://socialcast.socialcast.test/assets/v6/avatars/default_user_square16.png&quot;,&#x000A;      &quot;square30&quot;: &quot;https://socialcast.socialcast.test/assets/v6/avatars/default_user_square30.png&quot;,&#x000A;      &quot;square45&quot;: &quot;https://socialcast.socialcast.test/assets/v6/avatars/default_user_square45.png&quot;,&#x000A;      &quot;square70&quot;: &quot;https://socialcast.socialcast.test/assets/v6/avatars/default_user_square70.png&quot;,&#x000A;      &quot;square140&quot;: &quot;https://socialcast.socialcast.test/assets/v6/avatars/default_user_square140.png&quot;&#x000A;    },&#x000A;    &quot;username&quot;: &quot;changedDøe63&quot;,&#x000A;    &quot;active&quot;: true,&#x000A;    &quot;terminated&quot;: false,&#x000A;    &quot;inactive&quot;: false,&#x000A;    &quot;role&quot;: &quot;member&quot;,&#x000A;    &quot;type&quot;: &quot;User&quot;,&#x000A;    &quot;title&quot;: null,&#x000A;    &quot;out_of_office&quot;: false,&#x000A;    &quot;back_in_office_on&quot;: null,&#x000A;    &quot;company_login&quot;: null&#x000A;  }&#x000A;}</pre>
+        </div>
+        <div class='article'>
+          <h2>
+            <a href='../apidoc/users/create.html'>
+              POST
+              /api/users
+            </a>
+            <br />
+            create a user as a community admin
+          </h2>
+          
+          <h3>
+            Success Response Code:
+            <b>201</b>
+          </h3>
+          <h3>Params</h3>
+          <table class='table'>
+            <thead>
+              <tr>
+                <th>Param name</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr style='background-color:rgb(255,255,255);'>
+                <td>
+                  <strong>activate_user</strong>
+                  <br />
+                  <small>
+                    optional
+                    
+                  </small>
+                </td>
+                <td>
+                  
+                  <p>automatically activate the user or not (default=false)</p>
+                  <br />
+                  Value: Must be one of: true, false.
+                </td>
+              </tr>
+              
+              <tr style='background-color:rgb(255,255,255);'>
+                <td>
+                  <strong>skip_emails</strong>
+                  <br />
+                  <small>
+                    optional
+                    
+                  </small>
+                </td>
+                <td>
+                  
+                  <p>skip new user emails (default=false)</p>
+                  <br />
+                  Value: Must be one of: true, false.
+                </td>
+              </tr>
+              
+              <tr style='background-color:rgb(255,255,255);'>
+                <td>
+                  <strong>skip_joined_notifications</strong>
+                  <br />
+                  <small>
+                    optional
+                    
+                  </small>
+                </td>
+                <td>
+                  
+                  <p>Do not send the user a welcome email or post a welcome message to the
+                  stream on their behalf (only effective when activate_user is also true)
+                  (default=false)</p>
+                  <br />
+                  Value: Must be one of: true, false.
+                </td>
+              </tr>
+              
+              <tr style='background-color:rgb(255,255,255);'>
+                <td>
+                  <strong>user</strong>
+                  <br />
+                  <small>
+                    optional
+                    
+                  </small>
+                </td>
+                <td>
+                  
+                  <br />
+                  Value: Must be a Hash
+                </td>
+              </tr>
+              <tr style='background-color:rgb(250,250,250);'>
+                <td>
+                  <strong>user[first_name]</strong>
+                  <br />
+                  <small>
+                    optional
+                    
+                  </small>
+                </td>
+                <td>
+                  
+                  <p>first name of the user</p>
+                  <br />
+                  Value: Must be String
+                </td>
+              </tr>
+              
+              <tr style='background-color:rgb(250,250,250);'>
+                <td>
+                  <strong>user[last_name]</strong>
+                  <br />
+                  <small>
+                    optional
+                    
+                  </small>
+                </td>
+                <td>
+                  
+                  <p>last name of the user</p>
+                  <br />
+                  Value: Must be String
+                </td>
+              </tr>
+              
+              <tr style='background-color:rgb(250,250,250);'>
+                <td>
+                  <strong>user[title]</strong>
+                  <br />
+                  <small>
+                    optional
+                    
+                  </small>
+                </td>
+                <td>
+                  
+                  <p>title of the user</p>
+                  <br />
+                  Value: Must be String
+                </td>
+              </tr>
+              
+              <tr style='background-color:rgb(250,250,250);'>
+                <td>
+                  <strong>user[profile_photo_url]</strong>
+                  <br />
+                  <small>
+                    optional
+                    
+                  </small>
+                </td>
+                <td>
+                  
+                  <p>set the profile picture to the picture from this URL link</p>
+                  <br />
+                  Value: Must be String
+                </td>
+              </tr>
+              
+              <tr style='background-color:rgb(250,250,250);'>
+                <td>
+                  <strong>user[profile_photo]</strong>
+                  <br />
+                  <small>
+                    optional
+                    
+                  </small>
+                </td>
+                <td>
+                  
+                  <br />
+                  Value: Must be a Hash
+                </td>
+              </tr>
+              <tr style='background-color:rgb(245,245,245);'>
+                <td>
+                  <strong>user[profile_photo][data]</strong>
+                  <br />
+                  <small>
+                    optional
+                    
+                  </small>
+                </td>
+                <td>
+                  
+                  <p>set the profile picture to a file upload from the local file path</p>
+                  <br />
+                  Value: Must be File
+                </td>
+              </tr>
+              <tr style='background-color:rgb(250,250,250);'>
+                <td>
+                  <strong>user[roles]</strong>
+                  <br />
+                  <small>
+                    optional
+                    
+                  </small>
+                </td>
+                <td>
+                  
+                  <br />
+                  Value: Must be a Hash
+                </td>
+              </tr>
+              <tr style='background-color:rgb(245,245,245);'>
+                <td>
+                  <strong>user[roles][tenant_admin_role]</strong>
+                  <br />
+                  <small>
+                    optional
+                    
+                  </small>
+                </td>
+                <td>
+                  
+                  <p>flag to set tenant admin role</p>
+                  <br />
+                  Value: Must be one of: true, false.
+                </td>
+              </tr>
+              <tr style='background-color:rgb(250,250,250);'>
+                <td>
+                  <strong>user[contact_info]</strong>
+                  <br />
+                  <small>
+                    optional
+                    
+                  </small>
+                </td>
+                <td>
+                  
+                  <br />
+                  Value: Must be a Hash
+                </td>
+              </tr>
+              <tr style='background-color:rgb(245,245,245);'>
+                <td>
+                  <strong>user[contact_info][cell_phone]</strong>
+                  <br />
+                  <small>
+                    optional
+                    
+                  </small>
+                </td>
+                <td>
+                  
+                  <br />
+                  Value: Must be String
+                </td>
+              </tr>
+              
+              <tr style='background-color:rgb(245,245,245);'>
+                <td>
+                  <strong>user[contact_info][office_phone]</strong>
+                  <br />
+                  <small>
+                    optional
+                    
+                  </small>
+                </td>
+                <td>
+                  
+                  <br />
+                  Value: Must be String
+                </td>
+              </tr>
+              
+              <tr style='background-color:rgb(245,245,245);'>
+                <td>
+                  <strong>user[contact_info][aim]</strong>
+                  <br />
+                  <small>
+                    optional
+                    
+                  </small>
+                </td>
+                <td>
+                  
+                  <br />
+                  Value: Must be String
+                </td>
+              </tr>
+              
+              <tr style='background-color:rgb(245,245,245);'>
+                <td>
+                  <strong>user[contact_info][google_talk]</strong>
+                  <br />
+                  <small>
+                    optional
+                    
+                  </small>
+                </td>
+                <td>
+                  
+                  <br />
+                  Value: Must be String
+                </td>
+              </tr>
+              
+              <tr style='background-color:rgb(245,245,245);'>
+                <td>
+                  <strong>user[contact_info][yahoo]</strong>
+                  <br />
+                  <small>
+                    optional
+                    
+                  </small>
+                </td>
+                <td>
+                  
+                  <br />
+                  Value: Must be String
+                </td>
+              </tr>
+              
+              <tr style='background-color:rgb(245,245,245);'>
+                <td>
+                  <strong>user[contact_info][skype]</strong>
+                  <br />
+                  <small>
+                    optional
+                    
+                  </small>
+                </td>
+                <td>
+                  
+                  <br />
+                  Value: Must be String
+                </td>
+              </tr>
+              
+              <tr style='background-color:rgb(245,245,245);'>
+                <td>
+                  <strong>user[contact_info][jabber]</strong>
+                  <br />
+                  <small>
+                    optional
+                    
+                  </small>
+                </td>
+                <td>
+                  
+                  <br />
+                  Value: Must be String
+                </td>
+              </tr>
+              
+              <tr style='background-color:rgb(245,245,245);'>
+                <td>
+                  <strong>user[contact_info][msn]</strong>
+                  <br />
+                  <small>
+                    optional
+                    
+                  </small>
+                </td>
+                <td>
+                  
+                  <br />
+                  Value: Must be String
+                </td>
+              </tr>
+              
+              <tr style='background-color:rgb(245,245,245);'>
+                <td>
+                  <strong>user[contact_info][email]</strong>
+                  <br />
+                  <small>
+                    optional
+                    
+                  </small>
+                </td>
+                <td>
+                  
+                  <br />
+                  Value: Must be String
+                </td>
+              </tr>
+              
+              <tr style='background-color:rgb(245,245,245);'>
+                <td>
+                  <strong>user[contact_info][location]</strong>
+                  <br />
+                  <small>
+                    optional
+                    
+                  </small>
+                </td>
+                <td>
+                  
+                  <br />
+                  Value: Must be String
+                </td>
+              </tr>
+              
+              <tr style='background-color:rgb(245,245,245);'>
+                <td>
+                  <strong>user[contact_info][twitter]</strong>
+                  <br />
+                  <small>
+                    optional
+                    
+                  </small>
+                </td>
+                <td>
+                  
+                  <br />
+                  Value: Must be String
+                </td>
+              </tr>
+              
+              <tr style='background-color:rgb(245,245,245);'>
+                <td>
+                  <strong>user[contact_info][lync]</strong>
+                  <br />
+                  <small>
+                    optional
+                    
+                  </small>
+                </td>
+                <td>
+                  
+                  <br />
+                  Value: Must be String
+                </td>
+              </tr>
+              
+              <tr style='background-color:rgb(245,245,245);'>
+                <td>
+                  <strong>user[contact_info][google_talk]</strong>
+                  <br />
+                  <small>
+                    optional
+                    
+                  </small>
+                </td>
+                <td>
+                  
+                  <br />
+                  Value: Must be String
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <h3>Response Fields</h3>
+          <table class='table table-bordered response_field'>
+            <tr>
+              <th>user</th>
+              <td>see #show for details</td>
+              <td>User</td>
+            </tr>
+          </table>
+          <h3>Example Curl Commands</h3>
+          <div class='well'>
+            curl -X POST -v --basic -u &quot;adminuser@socialcast.com:adminuser&quot; 'https://demo.socialcast.com/api/users.json?activate_user=true&amp;skip_emails=true' -H&quot;Content-Type: application/json&quot; -d'{&quot;user&quot;: { &quot;contact_info&quot;: { &quot;cell_phone&quot;: &quot;949 555 6686&quot;, &quot;office_phone&quot;: &quot;949 555 6685&quot;, &quot;aim&quot;: &quot;emily2time&quot;, &quot;google_talk&quot;: &quot;emily2@demo.socialcast.com&quot;, &quot;yahoo&quot;: &quot;emily2times12&quot;, &quot;skype&quot;: &quot;emily2_james&quot;, &quot;jabber&quot;: &quot;emily2@socialcast.jabber.com&quot;, &quot;msn&quot;: &quot;emily2@msn.com&quot;, &quot;email&quot;: &quot;emily2@socialcast.com&quot;, &quot;location&quot;: &quot;Tustin, CA&quot; }, &quot;custom_fields&quot;: [ { &quot;id&quot;: &quot;resume&quot;, &quot;value&quot;: &quot;I currently assist the VP of Marketing in making sure that all marketing related activites are rolled out properly in the Americas market.&quot;, &quot;label&quot;: &quot;Job Description&quot; }, { &quot;id&quot;: &quot;passions&quot;, &quot;value&quot;: &quot;Event planning, attending conferences, social media, international marketing , working out, reading, soccer, skiing, Europe, redecorating&quot;, &quot;label&quot;: &quot;Passions&quot; }, { &quot;id&quot;: &quot;business_unit&quot;, &quot;value&quot;: &quot;Headquarters&quot;, &quot;label&quot;: &quot;Business Unit&quot; }, { &quot;id&quot;: &quot;department&quot;, &quot;value&quot;: &quot;Marketing&quot;, &quot;label&quot;: &quot;Department&quot; }, { &quot;id&quot;: &quot;title&quot;, &quot;value&quot;: &quot;Marketing Assistant&quot;, &quot;label&quot;: &quot;Title&quot; } ], &quot;title&quot;: &quot;Marketing Assistant&quot;, &quot;roles&quot;: [ &quot;member&quot; ], &quot;first_name&quot;:&quot;Emily2&quot;, &quot;last_name&quot;:&quot;James&quot; }}'
+          </div>
+          <h3>Examples</h3>
+          <pre class='prettyprint'>POST /api/users.json&#x000A;{&#x000A;  &quot;user&quot;: {&#x000A;    &quot;first_name&quot;: &quot;fuzzy&quot;,&#x000A;    &quot;last_name&quot;: &quot;monkey&quot;,&#x000A;    &quot;contact_info&quot;: {&#x000A;      &quot;email&quot;: &quot;monkey@socialcast.com&quot;&#x000A;    }&#x000A;  }&#x000A;}&#x000A;201&#x000A;{&#x000A;  &quot;user&quot;: {&#x000A;    &quot;contact_info&quot;: {&#x000A;      &quot;email&quot;: &quot;monkey@socialcast.com&quot;&#x000A;    },&#x000A;    &quot;manager&quot;: null,&#x000A;    &quot;custom_fields&quot;: [],&#x000A;    &quot;followable&quot;: false,&#x000A;    &quot;contact_id&quot;: null,&#x000A;    &quot;following_count&quot;: 0,&#x000A;    &quot;followers_count&quot;: 0,&#x000A;    &quot;status_message&quot;: null,&#x000A;    &quot;id&quot;: 459,&#x000A;    &quot;name&quot;: &quot;fuzzy monkey&quot;,&#x000A;    &quot;url&quot;: &quot;https://socialcast.socialcast.test/users/459-fuzzymonkey&quot;,&#x000A;    &quot;avatars&quot;: {&#x000A;      &quot;is_system_default&quot;: true,&#x000A;      &quot;square16&quot;: &quot;https://socialcast.socialcast.test/assets/v6/avatars/default_user_square16.png&quot;,&#x000A;      &quot;square30&quot;: &quot;https://socialcast.socialcast.test/assets/v6/avatars/default_user_square30.png&quot;,&#x000A;      &quot;square45&quot;: &quot;https://socialcast.socialcast.test/assets/v6/avatars/default_user_square45.png&quot;,&#x000A;      &quot;square70&quot;: &quot;https://socialcast.socialcast.test/assets/v6/avatars/default_user_square70.png&quot;,&#x000A;      &quot;square140&quot;: &quot;https://socialcast.socialcast.test/assets/v6/avatars/default_user_square140.png&quot;&#x000A;    },&#x000A;    &quot;username&quot;: &quot;fuzzymonkey&quot;,&#x000A;    &quot;active&quot;: false,&#x000A;    &quot;terminated&quot;: false,&#x000A;    &quot;inactive&quot;: true,&#x000A;    &quot;role&quot;: &quot;member&quot;,&#x000A;    &quot;type&quot;: &quot;User&quot;,&#x000A;    &quot;title&quot;: null,&#x000A;    &quot;out_of_office&quot;: false,&#x000A;    &quot;back_in_office_on&quot;: null,&#x000A;    &quot;company_login&quot;: null&#x000A;  }&#x000A;}</pre>
+        </div>
+        <div class='article'>
+          <h2>
+            <a href='../apidoc/users/destroy.html'>
+              DELETE
+              /api/users/:user_id
+            </a>
+            <br />
+            deactivate a user
+          </h2>
+          
+          <h3>
+            Success Response Code:
+            <b>200</b>
+          </h3>
+          <h3>Params</h3>
+          <table class='table'>
+            <thead>
+              <tr>
+                <th>Param name</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr style='background-color:rgb(255,255,255);'>
+                <td>
+                  <strong>user_id</strong>
+                  <br />
+                  <small>
+                    optional
+                    
+                  </small>
+                </td>
+                <td>
+                  
+                  <p>id of user to deactivate</p>
+                  <br />
+                  Value: Must be Integer
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <h3>Response Fields</h3>
+          <table class='table table-bordered response_field'>
+            <tr>
+              <th>user</th>
+              <td>deactivated user</td>
+              <td>User</td>
+            </tr>
+          </table>
+          <h3>Example Curl Commands</h3>
+          <div class='well'>
+            curl -X DELETE -v --basic -u &quot;emily@socialcast.com:demo&quot; &quot;https://demo.socialcast.com/api/users/25.json&quot;
+          </div>
+          <h3>Examples</h3>
+          <pre class='prettyprint'>DELETE /api/users/453.json&#x000A;200&#x000A;{&#x000A;  &quot;user&quot;: {&#x000A;    &quot;contact_info&quot;: {&#x000A;      &quot;email&quot;: &quot;active'63@socialcast.com&quot;&#x000A;    },&#x000A;    &quot;manager&quot;: null,&#x000A;    &quot;custom_fields&quot;: [],&#x000A;    &quot;followable&quot;: false,&#x000A;    &quot;contact_id&quot;: null,&#x000A;    &quot;following_count&quot;: 0,&#x000A;    &quot;followers_count&quot;: 0,&#x000A;    &quot;status_message&quot;: null,&#x000A;    &quot;id&quot;: 453,&#x000A;    &quot;name&quot;: &quot;J'øhn D'øe63&quot;,&#x000A;    &quot;url&quot;: &quot;https://socialcast.socialcast.test/users/453-j%C3%B8hnd%C3%B8e63&quot;,&#x000A;    &quot;avatars&quot;: {&#x000A;      &quot;is_system_default&quot;: true,&#x000A;      &quot;square16&quot;: &quot;https://socialcast.socialcast.test/assets/v6/avatars/default_user_square16.png&quot;,&#x000A;      &quot;square30&quot;: &quot;https://socialcast.socialcast.test/assets/v6/avatars/default_user_square30.png&quot;,&#x000A;      &quot;square45&quot;: &quot;https://socialcast.socialcast.test/assets/v6/avatars/default_user_square45.png&quot;,&#x000A;      &quot;square70&quot;: &quot;https://socialcast.socialcast.test/assets/v6/avatars/default_user_square70.png&quot;,&#x000A;      &quot;square140&quot;: &quot;https://socialcast.socialcast.test/assets/v6/avatars/default_user_square140.png&quot;&#x000A;    },&#x000A;    &quot;username&quot;: &quot;JøhnDøe63&quot;,&#x000A;    &quot;active&quot;: false,&#x000A;    &quot;terminated&quot;: true,&#x000A;    &quot;inactive&quot;: false,&#x000A;    &quot;role&quot;: &quot;member&quot;,&#x000A;    &quot;type&quot;: &quot;User&quot;,&#x000A;    &quot;title&quot;: null,&#x000A;    &quot;out_of_office&quot;: false,&#x000A;    &quot;back_in_office_on&quot;: null,&#x000A;    &quot;company_login&quot;: null&#x000A;  }&#x000A;}</pre>
+        </div>
+        <div class='article'>
+          <h2>
+            <a href='../apidoc/users/userinfo.html'>
+              GET
+              /api/userinfo
+            </a>
+            <br />
+            get information on current user
+          </h2>
+          
+          <h3>
+            Success Response Code:
+            <b>200</b>
+          </h3>
+          <h3>Response Fields</h3>
+          <table class='table table-bordered response_field'>
+            <tr>
+              <th>contact_info</th>
+              <td>the user's contact information. Includes phone numbers, email addresses, instant messenger services, and location</td>
+              <td>Hash&lt;string, string&gt;</td>
+            </tr>
+            <tr>
+              <th>manager</th>
+              <td>user's manager's ID</td>
+              <td>Integer</td>
+            </tr>
+            <tr>
+              <th>custom_fields</th>
+              <td>user's settings for community-defined custom fields - also includes business unit and department information</td>
+              <td>Array&lt;Hash&lt;string, string&gt;&gt;</td>
+            </tr>
+            <tr>
+              <th>followable</th>
+              <td>whether this user can be followed</td>
+              <td>Boolean</td>
+            </tr>
+            <tr>
+              <th>contact_id</th>
+              <td>if the current user is following this user, the contact record</td>
+              <td>Integer</td>
+            </tr>
+            <tr>
+              <th>following_count</th>
+              <td>the number of users that the user is following</td>
+              <td>Integer</td>
+            </tr>
+            <tr>
+              <th>followers_count</th>
+              <td>the number of users are following the user</td>
+              <td>Integer</td>
+            </tr>
+            <tr>
+              <th>status_message</th>
+              <td>unused; always null</td>
+              <td>String</td>
+            </tr>
+            <tr>
+              <th>id</th>
+              <td>user's id</td>
+              <td>Integer</td>
+            </tr>
+            <tr>
+              <th>name</th>
+              <td>user's name</td>
+              <td>String</td>
+            </tr>
+            <tr>
+              <th>url</th>
+              <td>url to interact with the user's record</td>
+              <td>String</td>
+            </tr>
+            <tr>
+              <th>avatars</th>
+              <td>urls for the user's avatar in various sizes</td>
+              <td>Hash&lt;string, string&gt;</td>
+            </tr>
+            <tr>
+              <th>username</th>
+              <td>user's username</td>
+              <td>String</td>
+            </tr>
+            <tr>
+              <th>active</th>
+              <td>whether the user is currently active</td>
+              <td>Boolean</td>
+            </tr>
+            <tr>
+              <th>terminated</th>
+              <td>whether the user has been terminated</td>
+              <td>Boolean</td>
+            </tr>
+            <tr>
+              <th>inactive</th>
+              <td>whether the user is inactive</td>
+              <td>Boolean</td>
+            </tr>
+            <tr>
+              <th>role</th>
+              <td>user's role within the community (community_admin, sbi_admin, reach_admin, town_hall_admin, external_contributor_admin, thanks_admin, broadcast_message_admin, client_admin, content_moderator, challenge_admin, tenant_admin)</td>
+              <td>String</td>
+            </tr>
+            <tr>
+              <th>title</th>
+              <td>user's title within the organization</td>
+              <td>String</td>
+            </tr>
+            <tr>
+              <th>type</th>
+              <td>type of user</td>
+              <td>String</td>
+            </tr>
+            <tr>
+              <th>out_of_office</th>
+              <td>whether the user is currently out of the office</td>
+              <td>Boolean</td>
+            </tr>
+            <tr>
+              <th>back_in_office_on</th>
+              <td>date and time that the user is expected back in the office if currently out_of_office</td>
+              <td>DateTime</td>
+            </tr>
+            <tr>
+              <th>company_login</th>
+              <td>user's company login</td>
+              <td>String</td>
+            </tr>
+            <tr>
+              <th>community[name]</th>
+              <td>name of the community</td>
+              <td>String</td>
+            </tr>
+            <tr>
+              <th>community[subdomain]</th>
+              <td>subdomain of the community</td>
+              <td>String</td>
+            </tr>
+            <tr>
+              <th>community[domain]</th>
+              <td>full domain of the community</td>
+              <td>String</td>
+            </tr>
+            <tr>
+              <th>community[attachments_enabled]</th>
+              <td>whether attachments are enabled for the community</td>
+              <td>Boolean</td>
+            </tr>
+            <tr>
+              <th>community[maximum_attachment_size]</th>
+              <td>maximum attachment size for the community (in bytes)</td>
+              <td>Boolean</td>
+            </tr>
+            <tr>
+              <th>community[private_messages_enabled]</th>
+              <td>whether private messages are enabled for the community</td>
+              <td>Boolean</td>
+            </tr>
+            <tr>
+              <th>community[thanks_enabled]</th>
+              <td>whether this community has thanks enabled</td>
+              <td>Boolean</td>
+            </tr>
+            <tr>
+              <th>community[conversations_enabled]</th>
+              <td>whether conversations are enabled for this community</td>
+              <td>Boolean</td>
+            </tr>
+            <tr>
+              <th>community[version]</th>
+              <td>version of Socialcast currently running</td>
+              <td>String</td>
+            </tr>
+            <tr>
+              <th>community[default_profile_photo_id]</th>
+              <td>the id of the default profile photo to be used for a user that does not have a photo set</td>
+              <td>Integer</td>
+            </tr>
+          </table>
+          <h3>Example Curl Commands</h3>
+          <div class='well'>
+            curl -X GET -v --basic -u &quot;emily@socialcast.com:demo&quot; &quot;https://demo.socialcast.com/api/userinfo.json&quot;
+          </div>
+          <h3>Examples</h3>
+          <pre class='prettyprint'>GET /api/userinfo.json&#x000A;200&#x000A;{&#x000A;  &quot;user&quot;: {&#x000A;    &quot;contact_info&quot;: {&#x000A;      &quot;email&quot;: &quot;active'63@socialcast.com&quot;&#x000A;    },&#x000A;    &quot;manager&quot;: null,&#x000A;    &quot;custom_fields&quot;: [],&#x000A;    &quot;followable&quot;: false,&#x000A;    &quot;contact_id&quot;: null,&#x000A;    &quot;following_count&quot;: 0,&#x000A;    &quot;followers_count&quot;: 0,&#x000A;    &quot;status_message&quot;: null,&#x000A;    &quot;id&quot;: 453,&#x000A;    &quot;name&quot;: &quot;J'øhn D'øe63&quot;,&#x000A;    &quot;url&quot;: &quot;https://socialcast.socialcast.test/users/453-j%C3%B8hnd%C3%B8e63&quot;,&#x000A;    &quot;avatars&quot;: {&#x000A;      &quot;is_system_default&quot;: true,&#x000A;      &quot;square16&quot;: &quot;https://socialcast.socialcast.test/assets/v6/avatars/default_user_square16.png&quot;,&#x000A;      &quot;square30&quot;: &quot;https://socialcast.socialcast.test/assets/v6/avatars/default_user_square30.png&quot;,&#x000A;      &quot;square45&quot;: &quot;https://socialcast.socialcast.test/assets/v6/avatars/default_user_square45.png&quot;,&#x000A;      &quot;square70&quot;: &quot;https://socialcast.socialcast.test/assets/v6/avatars/default_user_square70.png&quot;,&#x000A;      &quot;square140&quot;: &quot;https://socialcast.socialcast.test/assets/v6/avatars/default_user_square140.png&quot;&#x000A;    },&#x000A;    &quot;username&quot;: &quot;JøhnDøe63&quot;,&#x000A;    &quot;active&quot;: true,&#x000A;    &quot;terminated&quot;: false,&#x000A;    &quot;inactive&quot;: false,&#x000A;    &quot;role&quot;: &quot;member&quot;,&#x000A;    &quot;type&quot;: &quot;User&quot;,&#x000A;    &quot;title&quot;: null,&#x000A;    &quot;out_of_office&quot;: false,&#x000A;    &quot;back_in_office_on&quot;: null,&#x000A;    &quot;company_login&quot;: null,&#x000A;    &quot;thanks_points&quot;: 3,&#x000A;    &quot;preferences&quot;: {&#x000A;      &quot;always_accept_group_invitations&quot;: false,&#x000A;      &quot;email_reply_to_comment&quot;: true,&#x000A;      &quot;email_on_follow&quot;: true,&#x000A;      &quot;email_on_at_reply&quot;: true,&#x000A;      &quot;email_new_people_to_follow&quot;: true,&#x000A;      &quot;email_accept_invite&quot;: true,&#x000A;      &quot;email_me_when_employee_is_sent_thanks&quot;: true,&#x000A;      &quot;receipt_for_share_email&quot;: true,&#x000A;      &quot;nudge_email&quot;: true,&#x000A;      &quot;email_on_image_comment&quot;: true,&#x000A;      &quot;email_on_link_comment&quot;: true,&#x000A;      &quot;email_on_status_message_comment&quot;: true,&#x000A;      &quot;email_on_worklog_comment&quot;: true,&#x000A;      &quot;email_on_question_comment&quot;: true,&#x000A;      &quot;email_on_review_request_comment&quot;: true,&#x000A;      &quot;email_on_help_request_comment&quot;: true,&#x000A;      &quot;email_on_broadcast_message_comment&quot;: true,&#x000A;      &quot;email_on_idea_comment&quot;: true,&#x000A;      &quot;email_on_new_challenge_comment&quot;: true,&#x000A;      &quot;email_on_challenge_voting_end_comment&quot;: true,&#x000A;      &quot;email_on_challenge_change&quot;: true,&#x000A;      &quot;email_on_new_remark&quot;: true,&#x000A;      &quot;email_on_project_share_with_group_comment&quot;: true,&#x000A;      &quot;email_on_project_completed_comment&quot;: true,&#x000A;      &quot;email_on_project_change&quot;: true,&#x000A;      &quot;email_on_new_town_hall_comment&quot;: true,&#x000A;      &quot;email_on_answers_my_town_hall_questions&quot;: true,&#x000A;      &quot;email_on_becoming_moderator_or_speaker_of_town_hall&quot;: true,&#x000A;      &quot;email_on_new_group_comment&quot;: true,&#x000A;      &quot;email_on_group_broadcast_message_comment&quot;: true,&#x000A;      &quot;email_on_external_contributor_joined_comment&quot;: true,&#x000A;      &quot;email_on_web_feed_comment&quot;: true,&#x000A;      &quot;email_on_poll_comment&quot;: true,&#x000A;      &quot;email_on_profile_photo_comment&quot;: true,&#x000A;      &quot;email_on_thanks_comment&quot;: true,&#x000A;      &quot;email_on_joined_community_comment&quot;: true&#x000A;    },&#x000A;    &quot;community&quot;: {&#x000A;      &quot;name&quot;: &quot;socialcast &amp; CØ.&quot;,&#x000A;      &quot;subdomain&quot;: &quot;socialcast&quot;,&#x000A;      &quot;domain&quot;: &quot;socialcast.socialcast.test&quot;,&#x000A;      &quot;attachments_enabled&quot;: true,&#x000A;      &quot;maximum_attachment_size&quot;: 104857600,&#x000A;      &quot;private_messages_enabled&quot;: false,&#x000A;      &quot;thanks_enabled&quot;: true,&#x000A;      &quot;version&quot;: &quot;master&quot;,&#x000A;      &quot;conversations_enabled&quot;: true&#x000A;    }&#x000A;  }&#x000A;}</pre>
+        </div>
+        <div class='article'>
+          <h2>
+            <a href='../apidoc/users/company_login.html'>
+              GET
+              /api/users/company_login/:company_login
+            </a>
+            <br />
+            show information for a user
+          </h2>
+          
+          <h3>
+            Success Response Code:
+            <b>200</b>
+          </h3>
+          <h3>Params</h3>
+          <table class='table'>
+            <thead>
+              <tr>
+                <th>Param name</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr style='background-color:rgb(255,255,255);'>
+                <td>
+                  <strong>company_login</strong>
+                  <br />
+                  <small>
+                    required
+                    
+                  </small>
+                </td>
+                <td>
+                  
+                  <p>company login for the user</p>
+                  <br />
+                  Value: Must be String
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <h3>Response Fields</h3>
+          <table class='table table-bordered response_field'>
+            <tr>
+              <th>contact_info</th>
+              <td>the user's contact information. Includes phone numbers, email addresses, instant messenger services, and location</td>
+              <td>Hash&lt;string, string&gt;</td>
+            </tr>
+            <tr>
+              <th>manager</th>
+              <td>user's manager's ID</td>
+              <td>Integer</td>
+            </tr>
+            <tr>
+              <th>custom_fields</th>
+              <td>user's settings for community-defined custom fields - also includes business unit and department information</td>
+              <td>Array&lt;Hash&lt;string, string&gt;&gt;</td>
+            </tr>
+            <tr>
+              <th>followable</th>
+              <td>whether this user can be followed</td>
+              <td>Boolean</td>
+            </tr>
+            <tr>
+              <th>contact_id</th>
+              <td>if the current user is following this user, the contact record</td>
+              <td>Integer</td>
+            </tr>
+            <tr>
+              <th>following_count</th>
+              <td>the number of users that the user is following</td>
+              <td>Integer</td>
+            </tr>
+            <tr>
+              <th>followers_count</th>
+              <td>the number of users are following the user</td>
+              <td>Integer</td>
+            </tr>
+            <tr>
+              <th>status_message</th>
+              <td>unused; always null</td>
+              <td>String</td>
+            </tr>
+            <tr>
+              <th>id</th>
+              <td>user's id</td>
+              <td>Integer</td>
+            </tr>
+            <tr>
+              <th>name</th>
+              <td>user's name</td>
+              <td>String</td>
+            </tr>
+            <tr>
+              <th>url</th>
+              <td>url to interact with the user's record</td>
+              <td>String</td>
+            </tr>
+            <tr>
+              <th>avatars</th>
+              <td>urls for the user's avatar in various sizes</td>
+              <td>Hash&lt;string, string&gt;</td>
+            </tr>
+            <tr>
+              <th>username</th>
+              <td>user's username</td>
+              <td>String</td>
+            </tr>
+            <tr>
+              <th>active</th>
+              <td>whether the user is currently active</td>
+              <td>Boolean</td>
+            </tr>
+            <tr>
+              <th>terminated</th>
+              <td>whether the user has been terminated</td>
+              <td>Boolean</td>
+            </tr>
+            <tr>
+              <th>inactive</th>
+              <td>whether the user is inactive</td>
+              <td>Boolean</td>
+            </tr>
+            <tr>
+              <th>role</th>
+              <td>user's role within the community (community_admin, sbi_admin, reach_admin, town_hall_admin, external_contributor_admin, thanks_admin, broadcast_message_admin, client_admin, content_moderator, challenge_admin, tenant_admin)</td>
+              <td>String</td>
+            </tr>
+            <tr>
+              <th>title</th>
+              <td>user's title within the organization</td>
+              <td>String</td>
+            </tr>
+            <tr>
+              <th>type</th>
+              <td>type of user</td>
+              <td>String</td>
+            </tr>
+            <tr>
+              <th>out_of_office</th>
+              <td>whether the user is currently out of the office</td>
+              <td>Boolean</td>
+            </tr>
+            <tr>
+              <th>back_in_office_on</th>
+              <td>date and time that the user is expected back in the office if currently out_of_office</td>
+              <td>DateTime</td>
+            </tr>
+            <tr>
+              <th>company_login</th>
+              <td>user's company login</td>
+              <td>String</td>
+            </tr>
+          </table>
+          <h3>Example Curl Commands</h3>
+          <div class='well'>
+            curl -X GET -v --basic -u &quot;emily@socialcast.com:demo&quot; &quot;https://demo.socialcast.com/api/users/company_login/ejames.json&quot;
+          </div>
+          <div class='well'>
+            curl -X GET -v --basic -u &quot;emily@socialcast.com:demo&quot; &quot;https://demo.socialcast.com/api/users/company_login.json?id=emily@socialcast.com&quot;
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class='clear'></div>
+    <div class='footer'>
+      <div class='wrapper'>
+        <ul>
+          <li>
+            <a href="http://socialcast.com/"><span class="translation_missing" title="translation missing: en.Overview">Overview</span></a>
+          </li>
+          <li>
+            <a href="http://socialcast.com/product"><span class="translation_missing" title="translation missing: en.Product Details">Product Details</span></a>
+          </li>
+          <li>
+            <a href="http://socialcast.com/pricing#pricing"><span class="translation_missing" title="translation missing: en.Pricing">Pricing</span></a>
+          </li>
+          <li>
+            <a href="http://socialcast.com/pricing#services"><span class="translation_missing" title="translation missing: en.Services">Services</span></a>
+          </li>
+          <li>
+            <a href="http://socialcast.com/customers"><span class="translation_missing" title="translation missing: en.Customer Stories">Customer Stories</span></a>
+          </li>
+          <li>
+            <a href="http://socialcast.com/webinars"><span class="translation_missing" title="translation missing: en.Webinars">Webinars</span></a>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <a href="http://socialcast.com/resources"><span class="translation_missing" title="translation missing: en.Resources">Resources</span></a>
+          </li>
+          <li>
+            <a href="https://communities.vmware.com/community/vmtn/socialcast"><span class="translation_missing" title="translation missing: en.Community Forum">Community Forum</span></a>
+          </li>
+          <li>
+            <a href="http://socialcast.com/help"><span class="translation_missing" title="translation missing: en.Help">Help</span></a>
+          </li>
+          <li>
+            <a href="http://socialcast.com/faq"><span class="translation_missing" title="translation missing: en.FAQ">Faq</span></a>
+          </li>
+          <li>
+            <a href="http://developers.socialcast.com/"><span class="translation_missing" title="translation missing: en.Developers">Developers</span></a>
+          </li>
+          <li>
+            <a href="http://developers.socialcast.com/admin/"><span class="translation_missing" title="translation missing: en.Administrators">Administrators</span></a>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <a href="http://blog.socialcast.com/"><span class="translation_missing" title="translation missing: en.Blog">Blog</span></a>
+          </li>
+          <li>
+            <a href="http://socialcast.com/about"><span class="translation_missing" title="translation missing: en.About">About</span></a>
+          </li>
+          <li>
+            <a href="http://socialcast.com/press"><span class="translation_missing" title="translation missing: en.Press Center">Press Center</span></a>
+          </li>
+          <li>
+            <a href="http://socialcast.com/careers"><span class="translation_missing" title="translation missing: en.Careers">Careers</span></a>
+          </li>
+          <li>
+            <a href="http://socialcast.com/contact-form"><span class="translation_missing" title="translation missing: en.Contact">Contact</span></a>
+          </li>
+        </ul>
+        <div class='clear'></div>
+        <div class='footer_links'>
+          <div class='social_links'>
+            <a class="youtube" href="http://www.youtube.com/user/SocialcastByVMware"><img alt="Youtube circle" src="/socialcast/assets/youtube_circle.png" /></a>
+            <a class="twitter" href="https://twitter.com/socialcast"><img alt="Twitter circle" src="/socialcast/assets/twitter_circle.png" /></a>
+            <a class="facebook" href="https://www.facebook.com/VMwareSocialcast"><img alt="Facebook circle" src="/socialcast/assets/facebook_circle.png" /></a>
+            <a class="linkedin" href="http://www.linkedin.com/company/1171942"><img alt="Linkedin circle" src="/socialcast/assets/linkedin_circle.png" /></a>
+          </div>
+          <a class="truste_badge" href="https://privacy.truste.com/privacy-seal/VMware,-Inc-/validation?rid=06daecaa-35ac-46f7-9c3e-5c3713be8787"><img alt="Truste seal" src="/socialcast/assets/truste_seal.png" /></a>
+          <p class='tos'>
+            Copyright 2014 VMWare, Inc. All Rights Reserved.
+            <a href="http://www.socialcast.com/terms">Terms</a>
+            |
+            <a href="http://www.socialcast.com/privacy">Privacy</a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <script type='text/javascript' src='../apidoc/javascripts/bundled/jquery-1.7.2.js'></script>
+    <script type='text/javascript' src='../apidoc/javascripts/bundled/bootstrap-collapse.js'></script>
+    <script type='text/javascript' src='../apidoc/javascripts/bundled/prettify.js'></script>
+    <script type='text/javascript' src='../apidoc/javascripts/apipie.js'></script>
+  </body>
+</html>

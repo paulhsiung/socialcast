@@ -1,0 +1,784 @@
+<link href="/socialcast/assets/apipie.css" media="screen" rel="stylesheet" />
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+  <head>
+    <title>API documentation</title>
+    <meta content='text/html; charset=US-ASCII' http-equiv='Content-Type' />
+    <link href='//cloud.typography.com/7512272/744364/css/fonts.css' rel='stylesheet' type='text/css' />
+    <!-- IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <!-- <script src="<haml_loud> asset_path('html5.js') </haml_loud>"></script> -->
+    <![endif]-->
+  </head>
+  <body>
+    <div class='header'>
+      <div class='utility_bar'>
+        <div class='wrapper'>
+          <p class='links'>
+            <a href="http://www.socialcast.com">Back to Socialcast</a>
+            |
+            <a href="http://blog.socialcast.com/">Blog</a>
+          </p>
+        </div>
+      </div>
+      <div class='wrapper'>
+        <a class="logo" href="http://www.socialcast.com"><img alt="Socialcast vmware" src="/socialcast/assets/socialcast_vmware.jpg" /></a>
+      </div>
+    </div>
+    <div class='content wrapper'>
+      <div class='nav'>
+        <ul>
+          <li>
+            <a href="/socialcast/auth/oauth2.html">OAuth 2.0</a>
+          </li>
+          <li>
+            <a href="/socialcast/auth/basic-auth.html">HTTP Basic Authentication</a>
+          </li>
+          <li>
+            <a class="" href="../apidoc.html">API Resource Endpoints</a>
+            <ul>
+              <li>
+                <a class='' href='../apidoc/activities.html'>
+                  Activities
+                </a>
+              </li>
+              <li>
+                <a class='' href='../apidoc/attachments.html'>
+                  Attachments
+                </a>
+              </li>
+              <li>
+                <a class='' href='../apidoc/authentication.html'>
+                  Authentication
+                </a>
+              </li>
+              <li>
+                <a class='' href='../apidoc/badges.html'>
+                  Badges
+                </a>
+              </li>
+              <li>
+                <a class='' href='../apidoc/client_devices.html'>
+                  Client devices
+                </a>
+              </li>
+              <li>
+                <a class='active' href='../apidoc/comments.html'>
+                  Comments
+                </a>
+                <ul>
+                  <li>
+                    <a class='' href='../apidoc/comments/show.html'>show</a>
+                  </li>
+                  <li>
+                    <a class='' href='../apidoc/comments/index.html'>index</a>
+                  </li>
+                  <li>
+                    <a class='' href='../apidoc/comments/destroy.html'>destroy</a>
+                  </li>
+                  <li>
+                    <a class='' href='../apidoc/comments/update.html'>update</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a class='' href='../apidoc/content_filters.html'>
+                  Content filters
+                </a>
+              </li>
+              <li>
+                <a class='' href='../apidoc/conversations.html'>
+                  Conversations
+                </a>
+              </li>
+              <li>
+                <a class='' href='../apidoc/custom_fields.html'>
+                  Custom fields
+                </a>
+              </li>
+              <li>
+                <a class='' href='../apidoc/external_systems.html'>
+                  External systems
+                </a>
+              </li>
+              <li>
+                <a class='' href='../apidoc/flags.html'>
+                  Flags
+                </a>
+              </li>
+              <li>
+                <a class='' href='../apidoc/followers.html'>
+                  Followers
+                </a>
+              </li>
+              <li>
+                <a class='' href='../apidoc/following.html'>
+                  Following
+                </a>
+              </li>
+              <li>
+                <a class='' href='../apidoc/group_memberships.html'>
+                  Group memberships
+                </a>
+              </li>
+              <li>
+                <a class='' href='../apidoc/groups.html'>
+                  Groups
+                </a>
+              </li>
+              <li>
+                <a class='' href='../apidoc/likes.html'>
+                  Likes
+                </a>
+              </li>
+              <li>
+                <a class='' href='../apidoc/media_files.html'>
+                  Media files
+                </a>
+              </li>
+              <li>
+                <a class='' href='../apidoc/members.html'>
+                  Members
+                </a>
+              </li>
+              <li>
+                <a class='' href='../apidoc/messages.html'>
+                  Messages
+                </a>
+              </li>
+              <li>
+                <a class='' href='../apidoc/notifications.html'>
+                  Notifications
+                </a>
+              </li>
+              <li>
+                <a class='' href='../apidoc/polls.html'>
+                  Polls
+                </a>
+              </li>
+              <li>
+                <a class='' href='../apidoc/reach_extensions.html'>
+                  Reach extensions
+                </a>
+              </li>
+              <li>
+                <a class='' href='../apidoc/remarks.html'>
+                  Remarks
+                </a>
+              </li>
+              <li>
+                <a class='' href='../apidoc/search.html'>
+                  Search
+                </a>
+              </li>
+              <li>
+                <a class='' href='../apidoc/streams.html'>
+                  Streams
+                </a>
+              </li>
+              <li>
+                <a class='' href='../apidoc/thanks.html'>
+                  Thanks
+                </a>
+              </li>
+              <li>
+                <a class='' href='../apidoc/topics.html'>
+                  Topics
+                </a>
+              </li>
+              <li>
+                <a class='' href='../apidoc/users.html'>
+                  Users
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class='row'>
+        <ul class='breadcrumbs'>
+          <li>
+            <a href='../apidoc.html'>
+              API Resource Endpoints &gt;
+            </a>
+          </li>
+          <li>
+            Comments
+          </li>
+        </ul>
+        <h1>
+          Comments
+        </h1>
+        <p></p>
+        <div class='article'>
+          <h2>
+            <a href='../apidoc/comments/show.html'>
+              GET
+              /api/messages/:message_id/comments/:id
+            </a>
+            <br />
+            get an individual comment
+          </h2>
+          
+          <h3>
+            Success Response Code:
+            <b>200</b>
+          </h3>
+          <h3>Params</h3>
+          <table class='table'>
+            <thead>
+              <tr>
+                <th>Param name</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr style='background-color:rgb(255,255,255);'>
+                <td>
+                  <strong>message_id</strong>
+                  <br />
+                  <small>
+                    optional
+                    
+                  </small>
+                </td>
+                <td>
+                  
+                  <p>id of the message to which the comment belongs</p>
+                  <br />
+                  Value: Must be Integer
+                </td>
+              </tr>
+              
+              <tr style='background-color:rgb(255,255,255);'>
+                <td>
+                  <strong>id</strong>
+                  <br />
+                  <small>
+                    optional
+                    
+                  </small>
+                </td>
+                <td>
+                  
+                  <p>id of the comment to retrieve</p>
+                  <br />
+                  Value: Must be Integer
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <h3>Response Fields</h3>
+          <table class='table table-bordered response_field'>
+            <tr>
+              <th>comment[id]</th>
+              <td>unique id for the comment</td>
+              <td>Integer</td>
+            </tr>
+            <tr>
+              <th>comment[text]</th>
+              <td>comment body</td>
+              <td>String</td>
+            </tr>
+            <tr>
+              <th>comment[url]</th>
+              <td>url to access the comment</td>
+              <td>String</td>
+            </tr>
+            <tr>
+              <th>comment[permalink_url]</th>
+              <td>url to access the web form of this comment</td>
+              <td>String</td>
+            </tr>
+            <tr>
+              <th>comment[user]</th>
+              <td>information about the comment's author</td>
+              <td>Hash&lt;User&gt;</td>
+            </tr>
+            <tr>
+              <th>comment[created_at]</th>
+              <td>datetime stamp for when the comment was originally created</td>
+              <td>DateTime</td>
+            </tr>
+            <tr>
+              <th>comment[editable]</th>
+              <td>flag to notify clients if the comment is editable by the current user</td>
+              <td>Boolean</td>
+            </tr>
+            <tr>
+              <th>comment[detetable]</th>
+              <td>flag to notify clients if the comment is deletable by the current user</td>
+              <td>Boolean</td>
+            </tr>
+            <tr>
+              <th>comment[likable]</th>
+              <td>flag to notify clients if the comment is likable by the current user</td>
+              <td>Boolean</td>
+            </tr>
+            <tr>
+              <th>comment[likes]</th>
+              <td>likes for this comment</td>
+              <td>Array&lt;Like&gt;</td>
+            </tr>
+            <tr>
+              <th>comment[likes_count]</th>
+              <td>total number of likes for this comment</td>
+              <td>Integer</td>
+            </tr>
+            <tr>
+              <th>comment[attachments]</th>
+              <td>files attached to this comment</td>
+              <td>Array&lt;Attachment&gt;</td>
+            </tr>
+            <tr>
+              <th>comment[external_resources]</th>
+              <td>url links associated with this comment, which can include oembed data. If :attached_resource is true then the ExternalResource should be presented like an Attachment.</td>
+              <td>Array&lt;ExternalResource&gt;</td>
+            </tr>
+          </table>
+          <h3>Example Curl Commands</h3>
+          <div class='well'>
+            curl -X GET -v --basic -u &quot;emily@socialcast.com:demo&quot; &quot;https://demo.socialcast.com/api/messages/424/comments/85.json&quot;
+          </div>
+          <h3>Examples</h3>
+          <pre class='prettyprint'>GET /messages/119/comments/1.json&#x000A;200&#x000A;{&#x000A;  &quot;comment&quot;: {&#x000A;    &quot;id&quot;: 1,&#x000A;    &quot;url&quot;: &quot;https://socialcast.socialcast.test/api/messages/119/comments/1&quot;,&#x000A;    &quot;user&quot;: {&#x000A;      &quot;id&quot;: 88,&#x000A;      &quot;name&quot;: &quot;J'øhn D'øe1&quot;,&#x000A;      &quot;url&quot;: &quot;https://socialcast.socialcast.test/users/88-j%C3%B8hnd%C3%B8e1&quot;,&#x000A;      &quot;avatars&quot;: {&#x000A;        &quot;is_system_default&quot;: true,&#x000A;        &quot;square16&quot;: &quot;https://socialcast.socialcast.test/assets/v6/avatars/default_user_square16.png&quot;,&#x000A;        &quot;square30&quot;: &quot;https://socialcast.socialcast.test/assets/v6/avatars/default_user_square30.png&quot;,&#x000A;        &quot;square45&quot;: &quot;https://socialcast.socialcast.test/assets/v6/avatars/default_user_square45.png&quot;,&#x000A;        &quot;square70&quot;: &quot;https://socialcast.socialcast.test/assets/v6/avatars/default_user_square70.png&quot;,&#x000A;        &quot;square140&quot;: &quot;https://socialcast.socialcast.test/assets/v6/avatars/default_user_square140.png&quot;&#x000A;      },&#x000A;      &quot;username&quot;: &quot;JøhnDøe1&quot;,&#x000A;      &quot;active&quot;: true,&#x000A;      &quot;terminated&quot;: false,&#x000A;      &quot;inactive&quot;: false,&#x000A;      &quot;role&quot;: &quot;member&quot;,&#x000A;      &quot;type&quot;: &quot;User&quot;,&#x000A;      &quot;title&quot;: null,&#x000A;      &quot;out_of_office&quot;: false,&#x000A;      &quot;back_in_office_on&quot;: null,&#x000A;      &quot;company_login&quot;: null&#x000A;    },&#x000A;    &quot;text&quot;: &quot;http://www.youtube.com/watch?v=MjIyETGKvG0&quot;,&#x000A;    &quot;created_at&quot;: &quot;2014-04-10T16:36:28-07:00&quot;,&#x000A;    &quot;attachments&quot;: [],&#x000A;    &quot;media_files&quot;: [],&#x000A;    &quot;permalink_url&quot;: &quot;https://socialcast.socialcast.test/messages/119#comment-1&quot;,&#x000A;    &quot;editable&quot;: true,&#x000A;    &quot;deletable&quot;: true,&#x000A;    &quot;likable&quot;: false,&#x000A;    &quot;likes&quot;: [],&#x000A;    &quot;likes_count&quot;: 0,&#x000A;    &quot;external_resources&quot;: [&#x000A;      {&#x000A;        &quot;id&quot;: 5,&#x000A;        &quot;url&quot;: &quot;http://www.youtube.com/watch?v=MjIyETGKvG0&quot;,&#x000A;        &quot;title&quot;: &quot;Socialcast Product Overview: Communication + Collaboration&quot;,&#x000A;        &quot;description&quot;: null,&#x000A;        &quot;canonical_hashtag&quot;: null,&#x000A;        &quot;type&quot;: null,&#x000A;        &quot;source&quot;: {&#x000A;          &quot;name&quot;: &quot;YouTube&quot;,&#x000A;          &quot;url&quot;: &quot;http://www.youtube.com/&quot;&#x000A;        },&#x000A;        &quot;tags&quot;: [],&#x000A;        &quot;oembed&quot;: {&#x000A;          &quot;version&quot;: &quot;1.0&quot;,&#x000A;          &quot;provider_name&quot;: &quot;YouTube&quot;,&#x000A;          &quot;provider_url&quot;: &quot;http://www.youtube.com/&quot;,&#x000A;          &quot;title&quot;: &quot;Socialcast Product Overview: Communication + Collaboration&quot;,&#x000A;          &quot;type&quot;: &quot;video&quot;,&#x000A;          &quot;thumbnail_url&quot;: &quot;https://s3.amazonaws.com/socialcast_test/tenants/18/media_files/4/hqdefault_stream_square.jpg?AWSAccessKeyId=unused&amp;Expires=1399809600&amp;Signature=4j4xvm2%2FdgjuSAbH%2BNrABuxtonc%3D&quot;,&#x000A;          &quot;width&quot;: 480,&#x000A;          &quot;thumbnail_width&quot;: 75,&#x000A;          &quot;thumbnail_height&quot;: 75,&#x000A;          &quot;author_url&quot;: &quot;http://www.youtube.com/user/SocialcastByVMware&quot;,&#x000A;          &quot;author_name&quot;: &quot;Socialcast Enterprise Social Networking&quot;,&#x000A;          &quot;height&quot;: 270,&#x000A;          &quot;html&quot;: &quot;&lt;iframe width=\&quot;480\&quot; height=\&quot;270\&quot; src=\&quot;http://www.youtube.com/embed/MjIyETGKvG0?feature=oembed\&quot; frameborder=\&quot;0\&quot; allowfullscreen&gt;&lt;/iframe&gt;&quot;,&#x000A;          &quot;url&quot;: &quot;http://www.youtube.com/watch?v=MjIyETGKvG0&quot;,&#x000A;          &quot;description&quot;: null&#x000A;        },&#x000A;        &quot;media_files&quot;: [&#x000A;          {&#x000A;            &quot;canonical&quot;: true,&#x000A;            &quot;title&quot;: &quot;Socialcast Product Overview: Communication + Collaboration&quot;,&#x000A;            &quot;description&quot;: null,&#x000A;            &quot;thumbnails&quot;: {&#x000A;              &quot;stream&quot;: &quot;https://s3.amazonaws.com/socialcast_test/tenants/18/media_files/4/hqdefault_stream.jpg?AWSAccessKeyId=unused&amp;Expires=1399809600&amp;Signature=N54H7AcdQjV3FFuZ0QTmVhhgYiQ%3D&quot;,&#x000A;              &quot;stream_square&quot;: &quot;https://s3.amazonaws.com/socialcast_test/tenants/18/media_files/4/hqdefault_stream_square.jpg?AWSAccessKeyId=unused&amp;Expires=1399809600&amp;Signature=4j4xvm2%2FdgjuSAbH%2BNrABuxtonc%3D&quot;,&#x000A;              &quot;square45&quot;: &quot;https://s3.amazonaws.com/socialcast_test/tenants/18/media_files/4/hqdefault_square45.jpg?AWSAccessKeyId=unused&amp;Expires=1399809600&amp;Signature=DsLe0zdbrLQQJ%2FObPgV4NQXAg3A%3D&quot;,&#x000A;              &quot;scaled480&quot;: &quot;https://s3.amazonaws.com/socialcast_test/tenants/18/media_files/4/hqdefault_scaled480.jpg?AWSAccessKeyId=unused&amp;Expires=1399809600&amp;Signature=K5RE%2FdGwAlEOGxzRqhc%2Fs%2Fslc6M%3D&quot;&#x000A;            },&#x000A;            &quot;thumbnail_metadata&quot;: {&#x000A;              &quot;stream&quot;: {&#x000A;                &quot;width&quot;: 50.0,&#x000A;                &quot;height&quot;: 64.0&#x000A;              },&#x000A;              &quot;stream_square&quot;: {&#x000A;                &quot;width&quot;: 75.0,&#x000A;                &quot;height&quot;: 75.0&#x000A;              },&#x000A;              &quot;square45&quot;: {&#x000A;                &quot;width&quot;: 45.0,&#x000A;                &quot;height&quot;: 45.0&#x000A;              },&#x000A;              &quot;scaled480&quot;: {&#x000A;                &quot;width&quot;: 50.0,&#x000A;                &quot;height&quot;: 64.0&#x000A;              }&#x000A;            },&#x000A;            &quot;page_url&quot;: &quot;http://www.youtube.com/watch?v=MjIyETGKvG0&quot;,&#x000A;            &quot;url&quot;: &quot;https://s3.amazonaws.com/socialcast_test/tenants/18/media_files/4/hqdefault.jpg?AWSAccessKeyId=unused&amp;Expires=1399809600&amp;Signature=91EE3LJwoYRg3z3I7eHJDYTltpg%3D&quot;,&#x000A;            &quot;content_type&quot;: &quot;image/png&quot;,&#x000A;            &quot;attachment_id&quot;: null&#x000A;          }&#x000A;        ]&#x000A;      }&#x000A;    ],&#x000A;    &quot;thumbnail_url&quot;: null&#x000A;  }&#x000A;}</pre>
+        </div>
+        <div class='article'>
+          <h2>
+            <a href='../apidoc/comments/index.html'>
+              GET
+              /api/messages/:message_id/comments
+            </a>
+            <br />
+            get a list of comments associated with a message
+          </h2>
+          
+          <h3>
+            Success Response Code:
+            <b>200</b>
+          </h3>
+          <h3>Params</h3>
+          <table class='table'>
+            <thead>
+              <tr>
+                <th>Param name</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr style='background-color:rgb(255,255,255);'>
+                <td>
+                  <strong>message_id</strong>
+                  <br />
+                  <small>
+                    required
+                    
+                  </small>
+                </td>
+                <td>
+                  
+                  <p>message to retrieve comments for</p>
+                  <br />
+                  Value: Must be Integer
+                </td>
+              </tr>
+              
+              <tr style='background-color:rgb(255,255,255);'>
+                <td>
+                  <strong>page</strong>
+                  <br />
+                  <small>
+                    optional
+                    
+                  </small>
+                </td>
+                <td>
+                  
+                  <p>page number of comments to be returned (default=1)</p>
+                  <br />
+                  Value: Must be Integer
+                </td>
+              </tr>
+              
+              <tr style='background-color:rgb(255,255,255);'>
+                <td>
+                  <strong>per_page</strong>
+                  <br />
+                  <small>
+                    optional
+                    
+                  </small>
+                </td>
+                <td>
+                  
+                  <p>number of comments to be returned per page (default=20)</p>
+                  <br />
+                  Value: Must be Integer
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <h3>Response Fields</h3>
+          <table class='table table-bordered response_field'>
+            <tr>
+              <th>comments</th>
+              <td>array of comment entries</td>
+              <td>Array&lt;Comment&gt;</td>
+            </tr>
+            <tr>
+              <th>comment[id]</th>
+              <td>unique id for the comment</td>
+              <td>Integer</td>
+            </tr>
+            <tr>
+              <th>comment[text]</th>
+              <td>comment body</td>
+              <td>String</td>
+            </tr>
+            <tr>
+              <th>comment[url]</th>
+              <td>url to access the comment</td>
+              <td>String</td>
+            </tr>
+            <tr>
+              <th>comment[permalink_url]</th>
+              <td>url to access the web form of this comment</td>
+              <td>String</td>
+            </tr>
+            <tr>
+              <th>comment[user]</th>
+              <td>information about the comment's author</td>
+              <td>Hash&lt;User&gt;</td>
+            </tr>
+            <tr>
+              <th>comment[created_at]</th>
+              <td>datetime stamp for when the comment was originally created</td>
+              <td>DateTime</td>
+            </tr>
+            <tr>
+              <th>comment[editable]</th>
+              <td>flag to notify clients if the comment is editable by the current user</td>
+              <td>Boolean</td>
+            </tr>
+            <tr>
+              <th>comment[detetable]</th>
+              <td>flag to notify clients if the comment is deletable by the current user</td>
+              <td>Boolean</td>
+            </tr>
+            <tr>
+              <th>comment[likable]</th>
+              <td>flag to notify clients if the comment is likable by the current user</td>
+              <td>Boolean</td>
+            </tr>
+            <tr>
+              <th>comment[likes]</th>
+              <td>likes for this comment</td>
+              <td>Array&lt;Like&gt;</td>
+            </tr>
+            <tr>
+              <th>comment[likes_count]</th>
+              <td>total number of likes for this comment</td>
+              <td>Integer</td>
+            </tr>
+            <tr>
+              <th>comment[attachments]</th>
+              <td>files attached to this comment</td>
+              <td>Array&lt;Attachment&gt;</td>
+            </tr>
+            <tr>
+              <th>comment[external_resources]</th>
+              <td>url links associated with this comment, which can include oembed data. If :attached_resource is true then the ExternalResource should be presented like an Attachment.</td>
+              <td>Array&lt;ExternalResource&gt;</td>
+            </tr>
+          </table>
+          <h3>Example Curl Commands</h3>
+          <div class='well'>
+            curl -X GET -v --basic -u &quot;emily@socialcast.com:demo&quot; &quot;https://demo.socialcast.com/api/messages/424/comments.json&quot;
+          </div>
+          <h3>Examples</h3>
+          <pre class='prettyprint'>GET /messages/37/comments.json&#x000A;200&#x000A;{&#x000A;  &quot;comments&quot;: [&#x000A;    {&#x000A;      &quot;id&quot;: 1,&#x000A;      &quot;url&quot;: &quot;https://socialcast.socialcast.test/api/messages/37/comments/1&quot;,&#x000A;      &quot;user&quot;: {&#x000A;        &quot;id&quot;: 43,&#x000A;        &quot;name&quot;: &quot;J'øhn D'øe1&quot;,&#x000A;        &quot;url&quot;: &quot;https://socialcast.socialcast.test/users/43-j%C3%B8hnd%C3%B8e1&quot;,&#x000A;        &quot;avatars&quot;: {&#x000A;          &quot;is_system_default&quot;: true,&#x000A;          &quot;square16&quot;: &quot;https://socialcast.socialcast.test/assets/v6/avatars/default_user_square16.png&quot;,&#x000A;          &quot;square30&quot;: &quot;https://socialcast.socialcast.test/assets/v6/avatars/default_user_square30.png&quot;,&#x000A;          &quot;square45&quot;: &quot;https://socialcast.socialcast.test/assets/v6/avatars/default_user_square45.png&quot;,&#x000A;          &quot;square70&quot;: &quot;https://socialcast.socialcast.test/assets/v6/avatars/default_user_square70.png&quot;,&#x000A;          &quot;square140&quot;: &quot;https://socialcast.socialcast.test/assets/v6/avatars/default_user_square140.png&quot;&#x000A;        },&#x000A;        &quot;username&quot;: &quot;JøhnDøe1&quot;,&#x000A;        &quot;active&quot;: true,&#x000A;        &quot;terminated&quot;: false,&#x000A;        &quot;inactive&quot;: false,&#x000A;        &quot;role&quot;: &quot;member&quot;,&#x000A;        &quot;type&quot;: &quot;User&quot;,&#x000A;        &quot;title&quot;: null,&#x000A;        &quot;out_of_office&quot;: false,&#x000A;        &quot;back_in_office_on&quot;: null,&#x000A;        &quot;company_login&quot;: null&#x000A;      },&#x000A;      &quot;text&quot;: &quot;'WHørgg?'&quot;,&#x000A;      &quot;created_at&quot;: &quot;2014-04-08T09:36:48-07:00&quot;,&#x000A;      &quot;attachments&quot;: [],&#x000A;      &quot;media_files&quot;: [],&#x000A;      &quot;permalink_url&quot;: &quot;https://socialcast.socialcast.test/messages/37#comment-1&quot;,&#x000A;      &quot;editable&quot;: true,&#x000A;      &quot;deletable&quot;: true,&#x000A;      &quot;likable&quot;: false,&#x000A;      &quot;likes&quot;: [],&#x000A;      &quot;likes_count&quot;: 0,&#x000A;      &quot;external_resources&quot;: [],&#x000A;      &quot;thumbnail_url&quot;: null&#x000A;    }&#x000A;  ]&#x000A;}</pre>
+        </div>
+        <div class='article'>
+          <h2>
+            <a href='../apidoc/comments/destroy.html'>
+              DELETE
+              /api/messages/:message_id/comments/:id
+            </a>
+            <br />
+            delete a comment attached to a particular message
+          </h2>
+          
+          <h3>
+            Success Response Code:
+            <b>204</b>
+          </h3>
+          <h3>Params</h3>
+          <table class='table'>
+            <thead>
+              <tr>
+                <th>Param name</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr style='background-color:rgb(255,255,255);'>
+                <td>
+                  <strong>message_id</strong>
+                  <br />
+                  <small>
+                    optional
+                    
+                  </small>
+                </td>
+                <td>
+                  
+                  <p>id of the message to which the comments belongs</p>
+                  <br />
+                  Value: Must be Integer
+                </td>
+              </tr>
+              
+              <tr style='background-color:rgb(255,255,255);'>
+                <td>
+                  <strong>id</strong>
+                  <br />
+                  <small>
+                    optional
+                    
+                  </small>
+                </td>
+                <td>
+                  
+                  <p>comment to delete</p>
+                  <br />
+                  Value: Must be Integer
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <h3>Example Curl Commands</h3>
+          <div class='well'>
+            curl -X DELETE -v --basic -u &quot;emily@socialcast.com:demo&quot; https://demo.socialcast.com/api/messages/424/comments/85
+          </div>
+          <h3>Examples</h3>
+          <pre class='prettyprint'>DELETE /messages/37/comments/1.json&#x000A;204</pre>
+        </div>
+        <div class='article'>
+          <h2>
+            <a href='../apidoc/comments/update.html'>
+              PUT
+              /api/messages/:message_id/comments/:id
+            </a>
+            <br />
+            update an existing comment on a message. Only the comment owner can perform this operation
+          </h2>
+          
+          <h3>
+            Success Response Code:
+            <b>200</b>
+          </h3>
+          <h3>Params</h3>
+          <table class='table'>
+            <thead>
+              <tr>
+                <th>Param name</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr style='background-color:rgb(255,255,255);'>
+                <td>
+                  <strong>message_id</strong>
+                  <br />
+                  <small>
+                    optional
+                    
+                  </small>
+                </td>
+                <td>
+                  
+                  <p>message to retrieve comments for</p>
+                  <br />
+                  Value: Must be Integer
+                </td>
+              </tr>
+              
+              <tr style='background-color:rgb(255,255,255);'>
+                <td>
+                  <strong>id</strong>
+                  <br />
+                  <small>
+                    optional
+                    
+                  </small>
+                </td>
+                <td>
+                  
+                  <p>id of the referenced comment</p>
+                  <br />
+                  Value: Must be Integer
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <h3>Response Fields</h3>
+          <table class='table table-bordered response_field'>
+            <tr>
+              <th>comment[id]</th>
+              <td>unique id for the comment</td>
+              <td>Integer</td>
+            </tr>
+            <tr>
+              <th>comment[text]</th>
+              <td>comment body</td>
+              <td>String</td>
+            </tr>
+            <tr>
+              <th>comment[url]</th>
+              <td>url to access the comment</td>
+              <td>String</td>
+            </tr>
+            <tr>
+              <th>comment[permalink_url]</th>
+              <td>url to access the web form of this comment</td>
+              <td>String</td>
+            </tr>
+            <tr>
+              <th>comment[user]</th>
+              <td>information about the comment's author</td>
+              <td>Hash&lt;User&gt;</td>
+            </tr>
+            <tr>
+              <th>comment[created_at]</th>
+              <td>datetime stamp for when the comment was originally created</td>
+              <td>DateTime</td>
+            </tr>
+            <tr>
+              <th>comment[editable]</th>
+              <td>flag to notify clients if the comment is editable by the current user</td>
+              <td>Boolean</td>
+            </tr>
+            <tr>
+              <th>comment[detetable]</th>
+              <td>flag to notify clients if the comment is deletable by the current user</td>
+              <td>Boolean</td>
+            </tr>
+            <tr>
+              <th>comment[likable]</th>
+              <td>flag to notify clients if the comment is likable by the current user</td>
+              <td>Boolean</td>
+            </tr>
+            <tr>
+              <th>comment[likes]</th>
+              <td>likes for this comment</td>
+              <td>Array&lt;Like&gt;</td>
+            </tr>
+            <tr>
+              <th>comment[likes_count]</th>
+              <td>total number of likes for this comment</td>
+              <td>Integer</td>
+            </tr>
+            <tr>
+              <th>comment[attachments]</th>
+              <td>files attached to this comment</td>
+              <td>Array&lt;Attachment&gt;</td>
+            </tr>
+            <tr>
+              <th>comment[external_resources]</th>
+              <td>url links associated with this comment, which can include oembed data. If :attached_resource is true then the ExternalResource should be presented like an Attachment.</td>
+              <td>Array&lt;ExternalResource&gt;</td>
+            </tr>
+          </table>
+          <h3>Example Curl Commands</h3>
+          <div class='well'>
+            curl -X PUT -v --basic -u &quot;emily@socialcast.com:demo&quot; https://demo.socialcast.com/api/messages/424/comments/87.json -H&quot;Content-Type: application/json&quot; -d'{&quot;comment&quot;:{&quot;text&quot;:&quot;Updated comment!&quot;}}'
+          </div>
+          <h3>Examples</h3>
+          <pre class='prettyprint'>PUT /messages/37/comments/1.json&#x000A;{&#x000A;  &quot;comment&quot;: {&#x000A;    &quot;text&quot;: &quot;updated&quot;&#x000A;  }&#x000A;}&#x000A;200&#x000A;{&#x000A;  &quot;comment&quot;: {&#x000A;    &quot;id&quot;: 1,&#x000A;    &quot;url&quot;: &quot;https://socialcast.socialcast.test/api/messages/37/comments/1&quot;,&#x000A;    &quot;user&quot;: {&#x000A;      &quot;id&quot;: 43,&#x000A;      &quot;name&quot;: &quot;J'øhn D'øe1&quot;,&#x000A;      &quot;url&quot;: &quot;https://socialcast.socialcast.test/users/43-j%C3%B8hnd%C3%B8e1&quot;,&#x000A;      &quot;avatars&quot;: {&#x000A;        &quot;is_system_default&quot;: true,&#x000A;        &quot;square16&quot;: &quot;https://socialcast.socialcast.test/assets/v6/avatars/default_user_square16.png&quot;,&#x000A;        &quot;square30&quot;: &quot;https://socialcast.socialcast.test/assets/v6/avatars/default_user_square30.png&quot;,&#x000A;        &quot;square45&quot;: &quot;https://socialcast.socialcast.test/assets/v6/avatars/default_user_square45.png&quot;,&#x000A;        &quot;square70&quot;: &quot;https://socialcast.socialcast.test/assets/v6/avatars/default_user_square70.png&quot;,&#x000A;        &quot;square140&quot;: &quot;https://socialcast.socialcast.test/assets/v6/avatars/default_user_square140.png&quot;&#x000A;      },&#x000A;      &quot;username&quot;: &quot;JøhnDøe1&quot;,&#x000A;      &quot;active&quot;: true,&#x000A;      &quot;terminated&quot;: false,&#x000A;      &quot;inactive&quot;: false,&#x000A;      &quot;role&quot;: &quot;member&quot;,&#x000A;      &quot;type&quot;: &quot;User&quot;,&#x000A;      &quot;title&quot;: null,&#x000A;      &quot;out_of_office&quot;: false,&#x000A;      &quot;back_in_office_on&quot;: null,&#x000A;      &quot;company_login&quot;: null&#x000A;    },&#x000A;    &quot;text&quot;: &quot;updated&quot;,&#x000A;    &quot;created_at&quot;: &quot;2014-04-08T09:36:48-07:00&quot;,&#x000A;    &quot;attachments&quot;: [],&#x000A;    &quot;media_files&quot;: [],&#x000A;    &quot;permalink_url&quot;: &quot;https://socialcast.socialcast.test/messages/37#comment-1&quot;,&#x000A;    &quot;editable&quot;: true,&#x000A;    &quot;deletable&quot;: true,&#x000A;    &quot;likable&quot;: false,&#x000A;    &quot;likes&quot;: [],&#x000A;    &quot;likes_count&quot;: 0,&#x000A;    &quot;external_resources&quot;: [],&#x000A;    &quot;recipients&quot;: [],&#x000A;    &quot;watchable&quot;: false,&#x000A;    &quot;watch&quot;: null,&#x000A;    &quot;tags&quot;: [],&#x000A;    &quot;thumbnail_url&quot;: null&#x000A;  }&#x000A;}</pre>
+        </div>
+      </div>
+    </div>
+    <div class='clear'></div>
+    <div class='footer'>
+      <div class='wrapper'>
+        <ul>
+          <li>
+            <a href="http://socialcast.com/"><span class="translation_missing" title="translation missing: en.Overview">Overview</span></a>
+          </li>
+          <li>
+            <a href="http://socialcast.com/product"><span class="translation_missing" title="translation missing: en.Product Details">Product Details</span></a>
+          </li>
+          <li>
+            <a href="http://socialcast.com/pricing#pricing"><span class="translation_missing" title="translation missing: en.Pricing">Pricing</span></a>
+          </li>
+          <li>
+            <a href="http://socialcast.com/pricing#services"><span class="translation_missing" title="translation missing: en.Services">Services</span></a>
+          </li>
+          <li>
+            <a href="http://socialcast.com/customers"><span class="translation_missing" title="translation missing: en.Customer Stories">Customer Stories</span></a>
+          </li>
+          <li>
+            <a href="http://socialcast.com/webinars"><span class="translation_missing" title="translation missing: en.Webinars">Webinars</span></a>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <a href="http://socialcast.com/resources"><span class="translation_missing" title="translation missing: en.Resources">Resources</span></a>
+          </li>
+          <li>
+            <a href="https://communities.vmware.com/community/vmtn/socialcast"><span class="translation_missing" title="translation missing: en.Community Forum">Community Forum</span></a>
+          </li>
+          <li>
+            <a href="http://socialcast.com/help"><span class="translation_missing" title="translation missing: en.Help">Help</span></a>
+          </li>
+          <li>
+            <a href="http://socialcast.com/faq"><span class="translation_missing" title="translation missing: en.FAQ">Faq</span></a>
+          </li>
+          <li>
+            <a href="http://developers.socialcast.com/"><span class="translation_missing" title="translation missing: en.Developers">Developers</span></a>
+          </li>
+          <li>
+            <a href="http://developers.socialcast.com/admin/"><span class="translation_missing" title="translation missing: en.Administrators">Administrators</span></a>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <a href="http://blog.socialcast.com/"><span class="translation_missing" title="translation missing: en.Blog">Blog</span></a>
+          </li>
+          <li>
+            <a href="http://socialcast.com/about"><span class="translation_missing" title="translation missing: en.About">About</span></a>
+          </li>
+          <li>
+            <a href="http://socialcast.com/press"><span class="translation_missing" title="translation missing: en.Press Center">Press Center</span></a>
+          </li>
+          <li>
+            <a href="http://socialcast.com/careers"><span class="translation_missing" title="translation missing: en.Careers">Careers</span></a>
+          </li>
+          <li>
+            <a href="http://socialcast.com/contact-form"><span class="translation_missing" title="translation missing: en.Contact">Contact</span></a>
+          </li>
+        </ul>
+        <div class='clear'></div>
+        <div class='footer_links'>
+          <div class='social_links'>
+            <a class="youtube" href="http://www.youtube.com/user/SocialcastByVMware"><img alt="Youtube circle" src="/socialcast/assets/youtube_circle.png" /></a>
+            <a class="twitter" href="https://twitter.com/socialcast"><img alt="Twitter circle" src="/socialcast/assets/twitter_circle.png" /></a>
+            <a class="facebook" href="https://www.facebook.com/VMwareSocialcast"><img alt="Facebook circle" src="/socialcast/assets/facebook_circle.png" /></a>
+            <a class="linkedin" href="http://www.linkedin.com/company/1171942"><img alt="Linkedin circle" src="/socialcast/assets/linkedin_circle.png" /></a>
+          </div>
+          <a class="truste_badge" href="https://privacy.truste.com/privacy-seal/VMware,-Inc-/validation?rid=06daecaa-35ac-46f7-9c3e-5c3713be8787"><img alt="Truste seal" src="/socialcast/assets/truste_seal.png" /></a>
+          <p class='tos'>
+            Copyright 2014 VMWare, Inc. All Rights Reserved.
+            <a href="http://www.socialcast.com/terms">Terms</a>
+            |
+            <a href="http://www.socialcast.com/privacy">Privacy</a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <script type='text/javascript' src='../apidoc/javascripts/bundled/jquery-1.7.2.js'></script>
+    <script type='text/javascript' src='../apidoc/javascripts/bundled/bootstrap-collapse.js'></script>
+    <script type='text/javascript' src='../apidoc/javascripts/bundled/prettify.js'></script>
+    <script type='text/javascript' src='../apidoc/javascripts/apipie.js'></script>
+  </body>
+</html>

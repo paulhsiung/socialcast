@@ -1,0 +1,843 @@
+<link href="/socialcast/assets/apipie.css" media="screen" rel="stylesheet" />
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+  <head>
+    <title>API documentation</title>
+    <meta content='text/html; charset=US-ASCII' http-equiv='Content-Type' />
+    <link href='//cloud.typography.com/7512272/744364/css/fonts.css' rel='stylesheet' type='text/css' />
+    <!-- IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <!-- <script src="<haml_loud> asset_path('html5.js') </haml_loud>"></script> -->
+    <![endif]-->
+  </head>
+  <body>
+    <div class='header'>
+      <div class='utility_bar'>
+        <div class='wrapper'>
+          <p class='links'>
+            <a href="http://www.socialcast.com">Back to Socialcast</a>
+            |
+            <a href="http://blog.socialcast.com/">Blog</a>
+          </p>
+        </div>
+      </div>
+      <div class='wrapper'>
+        <a class="logo" href="http://www.socialcast.com"><img alt="Socialcast vmware" src="/socialcast/assets/socialcast_vmware.jpg" /></a>
+      </div>
+    </div>
+    <div class='content wrapper'>
+      <div class='nav'>
+        <ul>
+          <li>
+            <a href="/socialcast/auth/oauth2.html">OAuth 2.0</a>
+          </li>
+          <li>
+            <a href="/socialcast/auth/basic-auth.html">HTTP Basic Authentication</a>
+          </li>
+          <li>
+            <a class="" href="../apidoc.html">API Resource Endpoints</a>
+            <ul>
+              <li>
+                <a class='' href='../apidoc/activities.html'>
+                  Activities
+                </a>
+              </li>
+              <li>
+                <a class='' href='../apidoc/attachments.html'>
+                  Attachments
+                </a>
+              </li>
+              <li>
+                <a class='' href='../apidoc/authentication.html'>
+                  Authentication
+                </a>
+              </li>
+              <li>
+                <a class='' href='../apidoc/badges.html'>
+                  Badges
+                </a>
+              </li>
+              <li>
+                <a class='' href='../apidoc/client_devices.html'>
+                  Client devices
+                </a>
+              </li>
+              <li>
+                <a class='' href='../apidoc/comments.html'>
+                  Comments
+                </a>
+              </li>
+              <li>
+                <a class='' href='../apidoc/content_filters.html'>
+                  Content filters
+                </a>
+              </li>
+              <li>
+                <a class='' href='../apidoc/conversations.html'>
+                  Conversations
+                </a>
+              </li>
+              <li>
+                <a class='' href='../apidoc/custom_fields.html'>
+                  Custom fields
+                </a>
+              </li>
+              <li>
+                <a class='active' href='../apidoc/external_systems.html'>
+                  External systems
+                </a>
+                <ul>
+                  <li>
+                    <a class='' href='../apidoc/external_systems/index.html'>index</a>
+                  </li>
+                  <li>
+                    <a class='' href='../apidoc/external_systems/show.html'>show</a>
+                  </li>
+                  <li>
+                    <a class='' href='../apidoc/external_systems/create.html'>create</a>
+                  </li>
+                  <li>
+                    <a class='' href='../apidoc/external_systems/update.html'>update</a>
+                  </li>
+                  <li>
+                    <a class='' href='../apidoc/external_systems/destroy.html'>destroy</a>
+                  </li>
+                  <li>
+                    <a class='' href='../apidoc/external_systems/authentication.html'>authentication</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a class='' href='../apidoc/flags.html'>
+                  Flags
+                </a>
+              </li>
+              <li>
+                <a class='' href='../apidoc/followers.html'>
+                  Followers
+                </a>
+              </li>
+              <li>
+                <a class='' href='../apidoc/following.html'>
+                  Following
+                </a>
+              </li>
+              <li>
+                <a class='' href='../apidoc/group_memberships.html'>
+                  Group memberships
+                </a>
+              </li>
+              <li>
+                <a class='' href='../apidoc/groups.html'>
+                  Groups
+                </a>
+              </li>
+              <li>
+                <a class='' href='../apidoc/likes.html'>
+                  Likes
+                </a>
+              </li>
+              <li>
+                <a class='' href='../apidoc/media_files.html'>
+                  Media files
+                </a>
+              </li>
+              <li>
+                <a class='' href='../apidoc/members.html'>
+                  Members
+                </a>
+              </li>
+              <li>
+                <a class='' href='../apidoc/messages.html'>
+                  Messages
+                </a>
+              </li>
+              <li>
+                <a class='' href='../apidoc/notifications.html'>
+                  Notifications
+                </a>
+              </li>
+              <li>
+                <a class='' href='../apidoc/polls.html'>
+                  Polls
+                </a>
+              </li>
+              <li>
+                <a class='' href='../apidoc/reach_extensions.html'>
+                  Reach extensions
+                </a>
+              </li>
+              <li>
+                <a class='' href='../apidoc/remarks.html'>
+                  Remarks
+                </a>
+              </li>
+              <li>
+                <a class='' href='../apidoc/search.html'>
+                  Search
+                </a>
+              </li>
+              <li>
+                <a class='' href='../apidoc/streams.html'>
+                  Streams
+                </a>
+              </li>
+              <li>
+                <a class='' href='../apidoc/thanks.html'>
+                  Thanks
+                </a>
+              </li>
+              <li>
+                <a class='' href='../apidoc/topics.html'>
+                  Topics
+                </a>
+              </li>
+              <li>
+                <a class='' href='../apidoc/users.html'>
+                  Users
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class='row'>
+        <ul class='breadcrumbs'>
+          <li>
+            <a href='../apidoc.html'>
+              API Resource Endpoints &gt;
+            </a>
+          </li>
+          <li>
+            External systems
+          </li>
+        </ul>
+        <h1>
+          External systems
+        </h1>
+        <p></p>
+        <div class='article'>
+          <h2>
+            <a href='../apidoc/external_systems/index.html'>
+              GET
+              /api/external_systems
+            </a>
+            <br />
+            get a list of external_systems
+          </h2>
+          
+          <h3>
+            Success Response Code:
+            <b>200</b>
+          </h3>
+          <h3>Params</h3>
+          <table class='table'>
+            <thead>
+              <tr>
+                <th>Param name</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr style='background-color:rgb(255,255,255);'>
+                <td>
+                  <strong>page</strong>
+                  <br />
+                  <small>
+                    optional
+                    
+                  </small>
+                </td>
+                <td>
+                  
+                  <p>page number of external_systems to be returned (default=1)</p>
+                  <br />
+                  Value: Must be Integer
+                </td>
+              </tr>
+              
+              <tr style='background-color:rgb(255,255,255);'>
+                <td>
+                  <strong>per_page</strong>
+                  <br />
+                  <small>
+                    optional
+                    
+                  </small>
+                </td>
+                <td>
+                  
+                  <p>number of external_systems to be returned per page (default=20)</p>
+                  <br />
+                  Value: Must be Integer
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <h3>Response Fields</h3>
+          <table class='table table-bordered response_field'>
+            <tr>
+              <th>external_systems</th>
+              <td>array of ExternalSystem entries. See "GET /api/external_systems/:external_system_id" for format</td>
+              <td>Array&lt;ExternalSystem&gt;</td>
+            </tr>
+          </table>
+          <h3>Example Curl Commands</h3>
+          <div class='well'>
+            curl -X GET -v --basic -u &quot;adminuser@socialcast.com:adminuser&quot; https://demo.socialcast.com/api/external_systems.json
+          </div>
+        </div>
+        <div class='article'>
+          <h2>
+            <a href='../apidoc/external_systems/show.html'>
+              GET
+              /api/external_systems/:external_system_id
+            </a>
+            <br />
+            get a single external_system for the authenticated reach admin
+          </h2>
+          
+          <h3>
+            Success Response Code:
+            <b>200</b>
+          </h3>
+          <h3>Response Fields</h3>
+          <table class='table table-bordered response_field'>
+            <tr>
+              <th>id</th>
+              <td>unique ID of a external_system</td>
+              <td>Integer</td>
+            </tr>
+            <tr>
+              <th>name</th>
+              <td>name of the external_system</td>
+              <td>String</td>
+            </tr>
+            <tr>
+              <th>description</th>
+              <td>description of external_system</td>
+              <td>String</td>
+            </tr>
+            <tr>
+              <th>url</th>
+              <td>url to view the external_system permalink page</td>
+              <td>String</td>
+            </tr>
+            <tr>
+              <th>system_url</th>
+              <td>system url of the external_system</td>
+              <td>String</td>
+            </tr>
+            <tr>
+              <th>state</th>
+              <td>state of the external_system</td>
+              <td>[&quot;active&quot;, &quot;inactive&quot;]</td>
+            </tr>
+            <tr>
+              <th>not_in_company_stream</th>
+              <td>exclude this system's messages from Company Stream</td>
+              <td>[true, false]</td>
+            </tr>
+            <tr>
+              <th>external_system_type</th>
+              <td>system type</td>
+              <td>[&quot;html&quot;, &quot;sharepoint&quot;, &quot;google_gadget&quot;]</td>
+            </tr>
+            <tr>
+              <th>sharepoint_version</th>
+              <td>available only if external_system_type is sharepoint</td>
+              <td>[&quot;2007&quot;, &quot;2010&quot;]</td>
+            </tr>
+            <tr>
+              <th>avatars</th>
+              <td>urls for various sizes of external_system avatar pictures</td>
+              <td>Hash&lt;String, Url&gt;</td>
+            </tr>
+          </table>
+          <h3>Example Curl Commands</h3>
+          <div class='well'>
+            curl -X GET -v --basic -u &quot;adminuser@socialcast.com:adminuser&quot; https://demo.socialcast.com/api/external_system/12.json
+          </div>
+          <h3>Examples</h3>
+          <pre class='prettyprint'>GET /api/external_systems/3.json&#x000A;200&#x000A;{&#x000A;  &quot;external_system&quot;: {&#x000A;    &quot;id&quot;: 3,&#x000A;    &quot;name&quot;: &quot;Øur 'Intranet' 1&quot;,&#x000A;    &quot;description&quot;: null,&#x000A;    &quot;url&quot;: &quot;https://socialcast1.socialcast.test/external_systems/3&quot;,&#x000A;    &quot;system_url&quot;: &quot;http://intranet1.socialcast.com&quot;,&#x000A;    &quot;state&quot;: &quot;active&quot;,&#x000A;    &quot;external_system_type&quot;: &quot;html&quot;,&#x000A;    &quot;sharepoint_version&quot;: null,&#x000A;    &quot;not_in_company_stream&quot;: false,&#x000A;    &quot;avatars&quot;: {&#x000A;      &quot;is_system_default&quot;: true,&#x000A;      &quot;square16&quot;: &quot;https://socialcast1.socialcast.test/images/external_system_square16.png&quot;,&#x000A;      &quot;square30&quot;: &quot;https://socialcast1.socialcast.test/images/external_system_square30.png&quot;,&#x000A;      &quot;square45&quot;: &quot;https://socialcast1.socialcast.test/images/external_system_square45.png&quot;,&#x000A;      &quot;square70&quot;: &quot;https://socialcast1.socialcast.test/images/external_system_square70.png&quot;,&#x000A;      &quot;square140&quot;: &quot;https://socialcast1.socialcast.test/images/external_system_square140.png&quot;&#x000A;    },&#x000A;    &quot;type&quot;: &quot;ExternalSystem&quot;&#x000A;  }&#x000A;}</pre>
+        </div>
+        <div class='article'>
+          <h2>
+            <a href='../apidoc/external_systems/create.html'>
+              POST
+              /api/external_systems
+            </a>
+            <br />
+            create an external system for the authenticated reach admin
+          </h2>
+          
+          <h3>
+            Success Response Code:
+            <b>201</b>
+          </h3>
+          <h3>Params</h3>
+          <table class='table'>
+            <thead>
+              <tr>
+                <th>Param name</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr style='background-color:rgb(255,255,255);'>
+                <td>
+                  <strong>external_system</strong>
+                  <br />
+                  <small>
+                    optional
+                    
+                  </small>
+                </td>
+                <td>
+                  
+                  <br />
+                  Value: Must be a Hash
+                </td>
+              </tr>
+              <tr style='background-color:rgb(250,250,250);'>
+                <td>
+                  <strong>external_system[name]</strong>
+                  <br />
+                  <small>
+                    required
+                    
+                  </small>
+                </td>
+                <td>
+                  
+                  <p>name of the external_system</p>
+                  <br />
+                  Value: Must be String
+                </td>
+              </tr>
+              
+              <tr style='background-color:rgb(250,250,250);'>
+                <td>
+                  <strong>external_system[description]</strong>
+                  <br />
+                  <small>
+                    optional
+                    
+                  </small>
+                </td>
+                <td>
+                  
+                  <p>description of external_system</p>
+                  <br />
+                  Value: Must be String
+                </td>
+              </tr>
+              
+              <tr style='background-color:rgb(250,250,250);'>
+                <td>
+                  <strong>external_system[url]</strong>
+                  <br />
+                  <small>
+                    required
+                    
+                  </small>
+                </td>
+                <td>
+                  
+                  <p>the system url of the external_system</p>
+                  <br />
+                  Value: Must be String
+                </td>
+              </tr>
+              
+              <tr style='background-color:rgb(250,250,250);'>
+                <td>
+                  <strong>external_system[not_in_company_stream]</strong>
+                  <br />
+                  <small>
+                    optional
+                    
+                  </small>
+                </td>
+                <td>
+                  
+                  <p>exclude this system&#39;s messages from Company Stream</p>
+                  <br />
+                  Value: Must be one of: true, false.
+                </td>
+              </tr>
+              
+              <tr style='background-color:rgb(250,250,250);'>
+                <td>
+                  <strong>external_system[external_system_type]</strong>
+                  <br />
+                  <small>
+                    optional
+                    
+                  </small>
+                </td>
+                <td>
+                  
+                  <p>system type (default=html)</p>
+                  <br />
+                  Value: Must be one of: html, sharepoint, google_gadget.
+                </td>
+              </tr>
+              
+              <tr style='background-color:rgb(250,250,250);'>
+                <td>
+                  <strong>external_system[sharepoint_version]</strong>
+                  <br />
+                  <small>
+                    optional
+                    
+                  </small>
+                </td>
+                <td>
+                  
+                  <p>available only if external_system_type is sharepoint</p>
+                  <br />
+                  Value: Must be one of: 2007, 2010.
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <h3>Response Fields</h3>
+          <table class='table table-bordered response_field'>
+            <tr>
+              <th>external_system</th>
+              <td>see "GET /api/external_systems/:external_system_id" for documentation</td>
+              <td>external_system</td>
+            </tr>
+          </table>
+          <h3>Example Curl Commands</h3>
+          <div class='well'>
+            #Add a external_system named &quot;Socialcast Developers&quot; and url http://w.com
+            <br />
+            curl -X POST -d &quot;external_system[name]=Socialcast%20Developers&amp;external_system[url]=http%3A%2F%2Fw.com&quot; -v --basic -u &quot;adminuser@socialcast.com:adminuser&quot; http://demo.socialcast.com/api/external_systems.json
+          </div>
+          <div class='well'>
+            #Add a external_system named &quot;Socialcast Developers&quot; and url http://w.com and image from an url
+            <br />
+            curl -X POST -F &quot;external_system[name]=Socialcast Developers&quot; -F &quot;external_system[url]=http://w.com&quot; -F &quot;external_system[profile_photo_url]=http://www.socialcast.com/sites/default/files/Logos/logo.png&quot; -v --basic -u &quot;adminuser@socialcast.com:adminuser&quot; https://demo.socialcast.com/api/external_systems.json
+          </div>
+          <div class='well'>
+            #Add a external_system named &quot;Socialcast Developers&quot; and url http://w.com and a local image
+            <br />
+            curl -X POST -F &quot;external_system[name]=Socialcast Developers&quot; -F &quot;external_system[url]=http://w.com&quot; -F &quot;external_system[profile_photo][data]=@./socialcast.png&quot; -v --basic -u &quot;adminuser@socialcast.com:adminuser&quot; https://demo.socialcast.com/api/external_systems.json
+          </div>
+        </div>
+        <div class='article'>
+          <h2>
+            <a href='../apidoc/external_systems/update.html'>
+              PUT
+              /api/external_systems/:external_system_id
+            </a>
+            <br />
+            update an external system for the authenticated reach admin
+          </h2>
+          
+          <h3>
+            Success Response Code:
+            <b>200</b>
+          </h3>
+          <h3>Params</h3>
+          <table class='table'>
+            <thead>
+              <tr>
+                <th>Param name</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr style='background-color:rgb(255,255,255);'>
+                <td>
+                  <strong>external_system</strong>
+                  <br />
+                  <small>
+                    optional
+                    
+                  </small>
+                </td>
+                <td>
+                  
+                  <br />
+                  Value: Must be a Hash
+                </td>
+              </tr>
+              <tr style='background-color:rgb(250,250,250);'>
+                <td>
+                  <strong>external_system[name]</strong>
+                  <br />
+                  <small>
+                    required
+                    
+                  </small>
+                </td>
+                <td>
+                  
+                  <p>name of the external_system</p>
+                  <br />
+                  Value: Must be String
+                </td>
+              </tr>
+              
+              <tr style='background-color:rgb(250,250,250);'>
+                <td>
+                  <strong>external_system[description]</strong>
+                  <br />
+                  <small>
+                    optional
+                    
+                  </small>
+                </td>
+                <td>
+                  
+                  <p>description of external_system</p>
+                  <br />
+                  Value: Must be String
+                </td>
+              </tr>
+              
+              <tr style='background-color:rgb(250,250,250);'>
+                <td>
+                  <strong>external_system[url]</strong>
+                  <br />
+                  <small>
+                    required
+                    
+                  </small>
+                </td>
+                <td>
+                  
+                  <p>the system url of the external_system</p>
+                  <br />
+                  Value: Must be String
+                </td>
+              </tr>
+              
+              <tr style='background-color:rgb(250,250,250);'>
+                <td>
+                  <strong>external_system[not_in_company_stream]</strong>
+                  <br />
+                  <small>
+                    optional
+                    
+                  </small>
+                </td>
+                <td>
+                  
+                  <p>exclude this system&#39;s messages from Company Stream</p>
+                  <br />
+                  Value: Must be one of: true, false.
+                </td>
+              </tr>
+              
+              <tr style='background-color:rgb(250,250,250);'>
+                <td>
+                  <strong>external_system[external_system_type]</strong>
+                  <br />
+                  <small>
+                    optional
+                    
+                  </small>
+                </td>
+                <td>
+                  
+                  <p>system type (default=html)</p>
+                  <br />
+                  Value: Must be one of: html, sharepoint, google_gadget.
+                </td>
+              </tr>
+              
+              <tr style='background-color:rgb(250,250,250);'>
+                <td>
+                  <strong>external_system[sharepoint_version]</strong>
+                  <br />
+                  <small>
+                    optional
+                    
+                  </small>
+                </td>
+                <td>
+                  
+                  <p>available only if external_system_type is sharepoint</p>
+                  <br />
+                  Value: Must be one of: 2007, 2010.
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <h3>Response Fields</h3>
+          <table class='table table-bordered response_field'>
+            <tr>
+              <th>external_system</th>
+              <td>see "GET /api/external_systems/:external_system_id" for documentation</td>
+              <td>external_system</td>
+            </tr>
+          </table>
+          <h3>Example Curl Commands</h3>
+          <div class='well'>
+            #Update external_system to name &quot;Socialcast Developers&quot; and url http://w.com
+            <br />
+            curl -X PUT -d &quot;external_system[name]=Socialcast%20Developers&amp;external_system[url]=http%3A%2F%2Fw.com&quot; -v --basic -u &quot;adminuser@socialcast.com:adminuser&quot; http://demo.socialcast.com/api/external_systems/12.json
+          </div>
+          <div class='well'>
+            #Update profile photo with an image from an url
+            <br />
+            curl -X PUT -F &quot;external_system[profile_photo_url]=http://www.socialcast.com/sites/default/files/Logos/logo.png&quot; -v --basic -u &quot;adminuser@socialcast.com:adminuser&quot; https://demo.socialcast.com/api/external_systems/12.json
+          </div>
+          <div class='well'>
+            #Update profile photo with a local image
+            <br />
+            curl -X PUT -F &quot;external_system[profile_photo][data]=@./socialcast.png&quot; -v --basic -u &quot;adminuser@socialcast.com:adminuser&quot; https://demo.socialcast.com/api/external_systems/12.json
+          </div>
+          <div class='well'>
+            #Update external_system with 2007 sharepoint
+            <br />
+            curl -X PUT -d &quot;external_system[external_system_type]=sharepoint&amp;external_system[sharepoint_version]=2007&quot; -v --basic -u &quot;adminuser@socialcast.com:adminuser&quot; https://demo.socialcast.com/api/external_systems/12.json
+          </div>
+        </div>
+        <div class='article'>
+          <h2>
+            <a href='../apidoc/external_systems/destroy.html'>
+              DELETE
+              /api/external_systems/:external_system_id
+            </a>
+            <br />
+            deactivate an external_system
+          </h2>
+          
+          <h3>
+            Success Response Code:
+            <b>200</b>
+          </h3>
+          <h3>Response Fields</h3>
+          <table class='table table-bordered response_field'>
+            <tr>
+              <th>external_system</th>
+              <td>see "GET /api/external_systems/:external_system_id" for documentation</td>
+              <td>external_system</td>
+            </tr>
+          </table>
+          <h3>Example Curl Commands</h3>
+          <div class='well'>
+            curl -X DELETE -v --basic -u &quot;adminuser@socialcast.com:adminuser&quot; https://demo.socialcast.com/api/external_system/12.json
+          </div>
+        </div>
+        <div class='article'>
+          <h2>
+            <a href='../apidoc/external_systems/authentication.html'>
+              POST
+              /api/external_systems/authentication
+            </a>
+            <br />
+            verifies authentication of an external system
+          </h2>
+          Also see <a href="../apidoc/external_systems/show.html">preferred endpoint for external systems</a>.
+          
+          <p>Header: SocialcastApiClient
+          external_system_client_identifier:external_system_client_secret</p>
+          <h3>
+            Success Response Code:
+            <b>200</b>
+          </h3>
+          <h3>Response Fields</h3>
+          <table class='table table-bordered response_field'>
+            <tr>
+              <th>external_system</th>
+              <td>see "GET /api/external_systems/:external_system_id" for documentation</td>
+              <td>external_system</td>
+            </tr>
+          </table>
+          <h3>Example Curl Commands</h3>
+          <div class='well'>
+            curl -X POST -v https://demo.socialcast.com/api/external_systems/authenticate.json -d -h SocialcastApiClient myidentifier:myclientsecret
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class='clear'></div>
+    <div class='footer'>
+      <div class='wrapper'>
+        <ul>
+          <li>
+            <a href="http://socialcast.com/"><span class="translation_missing" title="translation missing: en.Overview">Overview</span></a>
+          </li>
+          <li>
+            <a href="http://socialcast.com/product"><span class="translation_missing" title="translation missing: en.Product Details">Product Details</span></a>
+          </li>
+          <li>
+            <a href="http://socialcast.com/pricing#pricing"><span class="translation_missing" title="translation missing: en.Pricing">Pricing</span></a>
+          </li>
+          <li>
+            <a href="http://socialcast.com/pricing#services"><span class="translation_missing" title="translation missing: en.Services">Services</span></a>
+          </li>
+          <li>
+            <a href="http://socialcast.com/customers"><span class="translation_missing" title="translation missing: en.Customer Stories">Customer Stories</span></a>
+          </li>
+          <li>
+            <a href="http://socialcast.com/webinars"><span class="translation_missing" title="translation missing: en.Webinars">Webinars</span></a>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <a href="http://socialcast.com/resources"><span class="translation_missing" title="translation missing: en.Resources">Resources</span></a>
+          </li>
+          <li>
+            <a href="https://communities.vmware.com/community/vmtn/socialcast"><span class="translation_missing" title="translation missing: en.Community Forum">Community Forum</span></a>
+          </li>
+          <li>
+            <a href="http://socialcast.com/help"><span class="translation_missing" title="translation missing: en.Help">Help</span></a>
+          </li>
+          <li>
+            <a href="http://socialcast.com/faq"><span class="translation_missing" title="translation missing: en.FAQ">Faq</span></a>
+          </li>
+          <li>
+            <a href="http://developers.socialcast.com/"><span class="translation_missing" title="translation missing: en.Developers">Developers</span></a>
+          </li>
+          <li>
+            <a href="http://developers.socialcast.com/admin/"><span class="translation_missing" title="translation missing: en.Administrators">Administrators</span></a>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <a href="http://blog.socialcast.com/"><span class="translation_missing" title="translation missing: en.Blog">Blog</span></a>
+          </li>
+          <li>
+            <a href="http://socialcast.com/about"><span class="translation_missing" title="translation missing: en.About">About</span></a>
+          </li>
+          <li>
+            <a href="http://socialcast.com/press"><span class="translation_missing" title="translation missing: en.Press Center">Press Center</span></a>
+          </li>
+          <li>
+            <a href="http://socialcast.com/careers"><span class="translation_missing" title="translation missing: en.Careers">Careers</span></a>
+          </li>
+          <li>
+            <a href="http://socialcast.com/contact-form"><span class="translation_missing" title="translation missing: en.Contact">Contact</span></a>
+          </li>
+        </ul>
+        <div class='clear'></div>
+        <div class='footer_links'>
+          <div class='social_links'>
+            <a class="youtube" href="http://www.youtube.com/user/SocialcastByVMware"><img alt="Youtube circle" src="/socialcast/assets/youtube_circle.png" /></a>
+            <a class="twitter" href="https://twitter.com/socialcast"><img alt="Twitter circle" src="/socialcast/assets/twitter_circle.png" /></a>
+            <a class="facebook" href="https://www.facebook.com/VMwareSocialcast"><img alt="Facebook circle" src="/socialcast/assets/facebook_circle.png" /></a>
+            <a class="linkedin" href="http://www.linkedin.com/company/1171942"><img alt="Linkedin circle" src="/socialcast/assets/linkedin_circle.png" /></a>
+          </div>
+          <a class="truste_badge" href="https://privacy.truste.com/privacy-seal/VMware,-Inc-/validation?rid=06daecaa-35ac-46f7-9c3e-5c3713be8787"><img alt="Truste seal" src="/socialcast/assets/truste_seal.png" /></a>
+          <p class='tos'>
+            Copyright 2014 VMWare, Inc. All Rights Reserved.
+            <a href="http://www.socialcast.com/terms">Terms</a>
+            |
+            <a href="http://www.socialcast.com/privacy">Privacy</a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <script type='text/javascript' src='../apidoc/javascripts/bundled/jquery-1.7.2.js'></script>
+    <script type='text/javascript' src='../apidoc/javascripts/bundled/bootstrap-collapse.js'></script>
+    <script type='text/javascript' src='../apidoc/javascripts/bundled/prettify.js'></script>
+    <script type='text/javascript' src='../apidoc/javascripts/apipie.js'></script>
+  </body>
+</html>

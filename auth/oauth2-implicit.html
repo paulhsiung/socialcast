@@ -1,0 +1,80 @@
+<html>
+<head>
+<title>Socialcast Oauth 2.0 documentation</title>
+<link href="/socialcast/assets/apipie.css" media="screen" rel="stylesheet">
+
+<script type="text/javascript" src="/socialcast/apidoc/javascripts/bundled/jquery-1.7.2.js" ></script>
+<script>
+
+  $(function(){
+    var content = $('body').html();
+    $('body').load("_layout.html", function() {
+      $(content).prependTo('.row');
+      $('.menu-oauth2-implicit').children().addClass('active');
+    });
+  });
+
+</script>
+
+</head>
+
+<body>
+
+<ul class='breadcrumbs'>
+  <li><a href="oauth2.html">OAuth 2.0</a> > </li>
+  <li>Implicit Grant</li>
+</ul>
+
+<h1>Implicit Grant</h1>
+
+<h2>Implicit Grant</h2>
+
+<p>To initiate the OAuth authorization delegation flow you must first direct your users to the Socialcast Authorization dialog where they can give your application permissions to access their Socialcast data and act on their behalf. Do this by opening the authorization dialog URL in a user-agent:</p>
+
+<pre class="prettyprint">https://ENDPOINT_DOMAIN/oauth2/authorization?response_type=token&amp;redirect_uri=CALLBACK_URL&amp;client_id=CLIENT_ID</pre>
+
+<p>Embedded user agents seeking a more streamlined experience may skip the first step of the authorization flow by opening the following URL instead:</p>
+
+<pre class="prettyprint">https://ENDPOINT_DOMAIN/oauth2/authorization/new?response_type=token&amp;redirect_uri=CALLBACK_URL&amp;client_id=CLIENT_ID</pre>
+
+<p>The following variables should be substituted:</p>
+
+<ul>
+  <li><strong>ENDPOINT_DOMAIN</strong>: The domain where the desired authorization endpoint can be reached. Can either be a full community domain, or "api.socialcast.com" for the centralized login endpoint.</li>
+  <li><strong>CALLBACK_URL</strong>: Your application's pre-registered callback URL.</li>
+  <li><strong>CLIENT_ID</strong>: Your application's Socialcast-supplied client identifier.</li>
+</ul>
+
+<p>The Socialcast server will handle authenticating the user and present them with the opportunity to approve or deny your access request. Once the user has made their choice, they will be redirected back to your application via the "redirect_uri" you supplied when sending the user to the Authorization dialog.</p>
+
+<h3>Authorization Granted Response</h3>
+
+<p>If the user chooses to grant your request, the Socialcast server will append the following <em><a href="http://en.wikipedia.org/wiki/Percent-encoding" target="_blank">URL-encoded</a></em> parameters <em>to the fragment identifier:</em></p>
+
+<ul>
+  <li><strong>access_token</strong>: A temporary access token issued for your application.</li>
+  <li><strong>expires_in</strong>: The length of time in seconds before the access token expires.</li>
+  <li><strong>token_type</strong>: "bearer"</li>
+  <li><strong>community_domain (optional): </strong>The centralized authorization endpoint will include a community_domain parameter which contains the domain of the token endpoint that can be used to make subsequent API requests.</li>
+</ul>
+
+<p>For example:</p>
+
+<pre class="prettyprint">REDIRECT_URI#access_token=12345&amp;expires_in=3600&amp;token_type=bearer</pre>
+
+<h3>Access Denied or Error Responses</h3>
+
+<p>If some kind of error occurs before authorization has been granted, or the user choses not to authorize your application the server will append the following <em><a href="http://en.wikipedia.org/wiki/Percent-encoding" target="_blank">URL-encoded</a></em> parameters <em>to the fragment identifier:</em></p>
+
+<ul>
+  <li><strong>error</strong>: a textual error code. See <a title="Section 4.2.2.1" href="http://tools.ietf.org/html/draft-ietf-oauth-v2-16#section-4.2.2.1" target="_blank" rel="noreferrer">Section 4.2.2.1 of Draft 16</a> for more information</li>
+  <li><strong>error_description</strong>: a human-readable, textual description of the error that occurred.</li>
+  <li><strong>cause</strong> (optional): set to "user" if the user chose to deny access, or absent otherwise.</li>
+</ul>
+
+<p>For example:</p>
+
+<pre class="prettyprint">REDIRECT_URI#error=access_denied&amp;error_description=the%20user%20has%20declined%20your%20request.</pre>
+
+</body>
+</html>

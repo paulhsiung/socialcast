@@ -1,0 +1,43 @@
+<html>
+<head>
+<title>Socialcast Oauth 2.0 documentation</title>
+<link href="/socialcast/assets/apipie.css" media="screen" rel="stylesheet">
+
+<script type="text/javascript" src="/socialcast/apidoc/javascripts/bundled/jquery-1.7.2.js" ></script>
+<script>
+
+  $(function(){
+    var content = $('body').html();
+    $('body').load("_layout.html", function() {
+      $(content).prependTo('.row');
+      $('.menu-oauth2-accessing-protected-resources').children().addClass('active');
+    });
+  });
+
+</script>
+
+</head>
+
+<body>
+
+<ul class='breadcrumbs'>
+  <li><a href="oauth2.html">OAuth 2.0</a> > </li>
+  <li>Accessing Resources</li>
+</ul>
+
+<h1>Accessing Resources</h1>
+<h2>Using Access Tokens</h2>
+<p>Once the client application has an access token, requests can be issued passing the access token in the request headers, or as a request parameter.</p>
+<p>To pass the access token via request header, set the authenticate header as such:</p>
+<pre class="prettyprint">Authorization: Bearer ACCESS_TOKEN</pre>
+<p>Alternatively, you can add it as a request parameter:</p>
+<pre class="prettyprint">http://COMMUNITY/path/to/protected/resource?bearer_token=ACCESS_TOKEN</pre>
+<h3>Successful Response</h3>
+<p>If authorization is successful, the server will return an HTTP 2xx or 3xx response code and a response body set to the requested resource.</p>
+<h3>Error Response</h3>
+<p>If authorization fails, the server will return an HTTP 401 response code. &nbsp;If you are nearing your access token's expiration time, you may be able to avoid future 401 errors by obtaining a new access token. See "Maintaining Access: Using Refresh Tokens" for more information.
+</p>
+
+
+</body>
+</html>

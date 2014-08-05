@@ -1,0 +1,105 @@
+<html>
+<head>
+<title>Socialcast Oauth 2.0 documentation</title>
+<link href="/socialcast/assets/apipie.css" media="screen" rel="stylesheet">
+
+<script type="text/javascript" src="/socialcast/apidoc/javascripts/bundled/jquery-1.7.2.js" ></script>
+<script>
+
+  $(function(){
+    var content = $('body').html();
+    $('body').load("_layout.html", function() {
+      $(content).prependTo('.row');
+      $('.menu-oauth2-refresh-tokens').children().addClass('active');
+    });
+  });
+
+</script>
+
+</head>
+
+<body>
+
+<ul class='breadcrumbs'>
+  <li><a href="oauth2.html">OAuth 2.0</a> > </li>
+  <li>Refresh Tokens</li>
+</ul>
+
+<h1>Refresh Tokens</h1>
+
+<h2>Using Refresh Tokens</h2>
+
+<p>You can use a refresh token to obtain an access token after your original access token has expired. Do this by making a HTTP POST request to the token endpoint located at:</p>
+
+<pre class="prettyprint">http://COMMUNITY_DOMAIN/oauth2/token</pre>
+
+<p>supplying the following request parameters:</p>
+
+<ul>
+  <li><strong>grant_type</strong>: must be "refresh_token" when obtaining a new access token</li>
+  <li><strong>refresh_token</strong>: the refresh token issued to your application</li>
+</ul>
+
+<p>and using the <strong>client_id</strong> as the username and the <strong>client_secret</strong> as password for <a href="http://en.wikipedia.org/wiki/Basic_access_authentication" target="_blank">HTTP Basic Authentication</a>:</p>
+
+<pre class="prettyprint">Authorization: Basic ENCODED_CLIENT_CREDENTIALS</pre>
+
+<p>For example, your request would take the following form:</p>
+
+<pre class="prettyprint">POST /oauth2/token HTTP/1.1
+Host: COMMUNITY_DOMAIN
+Authorization: Basic ENCODED_CLIENT_CREDENTIALS
+Content-Type: application/x-www-form-urlencoded
+
+grant_type=refresh_token&amp;refresh_token=REFRESH_TOKEN
+</pre>
+
+<p>Alternatively you can pass <strong>client_id</strong> and <strong>client_secret</strong> as POST parameters:</p>
+
+<pre class="prettyprint">POST /oauth2/token HTTP/1.1
+Host: COMMUNITY_DOMAIN
+Content-Type: application/x-www-form-urlencoded
+grant_type=refresh_token&amp;refresh_token=REFRESH_TOKEN&amp;client_id=CLIENT_ID&amp;client_secret=CLIENT_SECRET
+</pre>
+
+<p>Note that it is not acceptable to pass client credentials in a Basic Authorization and as POST parameters in the same request. Doing so will result in an invalid request error.</p>
+
+<h3>Successful Response</h3>
+
+<p>If redemption was successful, the Socialcast server will respond with an HTTP 200 with the response body is set to a JSON object containing information regarding your access refresh tokens:</p>
+
+<ul>
+  <li><strong>access_token</strong>: an opaque token that authorizes access to protected resources on behalf of the user</li>
+  <li><strong>token_type</strong>: "bearer," indicating that bearing this token is sufficient to gain access</li>
+  <li><strong>expires_in</strong>: number of seconds until the access token expires</li>
+  <li><strong>refresh_token</strong>: an opaque token that can be used to retrieve new access tokens</li>
+</ul>
+
+<p>For example:</p>
+
+<pre class="prettyprint">{
+access_token: 12341234,
+token_type: "bearer",
+expires_in: 3600,
+refresh_token: 54325421
+}</pre>
+
+<h3>Error Response</h3>
+
+<p>If redemption was unsuccessful, the Socialcast server will respond with an HTTP 400 with the response body set to a JSON object containing information regarding the error that occurred while attempting to redeem the token:</p>
+
+<ul>
+  <li><strong>error</strong>: a textual error code. See <a title="Section 5.2" href="http://tools.ietf.org/html/draft-ietf-oauth-v2-16#section-5.2" target="_blank" rel="noreferrer">Section 5.2 of Draft 16</a> for more information</li>
+  <li><strong>error_description</strong>: a human-readable, textual description of the error that occurred.</li>
+</ul>
+
+<p>For example:</p>
+
+<pre class="prettyprint">{
+error: "invalid_grant",
+error_description: "The supplied authorization code has expired, please re-authorize this application."
+}
+</pre>
+
+</body>
+</html>

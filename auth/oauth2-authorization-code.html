@@ -1,0 +1,147 @@
+<html>
+<head>
+<title>Socialcast Oauth 2.0 documentation</title>
+<link href="/socialcast/assets/apipie.css" media="screen" rel="stylesheet">
+
+<script type="text/javascript" src="/socialcast/apidoc/javascripts/bundled/jquery-1.7.2.js" ></script>
+<script>
+
+  $(function(){
+    var content = $('body').html();
+    $('body').load("_layout.html", function() {
+      $(content).prependTo('.row');
+      $('.menu-oauth2-authorization-code').children().addClass('active');
+    });
+  });
+
+</script>
+
+</head>
+
+<body>
+
+<ul class='breadcrumbs'>
+  <li><a href="oauth2.html">OAuth 2.0</a> > </li>
+  <li>Authorization Code Grant</li>
+</ul>
+
+<h1>Authorization Code Grant</h1>
+
+<p>See <a href="http://tools.ietf.org/html/draft-ietf-oauth-v2-16#section-4.1" rel="noreferrer">Section 4.1 of Draft 16</a>. This flow is suitable for applications which can make cross-domain HTTP requests, such as web, mobile, or desktop applications.</p>
+
+<h2>Obtaining an Authorization Code</h2>
+
+<p>To initiate the OAuth authorization delegation flow you must first direct your users to the Socialcast Authorization dialog where they can give your application permissions to access their Socialcast data and act on their behalf. Do this by opening the authorization dialog URL in a user-agent:</p>
+
+<pre class="prettyprint">https://ENDPOINT_DOMAIN/oauth2/authorization?response_type=code&amp;redirect_uri=CALLBACK_URL&amp;client_id=CLIENT_ID</pre>
+
+<p>Embedded user agents seeking a more streamlined experience may skip the first step of the authorization flow by opening the following URL instead:</p>
+
+<pre class="prettyprint">https://ENDPOINT_DOMAIN/oauth2/authorization/new?response_type=code&amp;redirect_uri=CALLBACK_URL&amp;client_id=CLIENT_ID</pre>
+
+<p>The following variables should be substituted:</p>
+
+<ul>
+  <li><strong>ENDPOINT_DOMAIN</strong>: The domain where the desired authorization endpoint can be reached. Can either be a full community domain, or "api.socialcast.com" for the centralized login endpoint</li>
+  <li><strong>CALLBACK_URL</strong>: Your application's pre-registered redirection target.</li>
+  <li><strong>CLIENT_ID</strong>: Your application's pre-registered identifier.</li>
+</ul>
+
+<p>The Socialcast server will handle authenticating the user and present them with the opportunity to approve or deny your access request. Once the user has made their choice, they will be redirected back to your application via the "redirect_uri" you supplied when sending the user to the Authorization dialog.</p>
+
+<h3>Authorization Granted Response</h3>
+
+<p>If the user chooses to grant your request, the Socialcast server will append the following parameters to the supplied redirect_uri before issuing the redirect to the user agent:</p>
+
+<ul>
+  <li><strong>code</strong>: the authorization code the Socialcast server has issued to your application. You can redeem this code to gain access to protected resources. See "Obtaining Access: Redeeming An Authorization Code" for more information.</li>
+  <li><strong>community_domain (optional): </strong>the centralized authorization endpoint will include a community_domain parameter which contains the domain of the token endpoint that can be used to redeem the token.</li>
+</ul>
+
+<h3>Access Denied or Error Responses</h3>
+
+<p>If some kind of error occurs before authorization has been granted, or the user choses not to authorize your application the server will append the following parameters to the supplied redirect_uri before issuing the redirect to the user agent:</p>
+
+<ul>
+  <li><strong>error</strong>: a textual error code. See <a title="Section 4.1.2.1" href="http://tools.ietf.org/html/draft-ietf-oauth-v2-16#section-4.1.2.1" target="_blank" rel="noreferrer">Section 4.1.2.1 of Draft 16</a> for more information</li>
+  <li><strong>error_description</strong>: a human-readable, textual description of the error that occurred.</li>
+  <li><strong>cause</strong> (optional): set to "user" if the user chose to deny access, or absent otherwise.</li>
+</ul>
+
+<h2 id="redeem_authorization_code">Obtaining Access: Redeeming an Authorization Code</h2>
+
+<p>You can redeem an Authorization Code using the token endpoint by making a HTTP POST request to the token endpoint, located at:</p>
+
+<pre class="prettyprint">https://COMMUNITY_DOMAIN/oauth2/token</pre>
+
+<p>supplying the following required parameters:</p>
+
+<ul>
+  <li><strong>grant_type</strong>: Must be "authorization_code" when redeeming an Authorization Code</li>
+  <li><strong>redirect_uri</strong>: your client application's pre-registered redirection target</li>
+  <li><strong>code</strong>: the authorization code issued by the Authorization ednpoint</li>
+</ul>
+
+<p>and using the <strong>client_id</strong> as the username and the <strong>client_secret</strong> as password for <a href="http://en.wikipedia.org/wiki/Basic_access_authentication" target="_blank">HTTP Basic Authentication</a>:</p>
+
+<pre class="prettyprint">Authorization: Basic ENCODED_CLIENT_CREDENTIALS</pre>
+
+<p>For example, your request would take the following form:</p>
+
+<pre class="prettyprint">POST /oauth2/token HTTP/1.1
+Host: COMMUNITY
+Authorization: Basic ENCODED_CLIENT_CREDENTIALS
+Content-Type: application/x-www-form-urlencoded
+
+grant_type=authorization_code&amp;code=AUTH_CODE&amp;redirect_uri=REDIRECT_URI
+</pre>
+
+<p>Alternatively you can pass <strong>client_id</strong> and <strong>client_secret</strong> as POST parameters:</p>
+
+<pre class="prettyprint">POST /oauth2/token HTTP/1.1
+Host: COMMUNITY
+Content-Type: application/x-www-form-urlencoded
+
+grant_type=authorization_code&amp;code=AUTH_CODE&amp;redirect_uri=REDIRECT_URI&amp;client_id=CLIENT_ID&amp;client_secret=CLIENT_SECRET
+</pre>
+
+<p>Note that it is not acceptable to pass client credentials in a Basic Authorization and as POST parameters in the same request. Doing so will result in an invalid request error.
+
+<h3>Successful Response</h3>
+
+<p>If redemption was successful, the Socialcast server will respond with an HTTP 200 with the response body is set to a JSON object containing information regarding your access refresh tokens:</p>
+
+<ul>
+  <li><strong>access_token</strong>: an opaque token that authorizes access to protected resources on behalf of the user</li>
+  <li><strong>token_type</strong>: "bearer," indicating that bearing this token is sufficient to gain access</li>
+  <li><strong>expires_in</strong>: number of seconds until the access token expires</li>
+  <li><strong>refresh_token</strong>: an opaque token that can be used to retrieve new access tokens</li>
+</ul>
+
+<p>For example:</p>
+
+<pre class="prettyprint">{
+access_token: 12341234,
+token_type: "bearer",
+expires_in: 3600,
+refresh_token: 54325421
+}</pre>
+
+<h3>Error Response</h3>
+
+<p>If redemption was unsuccessful, the Socialcast server will respond with an HTTP 400 with the response body set to a JSON object containing information regarding the error that occurred while attempting to redeem the token:</p>
+
+<ul>
+  <li><strong>error</strong>: a textual error code. See <a title="Section 5.2" href="http://tools.ietf.org/html/draft-ietf-oauth-v2-16#section-4.2" target="_blank" rel="noreferrer">Section 5.2 of Draft 16</a> for more information</li>
+  <li><strong>error_description</strong>: a human-readable, textual description of the error that occurred.</li>
+</ul>
+
+<p>For example:</p>
+
+<pre class="prettyprint">{
+error: "invalid_grant",
+error_description: "The supplied authorization code has expired, please re-authorize this application."
+}</pre>
+
+</body>
+</html>
