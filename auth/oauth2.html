@@ -2,23 +2,11 @@
 <head>
 <title>Socialcast Oauth 2.0 documentation</title>
 <link href="/socialcast/assets/apipie.css" media="screen" rel="stylesheet">
-
 <script type="text/javascript" src="/socialcast/apidoc/javascripts/bundled/jquery-1.7.2.js" ></script>
-<script>
-
-  $(function(){
-    var content = $('body').html();
-    $('body').load("layout.html", function() {
-      $(content).prependTo('.row');
-      $('.menu-oauth2').children().addClass('active');
-    });
-  });
-
-</script>
-
+<script type="text/javascript" src="layout.js" ></script>
 </head>
 
-<body>
+<body data-menu-active="menu-oauth2">
 
 <h1>OAuth 2.0</h1>
 <p><a href="http://oauth.net">OAuth 2.0</a> is now available for selected REST API clients. OAuth is "an open protocol to allow secure API authorization in a simple and standard method from desktop and web applications". Socialcast added this functionality to remove the need for third party clients to securely store your credentials. Instead of storing an encrypted copy of your password, the OAuth enabled client applications now use an access token to authenticate with Socialcast. This token can be used to perform a limited set of actions your behalf, but doesn't permanently provide full access to your account. In the event that an authorized application is compromised, attackers can't access the user's plain text password and the compromised tokens can be revoked at any time.</p>

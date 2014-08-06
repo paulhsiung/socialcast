@@ -2,23 +2,11 @@
 <head>
 <title>Socialcast Oauth 2.0 documentation</title>
 <link href="/socialcast/assets/apipie.css" media="screen" rel="stylesheet">
-
 <script type="text/javascript" src="/socialcast/apidoc/javascripts/bundled/jquery-1.7.2.js" ></script>
-<script>
-
-  $(function(){
-    var content = $('body').html();
-    $('body').load("layout.html", function() {
-      $(content).prependTo('.row');
-      $('.menu-oauth2-implicit').children().addClass('active');
-    });
-  });
-
-</script>
-
+<script type="text/javascript" src="layout.js" ></script>
 </head>
 
-<body>
+<body data-menu-active="menu-oauth2-implicit">
 
 <ul class='breadcrumbs'>
   <li><a href="oauth2.html">OAuth 2.0</a> > </li>

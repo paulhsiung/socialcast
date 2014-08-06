@@ -2,23 +2,11 @@
 <head>
 <title>Socialcast Oauth 2.0 documentation</title>
 <link href="/socialcast/assets/apipie.css" media="screen" rel="stylesheet">
-
 <script type="text/javascript" src="/socialcast/apidoc/javascripts/bundled/jquery-1.7.2.js" ></script>
-<script>
-
-  $(function(){
-    var content = $('body').html();
-    $('body').load("layout.html", function() {
-      $(content).prependTo('.row');
-      $('.menu-oauth2-accessing-protected-resources').children().addClass('active');
-    });
-  });
-
-</script>
-
+<script type="text/javascript" src="layout.js" ></script>
 </head>
 
-<body>
+<body data-menu-active="menu-oauth2-accessing-protected-resources">
 
 <ul class='breadcrumbs'>
   <li><a href="oauth2.html">OAuth 2.0</a> > </li>
@@ -35,7 +23,7 @@
 <h3>Successful Response</h3>
 <p>If authorization is successful, the server will return an HTTP 2xx or 3xx response code and a response body set to the requested resource.</p>
 <h3>Error Response</h3>
-<p>If authorization fails, the server will return an HTTP 401 response code. &nbsp;If you are nearing your access token's expiration time, you may be able to avoid future 401 errors by obtaining a new access token. See "Maintaining Access: Using Refresh Tokens" for more information.
+<p>If authorization fails, the server will return an HTTP 401 response code.  If you are nearing your access token's expiration time, you may be able to avoid future 401 errors by obtaining a new access token. See <a href="oauth2-refresh-tokens.html">Refresh Tokens</a> for more information.
 </p>
 
 

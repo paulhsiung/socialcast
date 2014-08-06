@@ -4,22 +4,10 @@
 <link href="/socialcast/assets/apipie.css" media="screen" rel="stylesheet">
 
 <script type="text/javascript" src="/socialcast/apidoc/javascripts/bundled/jquery-1.7.2.js" ></script>
-<script>
-
-  $(function(){
-    var content = $('body').html();
-    $('body').load("layout.html", function() {
-      $(content).prependTo('.row');
-      $('.menu-basic-auth').children().addClass('active');
-      $('.menu-oauth2').find('ul').hide(0);
-    });
-  });
-
-</script>
-
+<script type="text/javascript" src="layout.js" ></script>
 </head>
 
-<body>
+<body data-menu-active="menu-basic-auth">
 
 <h1>HTTP Basic Authentication</h1>
 <p>Basic authentication is the default mechanism for utilizing the API. Since all requests are made over SSL, the credentials are always encrypted.</p>
