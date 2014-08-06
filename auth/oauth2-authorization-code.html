@@ -42,7 +42,7 @@
 <p>If the user chooses to grant your request, the Socialcast server will append the following parameters to the supplied redirect_uri before issuing the redirect to the user agent:</p>
 
 <ul>
-  <li><strong>code</strong>: the authorization code the Socialcast server has issued to your application. You can redeem this code to gain access to protected resources. See "Obtaining Access: Redeeming An Authorization Code" for more information.</li>
+  <li><strong>code</strong>: the authorization code the Socialcast server has issued to your application. You can redeem this code to gain access to protected resources. See <a href="oauth2-authorization-code.html#redeeming_code">"Obtaining Access: Redeeming An Authorization Code"</a> for more information.</li>
   <li><strong>community_domain (optional): </strong>the centralized authorization endpoint will include a community_domain parameter which contains the domain of the token endpoint that can be used to redeem the token.</li>
 </ul>
 
@@ -56,7 +56,7 @@
   <li><strong>cause</strong> (optional): set to "user" if the user chose to deny access, or absent otherwise.</li>
 </ul>
 
-<h2 id="redeem_authorization_code">Obtaining Access: Redeeming an Authorization Code</h2>
+<h2 id="redeem_authorization_code" name="redeeming_code">Obtaining Access: Redeeming an Authorization Code</h2>
 
 <p>You can redeem an Authorization Code using the token endpoint by making a HTTP POST request to the token endpoint, located at:</p>
 
