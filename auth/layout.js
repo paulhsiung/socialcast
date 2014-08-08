@@ -1,16 +1,15 @@
-
-'use strict';
-
 $(function(){
+  'use strict';
+
   var content = $('body').html();
   var $body = $('body');
   var menuActive = $body.data('menu-active');
 
-  $body.load('layout.html', function() {
+  $body.load('./layout.html', function() {
     $(content).prependTo('.row');
-    $('.' + menuActive).children().addClass('active');
-    if(!menuActive.match(/oauth2/)) {
-      $('.menu-oauth2').find('ul').hide(0);
+    $('.' + menuActive).addClass('active');
+    if(!/oauth2/.test(menuActive)) {
+      $('.submenu-oauth2').hide();
     }
   });
 });
