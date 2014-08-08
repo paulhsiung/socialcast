@@ -5,7 +5,7 @@ $(function(){
   var $body = $('body');
   var menuActive = $body.data('menu-active');
 
-  $body.load('./layout.html', function() {
+  $body.load('/socialcast/auth/layout.html', function() {
     $(content).prependTo('.row');
     $('.' + menuActive).addClass('active');
     if(!/oauth2/.test(menuActive)) {
